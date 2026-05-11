@@ -1,0 +1,564 @@
+// D&D Toolkit Prisma Schema
+// PostgreSQL Database Schema
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// ============================================================================
+// LOOKUP / REFERENCE TABLES
+// ============================================================================
+
+model Book {
+  id       String   @id @default(uuid())
+  code     String   @unique
+  name     String
+  type     String?  // core, expansion, adventure
+  createdAt DateTime @default(now())
+
+  @@map("book")
+}
+
+model Language {
+  id   String @id @default(uuid())
+  name String @unique
+
+  raceLanguages  RaceLanguage[]
+  backgroundLanguages BackgroundLanguage[]
+
+  @@map("language")
+}
+
+model AbilityScore {
+  id           String @id @default(uuid())
+  abbreviation String @unique
+  name         String
+
+  skills Skill[]
+
+  @@map("ability_score")
+}
+
+model Alignment {
+  id   String @id @default(uuid())
+  code String @unique
+  name String
+
+  @@map("alignment")
+}
+
+model DamageType {
+  id          String  @id @default(uuid())
+  name        String  @unique
+  description String?
+
+  @@map("damage_type")
+}
+
+model SchoolOfMagic {
+  id           String @id @default(uuid())
+  name         String @unique
+  abbreviation String
+
+  @@map("school_of_magic")
+}
+
+model Skill {
+  id           String @id @default(uuid())
+  name         String @unique
+  abilityScore AbilityScore @relation(fields: [ability_score], references: [abbreviation])
+  ability_score String
+  description  String?
+
+  @@map("skill")
+}
+
+// ============================================================================
+// CORE GAME CONTENT
+// ============================================================================
+
+model Race {
+  id          String   @id @default(uuid())
+  name        String
+  source      String
+  page        Int?
+  size        String?  // S, M, L, H, G
+  speed       Int      @default(30)
+  darkvision  Int?
+  speedFly    Int?     @map("speed_fly")
+  speedSwim   Int?     @map("speed_swim")
+  strBonus    Int?     @map("str_bonus")
+  dexBonus    Int?     @map("dex_bonus")
+  conBonus    Int?     @map("con_bonus")
+  intBonus    Int?     @map("int_bonus")
+  wisBonus    Int?     @map("wis_bonus")
+  chaBonus    Int?     @map("cha_bonus")
+  description Json?
+  createdAt   DateTime @default(now())
+
+  subraces           Subrace[]
+  raceLanguages      RaceLanguage[]
+  characters         Character[]
+
+  @@unique([name, source])
+  @@map("race")
+}
+
+model RaceLanguage {
+  raceId    String
+  languageId String
+  race      Race    @relation(fields: [raceId], references: [id], onDelete: Cascade)
+  language  Language @relation(fields: [languageId], references: [id])
+
+  @@id([raceId, languageId])
+  @@map("race_language")
+}
+
+model Subrace {
+  id              String   @id @default(uuid())
+  raceId          String
+  name            String
+  source          String?
+  page            Int?
+  abilityBonuses  Json?
+  description     Json?
+  createdAt       DateTime @default(now())
+
+  race       Race        @relation(fields: [raceId], references: [id], onDelete: Cascade)
+  characters Character[]
+
+  @@unique([raceId, name])
+  @@map("subrace")
+}
+
+model Class {
+  id                String   @id @default(uuid())
+  name              String   @unique
+  source            String
+  hitDie            Int      @map("hit_die")
+  proficiencyStr    Boolean  @default(false) @map("proficiency_str")
+  proficiencyDex    Boolean  @default(false) @map("proficiency_dex")
+  proficiencyCon    Boolean  @default(false) @map("proficiency_con")
+  proficiencyInt    Boolean  @default(false) @map("proficiency_int")
+  proficiencyWis    Boolean  @default(false) @map("proficiency_wis")
+  proficiencyCha    Boolean  @default(false) @map("proficiency_cha")
+  subclassTitle     String?  @map("subclass_title")
+  description       Json?
+  createdAt         DateTime @default(now())
+
+  features   ClassFeature[]
+  subclasses Subclass[]
+  spells     SpellClass[]
+  characters Character[]
+
+  @@map("class")
+}
+
+model ClassFeature {
+  id                  String   @id @default(uuid())
+  classId             String
+  name                String
+  level               Int
+  description         Json
+  gainSubclassFeature Boolean  @default(false) @map("gain_subclass_feature")
+  createdAt           DateTime @default(now())
+
+  class Class @relation(fields: [classId], references: [id], onDelete: Cascade)
+
+  @@map("class_feature")
+}
+
+model Subclass {
+  id          String   @id @default(uuid())
+  classId     String
+  name        String
+  shortName   String?  @map("short_name")
+  source      String
+  description Json?
+  createdAt   DateTime @default(now())
+
+  class           Class              @relation(fields: [classId], references: [id], onDelete: Cascade)
+  features        SubclassFeature[]
+  characters      Character[]
+  spellClassFrom  SpellClass[]      @relation("FromSubclass")
+
+  @@unique([classId, name])
+  @@map("subclass")
+}
+
+model SubclassFeature {
+  id          String   @id @default(uuid())
+  subclassId  String
+  name        String
+  level       Int
+  description Json
+  createdAt   DateTime @default(now())
+
+  subclass Subclass @relation(fields: [subclassId], references: [id], onDelete: Cascade)
+
+  @@map("subclass_feature")
+}
+
+model Spell {
+  id                 String   @id @default(uuid())
+  name               String
+  source             String
+  level              Int
+  school             String?  @map("school")
+  castingTime        Json     @map("casting_time")
+  range              Json
+  components          Json
+  materialDescription String?  @map("material_description")
+  duration           Json
+  concentration       Boolean  @default(false)
+  ritual             Boolean  @default(false)
+  description        Json
+  higherLevel        Json?    @map("higher_level")
+  damageType         String?  @map("damage_type")
+  savingThrow        String?  @map("saving_throw")
+  page               Int?
+  createdAt          DateTime @default(now())
+
+  classes         SpellClass[]
+  characterSpells CharacterSpell[]
+
+  @@unique([name, source])
+  @@map("spell")
+}
+
+model SpellClass {
+  id          String   @id @default(uuid())
+  spellId     String
+  classId     String
+  fromSubclass Boolean  @default(false) @map("from_subclass")
+  subclassId  String?
+  spell       Spell   @relation(fields: [spellId], references: [id], onDelete: Cascade)
+  class       Class  @relation(fields: [classId], references: [id], onDelete: Cascade)
+  subclass    Subclass? @relation("FromSubclass", fields: [subclassId], references: [id], onDelete: SetNull)
+
+  @@unique([spellId, classId, subclassId])
+  @@map("spell_class")
+}
+
+model Condition {
+  id          String   @id @default(uuid())
+  name        String   @unique
+  source      String
+  description Json
+  page        Int?
+  createdAt   DateTime @default(now())
+
+  @@map("condition")
+}
+
+model Background {
+  id                   String   @id @default(uuid())
+  name                 String   @unique
+  source               String
+  skillProficiencies   Json?    @map("skill_proficiencies")
+  toolProficiencies    Json?    @map("tool_proficiencies")
+  languages            Json?
+  startingGold         Int?     @map("starting_gold")
+  featureName          String?  @map("feature_name")
+  featureDescription   Json?    @map("feature_description")
+  suggestedTraits      Json?    @map("suggested_traits")
+  suggestedIdeals       Json?    @map("suggested_ideals")
+  suggestedBonds       Json?    @map("suggested_bonds")
+  suggestedFlaws       Json?    @map("suggested_flaws")
+  page                 Int?
+  createdAt            DateTime @default(now())
+
+  characters         Character[]
+  backgroundLanguages BackgroundLanguage[]
+
+  @@map("background")
+}
+
+model BackgroundLanguage {
+  backgroundId String
+  languageId  String
+  background  Background @relation(fields: [backgroundId], references: [id], onDelete: Cascade)
+  language    Language   @relation(fields: [languageId], references: [id])
+
+  @@id([backgroundId, languageId])
+  @@map("background_language")
+}
+
+model Feat {
+  id              String   @id @default(uuid())
+  name            String   @unique
+  source          String
+  prerequisite    Json?
+  abilityBonuses   Json?    @map("ability_bonuses")
+  description     Json
+  page            Int?
+  createdAt       DateTime @default(now())
+
+  @@map("feat")
+}
+
+model Deity {
+  id          String   @id @default(uuid())
+  name        String
+  source      String
+  pantheon    String?
+  alignment   String?
+  domains     Json?
+  symbol      String?
+  description Json?
+  page        Int?
+  createdAt   DateTime @default(now())
+
+  @@unique([name, source])
+  @@map("deity")
+}
+
+model Item {
+  id                   String   @id @default(uuid())
+  name                 String
+  source               String
+  type                 String
+  subtype              String?
+  rarity               String?
+  attunement           Boolean  @default(false)
+  value                String?
+  weight               Float?
+  damage               String?
+  damageType           String?  @map("damage_type")
+  armorClass           Int?     @map("armor_class")
+  strengthRequirement   Int?     @map("strength_requirement")
+  stealthDisadvantage  Boolean  @default(false) @map("stealth_disadvantage")
+  description          Json?
+  page                 Int?
+  createdAt            DateTime @default(now())
+
+  characterItems CharacterItem[]
+
+  @@unique([name, source])
+  @@map("item")
+}
+
+// ============================================================================
+// MONSTERS
+// ============================================================================
+
+model MonsterType {
+  id       String    @id @default(uuid())
+  name     String    @unique
+
+  monsters Monster[]
+
+  @@map("monster_type")
+}
+
+model Monster {
+  id                   String   @id @default(uuid())
+  name                 String
+  source               String
+  size                 String
+  typeId               String   @map("type_id")
+  tags                 Json?
+  alignment            Json?
+  armorClass           Int?     @map("armor_class")
+  armorType            String?  @map("armor_type")
+  hitPointsAvg         Int?     @map("hit_points_avg")
+  hitPointsFormula     String?  @map("hit_points_formula")
+  speedWalk            Int?     @map("speed_walk")
+  speedFly             Int?     @map("speed_fly")
+  speedSwim            Int?     @map("speed_swim")
+  speedClimb           Int?     @map("speed_climb")
+  strScore             Int?     @map("str_score")
+  dexScore             Int?     @map("dex_score")
+  conScore             Int?     @map("con_score")
+  intScore             Int?     @map("int_score")
+  wisScore             Int?     @map("wis_score")
+  chaScore             Int?     @map("cha_score")
+  strSave              Int?     @map("str_save")
+  dexSave              Int?     @map("dex_save")
+  conSave              Int?     @map("con_save")
+  intSave              Int?     @map("int_save")
+  wisSave              Int?     @map("wis_save")
+  chaSave              Int?     @map("cha_save")
+  skills               Json?
+  senses               String?
+  passivePerception    Int?     @map("passive_perception")
+  languages             String?
+  challengeRating      String   @map("challenge_rating")
+  crValue              Float?   @map("cr_value")
+  page                 Int?
+  createdAt            DateTime @default(now())
+
+  monsterType  MonsterType    @relation(fields: [typeId], references: [id])
+  traits       MonsterTrait[]
+  actions      MonsterAction[]
+  encounters   EncounterMonster[]
+
+  @@unique([name, source])
+  @@map("monster")
+}
+
+model MonsterTrait {
+  id          String   @id @default(uuid())
+  monsterId   String
+  name        String
+  description Json
+  createdAt   DateTime @default(now())
+
+  monster Monster @relation(fields: [monsterId], references: [id], onDelete: Cascade)
+
+  @@map("monster_trait")
+}
+
+model MonsterAction {
+  id          String   @id @default(uuid())
+  monsterId   String
+  name        String
+  type        String   @default("action")
+  description Json
+  createdAt   DateTime @default(now())
+
+  monster Monster @relation(fields: [monsterId], references: [id], onDelete: Cascade)
+
+  @@map("monster_action")
+}
+
+// ============================================================================
+// USER CONTENT
+// ============================================================================
+
+model Party {
+  id          String   @id @default(uuid())
+  name        String
+  description String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  characters Character[]
+
+  @@map("party")
+}
+
+model Character {
+  id               String   @id @default(uuid())
+  partyId          String?
+  name             String
+  playerName       String?  @map("player_name")
+  level            Int      @default(1)
+  raceId           String?
+  subraceId        String?
+  classId          String?
+  subclassId       String?
+  backgroundId     String?
+  currentHp        Int?
+  maxHp            Int?     @map("max_hp")
+  tempHp           Int      @default(0) @map("temp_hp")
+  proficiencyBonus Int?     @map("proficiency_bonus")
+  experiencePoints Int      @default(0) @map("experience_points")
+  strScore         Int      @default(10) @map("str_score")
+  dexScore         Int      @default(10) @map("dex_score")
+  conScore         Int      @default(10) @map("con_score")
+  intScore         Int      @default(10) @map("int_score")
+  wisScore         Int      @default(10) @map("wis_score")
+  chaScore         Int      @default(10) @map("cha_score")
+  inspiration      Boolean  @default(false)
+  notes            String?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  party       Party?        @relation(fields: [partyId], references: [id], onDelete: SetNull)
+  race        Race?         @relation(fields: [raceId], references: [id])
+  subrace     Subrace?      @relation(fields: [subraceId], references: [id])
+  class       Class?        @relation(fields: [classId], references: [id])
+  subclass    Subclass?      @relation(fields: [subclassId], references: [id])
+  background  Background?    @relation(fields: [backgroundId], references: [id])
+  spells      CharacterSpell[]
+  features    CharacterFeature[]
+  items       CharacterItem[]
+
+  @@map("character")
+}
+
+model CharacterSpell {
+  id           String   @id @default(uuid())
+  characterId  String
+  spellId     String
+  prepared    Boolean  @default(false)
+  usedPerDay  Int?     @map("used_per_day")
+  createdAt   DateTime @default(now())
+
+  character Character @relation(fields: [characterId], references: [id], onDelete: Cascade)
+  spell     Spell     @relation(fields: [spellId], references: [id], onDelete: Cascade)
+
+  @@unique([characterId, spellId])
+  @@map("character_spell")
+}
+
+model CharacterFeature {
+  id            String   @id @default(uuid())
+  characterId   String
+  featureName   String
+  description   String?
+  usesRemaining Int?     @map("uses_remaining")
+  maxUses      Int?     @map("max_uses")
+  createdAt     DateTime @default(now())
+
+  character Character @relation(fields: [characterId], references: [id], onDelete: Cascade)
+
+  @@map("character_feature")
+}
+
+model CharacterItem {
+  id          String   @id @default(uuid())
+  characterId String
+  itemId     String?
+  customName String?  @map("custom_name")
+  quantity   Int      @default(1)
+  equipped   Boolean  @default(false)
+  attuned    Boolean  @default(false)
+  createdAt  DateTime @default(now())
+
+  character Character @relation(fields: [characterId], references: [id], onDelete: Cascade)
+  item      Item?     @relation(fields: [itemId], references: [id], onDelete: SetNull)
+
+  @@map("character_item")
+}
+
+model Encounter {
+  id          String   @id @default(uuid())
+  name        String
+  description String?
+  difficulty  String?
+  partyLevel  Int?     @map("party_level")
+  notes       String?
+  isActive    Boolean  @default(false) @map("is_active")
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  monsters EncounterMonster[]
+
+  @@map("encounter")
+}
+
+model EncounterMonster {
+  id           String   @id @default(uuid())
+  encounterId  String
+  monsterId    String
+  quantity     Int      @default(1)
+  initiative   Int?
+  currentHp    Int?     @map("current_hp")
+  maxHp        Int?     @map("max_hp")
+  conditions   Json?
+  isActive     Boolean  @default(true) @map("is_active")
+  notes        String?
+
+  encounter Encounter @relation(fields: [encounterId], references: [id], onDelete: Cascade)
+  monster   Monster   @relation(fields: [monsterId], references: [id], onDelete: Cascade)
+
+  @@unique([encounterId, monsterId])
+  @@map("encounter_monster")
+}

@@ -1,0 +1,490 @@
+[
+	{
+		"id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+		"name": "Goblin Ambush",
+		"savedAt": "2026-03-20T10:00:00.000Z",
+		"entries": [
+			{
+				"count": 4,
+				"monster": {
+					"name": "Goblin",
+					"source": "MM",
+					"size": "S",
+					"type": "humanoid",
+					"alignment": ["N", "E"],
+					"ac": "15",
+					"hp": { "average": 7, "formula": "2d6" },
+					"speed": { "walk": 30 },
+					"str": 8, "dex": 14, "con": 10, "int": 10, "wis": 8, "cha": 8,
+					"passive": 9,
+					"languages": "Common, Goblin",
+					"cr": "1/4"
+				}
+			},
+			{
+				"count": 1,
+				"monster": {
+					"name": "Hobgoblin",
+					"source": "MM",
+					"size": "M",
+					"type": "humanoid",
+					"alignment": ["L", "E"],
+					"ac": "18",
+					"hp": { "average": 11, "formula": "2d8+2" },
+					"speed": { "walk": 30 },
+					"str": 13, "dex": 12, "con": 12, "int": 10, "wis": 10, "cha": 9,
+					"passive": 10,
+					"languages": "Common, Goblin",
+					"cr": "1/2"
+				}
+			}
+		]
+	},
+	{
+		"id": "b2c3d4e5-f6a7-8901-bcde-f12345678901",
+		"name": "Rogue's Den",
+		"savedAt": "2026-03-20T10:05:00.000Z",
+		"entries": [
+			{
+				"count": 1,
+				"monster": {
+					"name": "Master Thief",
+					"source": "VGM",
+					"size": "M",
+					"type": "humanoid",
+					"alignment": ["N"],
+					"ac": "16",
+					"hp": { "average": 84, "formula": "13d8+26" },
+					"speed": { "walk": 30 },
+					"str": 11, "dex": 20, "con": 14, "int": 11, "wis": 11, "cha": 12,
+					"passive": 14,
+					"languages": "Thieves' cant plus any two languages",
+					"cr": "5"
+				}
+			},
+			{
+				"count": 2,
+				"monster": {
+					"name": "Druid",
+					"source": "MM",
+					"size": "M",
+					"type": "humanoid",
+					"alignment": ["N"],
+					"ac": "11",
+					"hp": { "average": 27, "formula": "5d8+5" },
+					"speed": { "walk": 30 },
+					"str": 10, "dex": 12, "con": 13, "int": 12, "wis": 15, "cha": 11,
+					"passive": 14,
+					"languages": "Druidic plus any two languages",
+					"cr": "2"
+				}
+			}
+		]
+	},
+	{
+		"id": "c3d4e5f6-a7b8-9012-cdef-123456789012",
+		"name": "Cult Gathering",
+		"savedAt": "2026-03-20T10:10:00.000Z",
+		"entries": [
+			{
+				"count": 1,
+				"monster": {
+					"name": "Cult Fanatic",
+					"source": "MM",
+					"size": "M",
+					"type": "humanoid",
+					"alignment": ["N", "E"],
+					"ac": "13",
+					"hp": { "average": 33, "formula": "6d8+6" },
+					"speed": { "walk": 30 },
+					"str": 11, "dex": 14, "con": 12, "int": 10, "wis": 13, "cha": 14,
+					"passive": 11,
+					"languages": "Any one language",
+					"cr": "2"
+				}
+			},
+			{
+				"count": 1,
+				"monster": {
+					"name": "Priest",
+					"source": "MM",
+					"size": "M",
+					"type": "humanoid",
+					"alignment": ["L", "G"],
+					"ac": "13",
+					"hp": { "average": 27, "formula": "5d8+5" },
+					"speed": { "walk": 30 },
+					"str": 10, "dex": 10, "con": 12, "int": 13, "wis": 16, "cha": 13,
+					"passive": 13,
+					"languages": "Any two languages",
+					"cr": "2"
+				}
+			},
+			{
+				"count": 1,
+				"monster": {
+					"name": "Veteran",
+					"source": "MM",
+					"size": "M",
+					"type": "humanoid",
+					"alignment": ["N"],
+					"ac": "17",
+					"hp": { "average": 58, "formula": "9d8+18" },
+					"speed": { "walk": 30 },
+					"str": 16, "dex": 13, "con": 14, "int": 10, "wis": 11, "cha": 10,
+					"passive": 10,
+					"languages": "Any one language",
+					"cr": "3"
+				}
+			},
+			{
+				"count": 1,
+				"monster": {
+					"name": "Berserker",
+					"source": "MM",
+					"size": "M",
+					"type": "humanoid",
+					"alignment": ["C", "N"],
+					"ac": "13",
+					"hp": { "average": 67, "formula": "9d8+27" },
+					"speed": { "walk": 30 },
+					"str": 16, "dex": 12, "con": 17, "int": 9, "wis": 11, "cha": 9,
+					"passive": 10,
+					"languages": "Any one language",
+					"cr": "2"
+				}
+			}
+		]
+	},
+	{
+		"id": "d4e5f6a7-b8c9-0123-defa-234567890123",
+		"name": "Blight Swarm",
+		"savedAt": "2026-03-20T10:15:00.000Z",
+		"entries": [
+			{
+				"count": 1,
+				"monster": {
+					"name": "Twig Blight",
+					"source": "MM",
+					"size": "S",
+					"type": "plant",
+					"alignment": ["N", "E"],
+					"ac": "13",
+					"hp": { "average": 4, "formula": "1d6+1" },
+					"speed": { "walk": 20 },
+					"str": 6, "dex": 13, "con": 12, "int": 4, "wis": 8, "cha": 3,
+					"passive": 8,
+					"languages": "Common (understands only)",
+					"cr": "1/8"
+				}
+			},
+			{
+				"count": 1,
+				"monster": {
+					"name": "Needle Blight",
+					"source": "MM",
+					"size": "M",
+					"type": "plant",
+					"alignment": ["N", "E"],
+					"ac": "12",
+					"hp": { "average": 11, "formula": "2d8+2" },
+					"speed": { "walk": 30 },
+					"str": 12, "dex": 12, "con": 13, "int": 4, "wis": 8, "cha": 3,
+					"passive": 8,
+					"languages": "Common (understands only)",
+					"cr": "1/4"
+				}
+			},
+			{
+				"count": 2,
+				"monster": {
+					"name": "Vine Blight",
+					"source": "MM",
+					"size": "M",
+					"type": "plant",
+					"alignment": ["N", "E"],
+					"ac": "12",
+					"hp": { "average": 26, "formula": "4d8+8" },
+					"speed": { "walk": 10 },
+					"str": 15, "dex": 8, "con": 14, "int": 5, "wis": 10, "cha": 3,
+					"passive": 10,
+					"languages": "Common (understands only)",
+					"cr": "1/2"
+				}
+			}
+		]
+	},
+	{
+		"id": "e5f6a7b8-c9d0-1234-efab-345678901234",
+		"name": "Undead Horror",
+		"savedAt": "2026-03-20T10:20:00.000Z",
+		"entries": [
+			{
+				"count": 1,
+				"monster": {
+					"name": "Wraith",
+					"source": "MM",
+					"size": "M",
+					"type": "undead",
+					"alignment": ["N", "E"],
+					"ac": "13",
+					"hp": { "average": 67, "formula": "9d8+27" },
+					"speed": { "walk": 0, "fly": 60 },
+					"str": 6, "dex": 16, "con": 16, "int": 12, "wis": 14, "cha": 15,
+					"passive": 12,
+					"languages": "The languages it knew in life",
+					"cr": "5"
+				}
+			},
+			{
+				"count": 2,
+				"monster": {
+					"name": "Zombie",
+					"source": "MM",
+					"size": "M",
+					"type": "undead",
+					"alignment": ["N", "E"],
+					"ac": "8",
+					"hp": { "average": 22, "formula": "3d8+9" },
+					"speed": { "walk": 20 },
+					"str": 13, "dex": 6, "con": 16, "int": 3, "wis": 6, "cha": 5,
+					"passive": 8,
+					"languages": "Understands languages it knew in life",
+					"cr": "1/4"
+				}
+			},
+			{
+				"count": 1,
+				"monster": {
+					"name": "Skeleton",
+					"source": "MM",
+					"size": "M",
+					"type": "undead",
+					"alignment": ["L", "E"],
+					"ac": "13",
+					"hp": { "average": 13, "formula": "2d8+4" },
+					"speed": { "walk": 30 },
+					"str": 10, "dex": 14, "con": 15, "int": 6, "wis": 8, "cha": 5,
+					"passive": 9,
+					"languages": "Understands languages it knew in life",
+					"cr": "1/4"
+				}
+			}
+		]
+	},
+	{
+		"id": "f6a7b8c9-d0e1-2345-fabc-456789012345",
+		"name": "Orc Raiders",
+		"savedAt": "2026-03-20T10:25:00.000Z",
+		"entries": [
+			{
+				"count": 1,
+				"monster": {
+					"name": "Orc",
+					"source": "MM",
+					"size": "M",
+					"type": "humanoid",
+					"alignment": ["C", "E"],
+					"ac": "13",
+					"hp": { "average": 15, "formula": "2d8+6" },
+					"speed": { "walk": 30 },
+					"str": 16, "dex": 12, "con": 16, "int": 7, "wis": 11, "cha": 10,
+					"passive": 10,
+					"languages": "Common, Orc",
+					"cr": "1/2"
+				}
+			},
+			{
+				"count": 1,
+				"monster": {
+					"name": "Ogre",
+					"source": "MM",
+					"size": "L",
+					"type": "giant",
+					"alignment": ["C", "E"],
+					"ac": "11",
+					"hp": { "average": 59, "formula": "7d10+21" },
+					"speed": { "walk": 40 },
+					"str": 19, "dex": 8, "con": 16, "int": 5, "wis": 7, "cha": 7,
+					"passive": 8,
+					"languages": "Common, Giant",
+					"cr": "2"
+				}
+			},
+			{
+				"count": 1,
+				"monster": {
+					"name": "Lizardfolk Shaman",
+					"source": "MM",
+					"size": "M",
+					"type": "humanoid",
+					"alignment": ["N"],
+					"ac": "13",
+					"hp": { "average": 27, "formula": "5d8+5" },
+					"speed": { "walk": 30, "swim": 30 },
+					"str": 15, "dex": 10, "con": 13, "int": 10, "wis": 15, "cha": 8,
+					"passive": 12,
+					"languages": "Draconic",
+					"cr": "2"
+				}
+			},
+			{
+				"count": 1,
+				"monster": {
+					"name": "Scout",
+					"source": "MM",
+					"size": "M",
+					"type": "humanoid",
+					"alignment": ["N"],
+					"ac": "13",
+					"hp": { "average": 16, "formula": "3d8+3" },
+					"speed": { "walk": 30 },
+					"str": 11, "dex": 14, "con": 12, "int": 11, "wis": 13, "cha": 11,
+					"passive": 15,
+					"languages": "Any one language",
+					"cr": "1/2"
+				}
+			}
+		]
+	},
+	{
+		"id": "a7b8c9d0-e1f2-3456-abcd-567890123456",
+		"name": "Spider Cave",
+		"savedAt": "2026-03-20T10:30:00.000Z",
+		"entries": [
+			{
+				"count": 1,
+				"monster": {
+					"name": "Giant Spider",
+					"source": "MM",
+					"size": "L",
+					"type": "beast",
+					"alignment": [],
+					"ac": "14",
+					"hp": { "average": 26, "formula": "4d10+4" },
+					"speed": { "walk": 30, "climb": 30 },
+					"str": 14, "dex": 16, "con": 12, "int": 2, "wis": 11, "cha": 4,
+					"passive": 10,
+					"languages": "—",
+					"cr": "1"
+				}
+			},
+			{
+				"count": 1,
+				"monster": {
+					"name": "Phase Spider",
+					"source": "MM",
+					"size": "L",
+					"type": "monstrosity",
+					"alignment": [],
+					"ac": "13",
+					"hp": { "average": 32, "formula": "5d10+5" },
+					"speed": { "walk": 30, "climb": 30 },
+					"str": 15, "dex": 15, "con": 12, "int": 6, "wis": 10, "cha": 6,
+					"passive": 10,
+					"languages": "—",
+					"cr": "3"
+				}
+			},
+			{
+				"count": 1,
+				"monster": {
+					"name": "Goblin",
+					"source": "MM",
+					"size": "S",
+					"type": "humanoid",
+					"alignment": ["N", "E"],
+					"ac": "15",
+					"hp": { "average": 7, "formula": "2d6" },
+					"speed": { "walk": 30 },
+					"str": 8, "dex": 14, "con": 10, "int": 10, "wis": 8, "cha": 8,
+					"passive": 9,
+					"languages": "Common, Goblin",
+					"cr": "1/4"
+				}
+			}
+		]
+	},
+	{
+		"id": "b8c9d0e1-f2a3-4567-bcde-678901234567",
+		"name": "Spider Lair",
+		"savedAt": "2026-03-20T10:35:00.000Z",
+		"entries": [
+			{
+				"count": 1,
+				"monster": {
+					"name": "Giant Spider",
+					"source": "MM",
+					"size": "L",
+					"type": "beast",
+					"alignment": [],
+					"ac": "14",
+					"hp": { "average": 26, "formula": "4d10+4" },
+					"speed": { "walk": 30, "climb": 30 },
+					"str": 14, "dex": 16, "con": 12, "int": 2, "wis": 11, "cha": 4,
+					"passive": 10,
+					"languages": "—",
+					"cr": "1"
+				}
+			},
+			{
+				"count": 2,
+				"monster": {
+					"name": "Phase Spider",
+					"source": "MM",
+					"size": "L",
+					"type": "monstrosity",
+					"alignment": [],
+					"ac": "13",
+					"hp": { "average": 32, "formula": "5d10+5" },
+					"speed": { "walk": 30, "climb": 30 },
+					"str": 15, "dex": 15, "con": 12, "int": 6, "wis": 10, "cha": 6,
+					"passive": 10,
+					"languages": "—",
+					"cr": "3"
+				}
+			}
+		]
+	},
+	{
+		"id": "c9d0e1f2-a3b4-5678-cdef-789012345678",
+		"name": "Dragon's Lair",
+		"savedAt": "2026-03-20T10:40:00.000Z",
+		"entries": [
+			{
+				"count": 1,
+				"monster": {
+					"name": "Green Guard Drake",
+					"source": "HotDQ",
+					"size": "M",
+					"type": "dragon",
+					"alignment": ["N"],
+					"ac": "14",
+					"hp": { "average": 52, "formula": "8d8+16" },
+					"speed": { "walk": 30 },
+					"str": 16, "dex": 11, "con": 14, "int": 4, "wis": 10, "cha": 7,
+					"passive": 10,
+					"languages": "—",
+					"cr": "2"
+				}
+			},
+			{
+				"count": 1,
+				"monster": {
+					"name": "Young Green Dragon",
+					"source": "MM",
+					"size": "L",
+					"type": "dragon",
+					"alignment": ["L", "E"],
+					"ac": "18",
+					"hp": { "average": 136, "formula": "16d10+48" },
+					"speed": { "walk": 40, "fly": 80, "swim": 40 },
+					"str": 19, "dex": 12, "con": 17, "int": 16, "wis": 13, "cha": 15,
+					"passive": 14,
+					"languages": "Common, Draconic",
+					"cr": "8"
+				}
+			}
+		]
+	}
+]

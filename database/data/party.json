@@ -1,0 +1,56 @@
+[
+	{
+		"name": "Virex the Cataclysm",
+		"player": "Tomas",
+		"level": 5,
+		"race": "Fire Genasi",
+		"class": "Sorcerer",
+		"subclass": "Draconic Sorcery",
+		"maxHp": 40
+	},
+	{
+		"name": "Fizz",
+		"player": "Arturas",
+		"level": 5,
+		"race": "Tiefling",
+		"class": "Sorcerer",
+		"subclass": null,
+		"maxHp": 32
+	},
+	{
+		"name": "Yoric",
+		"player": "Arta",
+		"level": 5,
+		"race": "Elf",
+		"class": "Warlock",
+		"subclass": null,
+		"maxHp": 41
+	},
+	{
+		"name": "Hodolf",
+		"player": "Benas",
+		"level": 5,
+		"race": "Dwarf",
+		"class": "Bard",
+		"subclass": "Fighter",
+		"maxHp": 62
+	},
+	{
+		"name": "Vire",
+		"player": "Tadas",
+		"level": 5,
+		"race": "Half-Elf",
+		"class": "Rogue",
+		"subclass": null,
+		"maxHp": 50
+	},
+	{
+		"name": "sazaras",
+		"player": "Mantelis",
+		"level": 5,
+		"race": "Dragonbordn",
+		"class": "Rogue",
+		"subclass": null,
+		"maxHp": 37
+	}
+]
