@@ -10,6 +10,7 @@ export async function getMonsterTypes(req: Request, res: Response) {
 		return res.json(monsterTypes);
 	} catch (error) {
 		console.error("Error fetching monster types:", error);
+
 		return res.status(500).json({ error: "Failed to fetch monster types" });
 	}
 }
@@ -30,9 +31,10 @@ export async function getMonsterTypeById(
 			return res.status(404).json({ error: "Monster type not found" });
 		}
 
-		res.json(monsterType);
+    res.json(monsterType);
 	} catch (error) {
 		console.error("Error fetching monster type:", error);
+
 		res.status(500).json({ error: "Failed to fetch monster type" });
 	}
 }

@@ -21,7 +21,61 @@ model Book {
   type     String?  // core, expansion, adventure
   createdAt DateTime @default(now())
 
+  adventures Adventure[]
+
   @@map("book")
+}
+
+model Adventure {
+  id         String    @id @default(uuid())
+  code       String    @unique // e.g. "LMoP", "TftYP-AtG"
+  name       String
+  storyline  String?
+  levelStart Int?      @map("level_start")
+  levelEnd   Int?      @map("level_end")
+  published  DateTime?
+  bookId     String?   @map("book_id")
+  createdAt  DateTime  @default(now())
+
+  book     Book?              @relation(fields: [bookId], references: [id])
+  sections AdventureSection[]
+  npcs     Npc[]
+
+  @@map("adventure")
+}
+
+model AdventureSection {
+  id          String @id @default(uuid())
+  adventureId String @map("adventure_id")
+  ordinal     Int    // chapter order within the adventure
+  name        String
+  headers     Json?  // table-of-contents headers for this chapter
+  entries     Json   // full nested entry tree (text, insets, tables, images)
+  images      Json?  // extracted image refs: [{ title, path, url }]
+
+  adventure Adventure @relation(fields: [adventureId], references: [id], onDelete: Cascade)
+
+  @@unique([adventureId, ordinal])
+  @@map("adventure_section")
+}
+
+model Npc {
+  id          String  @id @default(uuid())
+  name        String
+  source      String  // source book code the creature tag points at
+  adventureId String  @map("adventure_id")
+  monsterId   String? @map("monster_id")
+  tokenUrl    String? @map("token_url")
+  appearance  String? // physical description: race, age, clothing, features
+  location    String? // where the NPC is found, e.g. "Stonehill Inn — Phandalin"
+  description String? // who they are: role, affiliations, motivations
+
+  adventure Adventure @relation(fields: [adventureId], references: [id], onDelete: Cascade)
+  monster   Monster?  @relation(fields: [monsterId], references: [id])
+
+  @@unique([adventureId, name])
+  @@index([monsterId])
+  @@map("npc")
 }
 
 model Language {
@@ -76,6 +130,26 @@ model Skill {
   description  String?
 
   @@map("skill")
+}
+
+// ============================================================================
+// USERS / AUTH
+// ============================================================================
+
+model User {
+  id        String   @id @default(uuid())
+  googleId  String   @unique @map("google_id")
+  email     String   @unique
+  name      String?
+  avatarUrl String?  @map("avatar_url")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  customSpells   Spell[]
+  customItems    Item[]
+  customMonsters Monster[]
+
+  @@map("app_user")
 }
 
 // ============================================================================
@@ -222,12 +296,17 @@ model Spell {
   damageType         String?  @map("damage_type")
   savingThrow        String?  @map("saving_throw")
   page               Int?
+  isCustom           Boolean  @default(false) @map("is_custom")
+  createdById        String?  @map("created_by_id")
   createdAt          DateTime @default(now())
 
+  createdBy       User?            @relation(fields: [createdById], references: [id], onDelete: Cascade)
   classes         SpellClass[]
   characterSpells CharacterSpell[]
+  monsters        MonsterSpell[]
 
   @@unique([name, source])
+  @@index([createdById])
   @@map("spell")
 }
 
@@ -322,11 +401,18 @@ model Item {
   id                   String   @id @default(uuid())
   name                 String
   source               String
-  type                 String
+  type                 String   // primary category: weapon, armor, potion, wondrous item, ...
+  types                String[] @default([]) // all categories, e.g. ["weapon", "magic item"]
   subtype              String?
+  armorType            String?  @map("armor_type") // light, medium, heavy, shield
+  weaponType           String?  @map("weapon_type") // melee, ranged
+  weaponCategory       String?  @map("weapon_category") // simple, martial
   rarity               String?
   attunement           Boolean  @default(false)
-  value                String?
+  attunementRequirement String? @map("attunement_requirement") // e.g. "by a Dwarf"
+  value                String?  // original text, e.g. "10gp"
+  valueGp              Float?   @map("value_gp") // normalized gold value
+  valueEstimated       Boolean  @default(false) @map("value_estimated") // valueGp derived from rarity guidelines
   weight               Float?
   damage               String?
   damageType           String?  @map("damage_type")
@@ -335,11 +421,15 @@ model Item {
   stealthDisadvantage  Boolean  @default(false) @map("stealth_disadvantage")
   description          Json?
   page                 Int?
+  isCustom             Boolean  @default(false) @map("is_custom")
+  createdById          String?  @map("created_by_id")
   createdAt            DateTime @default(now())
 
+  createdBy      User?           @relation(fields: [createdById], references: [id], onDelete: Cascade)
   characterItems CharacterItem[]
 
   @@unique([name, source])
+  @@index([createdById])
   @@map("item")
 }
 
@@ -391,15 +481,32 @@ model Monster {
   challengeRating      String   @map("challenge_rating")
   crValue              Float?   @map("cr_value")
   page                 Int?
+  isCustom             Boolean  @default(false) @map("is_custom")
+  createdById          String?  @map("created_by_id")
   createdAt            DateTime @default(now())
 
+  createdBy    User?          @relation(fields: [createdById], references: [id], onDelete: Cascade)
   monsterType  MonsterType    @relation(fields: [typeId], references: [id])
   traits       MonsterTrait[]
   actions      MonsterAction[]
+  spells       MonsterSpell[]
   encounters   EncounterMonster[]
+  npcs         Npc[]
 
   @@unique([name, source])
+  @@index([createdById])
   @@map("monster")
+}
+
+model MonsterSpell {
+  id        String  @id @default(uuid())
+  monsterId String  @map("monster_id")
+  spellId   String  @map("spell_id")
+  monster   Monster @relation(fields: [monsterId], references: [id], onDelete: Cascade)
+  spell     Spell   @relation(fields: [spellId], references: [id], onDelete: Cascade)
+
+  @@unique([monsterId, spellId])
+  @@map("monster_spell")
 }
 
 model MonsterTrait {

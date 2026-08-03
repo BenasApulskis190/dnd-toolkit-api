@@ -1,62 +1,45 @@
 import { Request, Response } from 'express';
-import { esClient, INDICES } from '../../lib/elasticsearch';
+import { esClient, search, INDICES, SEARCH_FIELDS, IndexName } from '../../lib/elasticsearch';
+import { parsePagination, paginatedResponse } from '../../lib/pagination';
 
 const ALL_INDICES = Object.values(INDICES);
 
 export async function searchAllContent(req: Request, res: Response) {
   try {
     const query = (req.query.q as string) || '';
-    const limit = parseInt(req.query.limit as string) || 20;
-    const offset = parseInt(req.query.offset as string) || 0;
+    const pagination = parsePagination(req.query);
 
     if (!query) {
       return res.status(400).json({ error: 'Query parameter "q" is required' });
     }
 
-    const allHits: any[] = [];
-
-    for (const index of ALL_INDICES) {
-      try {
-        const result = await esClient.search({
-          index,
-          query: {
-            multi_match: {
-              query,
-              fields: ['name^5', 'description^2', 'type', 'source'],
-              fuzziness: 'AUTO',
-            },
-          },
-          size: limit,
-          from: offset,
-        });
-
-        for (const hit of result.hits.hits) {
-          allHits.push({
-            ...hit._source,
-            _index: index,
-            _score: hit._score,
-          });
-        }
-      } catch (error) {
-        console.error(`Error searching ${index}:`, error);
-      }
-    }
-
-    allHits.sort((a, b) => (b._score || 0) - (a._score || 0));
-    const hits = allHits.slice(0, limit);
-
-    res.json({
-      query,
-      data: hits,
-      pagination: {
-        limit,
-        offset,
-        total: hits.length,
+    const result = await esClient.search({
+      index: ALL_INDICES,
+      query: {
+        multi_match: {
+          query,
+          fields: SEARCH_FIELDS,
+          fuzziness: 'AUTO',
+        },
       },
+      size: pagination.limit,
+      from: pagination.from,
     });
+
+    const hits = result.hits.hits.map((hit) => ({
+      ...(hit._source as object),
+      _index: hit._index,
+      _score: hit._score,
+    }));
+    const total =
+      typeof result.hits.total === 'number'
+        ? result.hits.total
+        : result.hits.total?.value || 0;
+
+    return res.json({ query, ...paginatedResponse(hits, total, pagination) });
   } catch (error) {
     console.error('Error searching:', error);
-    res.status(500).json({ error: 'Failed to search' });
+    return res.status(500).json({ error: 'Failed to search' });
   }
 }
 
@@ -64,54 +47,32 @@ export async function searchIndex(req: Request, res: Response) {
   try {
     const { index } = req.params;
     const query = (req.query.q as string) || '';
-    const limit = parseInt(req.query.limit as string) || 20;
-    const offset = parseInt(req.query.offset as string) || 0;
+    const pagination = parsePagination(req.query);
 
-    if (!ALL_INDICES.includes(index as any)) {
-      return res.status(400).json({ 
+    if (!ALL_INDICES.includes(index as IndexName)) {
+      return res.status(400).json({
         error: 'Invalid index',
-        validIndices: ALL_INDICES 
+        validIndices: ALL_INDICES,
       });
-
-
     }
 
     if (!query) {
       return res.status(400).json({ error: 'Query parameter "q" is required' });
     }
 
-    const result = await esClient.search({
-      index,
-      query: {
-        multi_match: {
-          query,
-          fields: ['name^3', 'description', 'type', 'source'],
-          fuzziness: 'AUTO',
-        },
-      },
-      size: limit,
-      from: offset,
+    const { hits, total } = await search(index as IndexName, query, {
+      size: pagination.limit,
+      from: pagination.from,
     });
 
-    const hits = result.hits.hits.map((hit: any) => hit._source);
-
-    res.json({
-      index,
-      query,
-      data: hits,
-      pagination: {
-        limit,
-        offset,
-        total: result.hits.total?.value || hits.length,
-      },
-    });
+    return res.json({ index, query, ...paginatedResponse(hits, total, pagination) });
   } catch (error) {
     console.error('Error searching index:', error);
-    res.status(500).json({ error: 'Failed to search' });
+    return res.status(500).json({ error: 'Failed to search' });
   }
 }
 
-export async function getAvailableIndices(req: Request, res: Response) {
+export async function getAvailableIndices(_req: Request, res: Response) {
   res.json({
     indices: ALL_INDICES.map(name => ({
       name,

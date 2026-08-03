@@ -16,8 +16,6 @@ export function loadSpellsDir(): any[] {
   const spells: any[] = [];
   
   const files = [
-    'spells/roll20.json',
-    'spells/spells-3pp-bols.json',
     'spells/spells-phb.json',
     'spells/spells-scag.json',
     'spells/spells-ua-mm.json',
@@ -90,6 +88,9 @@ export async function clearTable(model: keyof typeof prisma) {
 
 export async function clearAllTables() {
   const tables = [
+    'npc',
+    'adventureSection',
+    'adventure',
     'encounterMonster',
     'encounter',
     'characterItem',
@@ -158,6 +159,9 @@ export async function getStats() {
     'monster',
     'monsterTrait',
     'monsterAction',
+    'adventure',
+    'adventureSection',
+    'npc',
   ];
 
   for (const table of tables) {

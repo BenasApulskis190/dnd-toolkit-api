@@ -1,32 +1,14 @@
 import { Request, Response } from "express";
 import prisma from "../../lib/prisma";
-import { search, INDICES } from "../../lib/elasticsearch";
+import { searchMonsters } from "../../lib/elasticsearch";
+import { parsePagination, paginatedResponse } from "../../lib/pagination";
 
 export async function getMonsters(req: Request, res: Response) {
 	try {
+		const pagination = parsePagination(req.query);
+		const { limit, from } = pagination;
 		const q = (req.query.q as string) || "";
-		const page = parseInt(req.query.page as string) || 1;
-		const limit = parseInt(req.query.limit as string) || 20;
-		const from = (page - 1) * limit;
-
-		const { crMin, crMax, type, sortBy, sortOrder, ...restQuery } = req.query;
-		const filters: Record<string, any> = {};
-		if (type) filters.type = type;
-		if (crMin) filters.crValue = { $gte: parseFloat(crMin as string) };
-		if (crMax)
-			filters.crValue = {
-				...filters.crValue,
-				$lte: parseFloat(crMax as string),
-			};
-		Object.entries(restQuery).forEach(([key, value]) => {
-			if (
-				value !== undefined &&
-				value !== "" &&
-				!["q", "page", "limit"].includes(key)
-			) {
-				filters[key] = value;
-			}
-		});
+		const { crMin, crMax, type, sortBy, sortOrder } = req.query;
 
 		const SORTABLE_FIELDS = new Set([
 			"name", "crValue", "hitPointsAvg", "armorClass", "size",
@@ -44,20 +26,14 @@ export async function getMonsters(req: Request, res: Response) {
 			: { [sortField]: sortDir };
 
 		if (q) {
-			const result = await search(INDICES.monsters, q, {
+			const result = await searchMonsters(q, {
 				size: limit,
 				from,
-				filters,
+				type: type as string | undefined,
+				crMin: crMin ? parseFloat(crMin as string) : undefined,
+				crMax: crMax ? parseFloat(crMax as string) : undefined,
 			});
-			return res.json({
-				data: result.hits,
-				pagination: {
-					page,
-					limit,
-					total: result.total,
-					totalPages: Math.ceil(result.total / limit),
-				},
-			});
+			return res.json(paginatedResponse(result.hits, result.total, pagination));
 		}
 
 		const where = type
@@ -75,25 +51,14 @@ export async function getMonsters(req: Request, res: Response) {
 			prisma.monster.count({ where }),
 		]);
 
-		return res.json({
-			data: monsters,
-			pagination: {
-				page,
-				limit,
-				total,
-				totalPages: Math.ceil(total / limit),
-			},
-		});
+		return res.json(paginatedResponse(monsters, total, pagination));
 	} catch (error) {
 		console.error("Error fetching monsters:", error);
-		res.status(500).json({ error: "Failed to fetch monsters" });
+		return res.status(500).json({ error: "Failed to fetch monsters" });
 	}
 }
 
-export async function getMonsterById(
-	req: Request<{ id: string }>,
-	res: Response,
-) {
+export async function getMonsterById(req: Request<{ id: string }>, res: Response) {
 	try {
 		const { id } = req.params;
 
@@ -103,6 +68,9 @@ export async function getMonsterById(
 				monsterType: true,
 				traits: true,
 				actions: true,
+				spells: {
+					select: { spell: { select: { id: true, name: true, level: true } } },
+				},
 			},
 		});
 
@@ -110,14 +78,14 @@ export async function getMonsterById(
 			return res.status(404).json({ error: "Monster not found" });
 		}
 
-		res.json(monster);
+		return res.json({ ...monster, spells: monster.spells.map((ms) => ms.spell) });
 	} catch (error) {
 		console.error("Error fetching monster:", error);
-		res.status(500).json({ error: "Failed to fetch monster" });
+		return res.status(500).json({ error: "Failed to fetch monster" });
 	}
 }
 
-export async function getMonsterStats(req: Request, res: Response) {
+export async function getMonsterStats(_req: Request, res: Response) {
 	try {
 		const [typeStats, crDistribution] = await Promise.all([
 			prisma.monsterType.findMany({
@@ -131,7 +99,7 @@ export async function getMonsterStats(req: Request, res: Response) {
 			}),
 		]);
 
-		res.json({
+		return res.json({
 			byType: typeStats.map((s) => ({
 				type: s.name,
 				count: s._count.monsters,
@@ -143,6 +111,6 @@ export async function getMonsterStats(req: Request, res: Response) {
 		});
 	} catch (error) {
 		console.error("Error fetching monster stats:", error);
-		res.status(500).json({ error: "Failed to fetch monster stats" });
+		return res.status(500).json({ error: "Failed to fetch monster stats" });
 	}
 }

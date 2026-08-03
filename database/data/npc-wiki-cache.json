@@ -1,0 +1,2509 @@
+{
+ "LMoP|sildar hallwinter": {
+  "title": "Sildar Hallwinter",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "KnightSellswordTown councilor",
+  "home": "Phandalin, Sword Coast North",
+  "intro": "Sildar Hallwinter was a retired knight from Neverwinter and later a member of the Town Council of Phandalin in the late 15th century DR.",
+  "physical": "Sildar was nearly 50 years old in 1491 DR.",
+  "personality": "Despite his restrained and almost cold mannerisms and speech, Sildar was kind-hearted and sincere, although lacking in confidence and charisma. He was generally risk-averse, although still willing to enter into potentially dangerous situations when no one else dared. He wished to see the town of Phandalin prosper and to ensure that innocents&mdash;even fools&mdash;never came to any harm."
+ },
+ "LMoP|gundren rockseeker": {
+  "title": "Gundren Rockseeker",
+  "sex": "Male",
+  "race": "Dwarf",
+  "home": "Neverwinter, Sword Coast North",
+  "intro": "Gundren Rockseeker was a dwarf treasure hunter and one of the three Rockseeker brothers who rediscovered Wave Echo Cave in the late 15th century DR.",
+  "personality": "Gundren was an eager treasure hunter, willing even to travel the planes in search of wealth. After discovering Wave Echo Cave, he was excited and secretive about the find, and was impatient to return and excavate the discovery. He was gracious to those who helped him."
+ },
+ "LMoP|klarg": {
+  "title": "Klarg",
+  "sex": "Male",
+  "race": "Bugbear",
+  "intro": "Klarg was a lieutenant of King Grol of the Cragmaw tribe during the late 15th century DR. He was in command of the Cragmaw Hideout, an outpost of the Cragmaw tribe in the 1491 DR."
+ },
+ "LMoP|iarno albrek": {
+  "title": "Iarno Albrek",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Bandit leader, Lords' Alliance agent",
+  "home": "Phandalin, Sword Coast North",
+  "intro": "Iarno Albrek, also known as \"Glasstaff\", was a human wizard and the leader of the Redbrands bandit gang.",
+  "physical": "He was a short, dark-bearded human wizard that was simply known to most as \"Glasstaff\" for his weapon of choice, a magic staff made of glass, which was a staff of defense. Iarno was initially a member of the Lords' Alliance, who was sent to the town of Phandalin to establish constabulary (as the town did not have a powerful authority). Albrek had a rat familiar that served as a scout."
+ },
+ "LMoP|toblen stonehill": {
+  "title": "Toblen Stonehill",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Innkeeper",
+  "home": "Phandalin, Sword Coast North",
+  "intro": "Toblen Stonehill was the proprietor of the Stonehill Inn in the late 15th century DR.",
+  "physical": "Toblen was a young man who was quite short and very friendly. His inn served drinks and food, and offered rooms for rent, and Toblen himself was always happy to pass on gossip he'd heard in his common room."
+ },
+ "LMoP|linene graywind": {
+  "title": "Linene Graywind",
+  "sex": "Female",
+  "race": "Human",
+  "occupation": "Trading post master",
+  "home": "Phandalin, the Sword Coast North",
+  "intro": "Linene Graywind was the master of the Lionshield Coster trading post in Phandalin in the late 15th century DR.",
+  "personality": "She was described to be sharp-tongued. She worked tirelessly to keep her business running smoothly regardless of whether times were good or bad, and was grateful to anyone that could aid her in times of need. She was a reliable source for gossip."
+ },
+ "LMoP|halia thornton": {
+  "title": "Halia Thornton",
+  "sex": "Female",
+  "race": "Human",
+  "occupation": "GuildmasterZhentarim agent",
+  "home": "Phandalin Miner's Exchange, Phandalin",
+  "intro": "Halia Thornton was a Zhentarim agent and the original guildmaster of the Phandalin Miner's Exchange in the late 15th century DR.",
+  "physical": "Thornton was a calculating agent with huge ambitions. She wished to further the Zhentarim cause by taking over Phandalin and adding it to their territory. Thornton wished to do this by slowly establishing her guild as the governing body of the village.",
+  "personality": "She was a fierce but patient woman who was dangerous to cross. She had few qualms about helping those who seemed like valuable business partners, and equally few qualms about stabbing those same people in the back if it suited her (or even if they were simply rude to her)."
+ },
+ "LMoP|reidoth": {
+  "title": "Reidoth",
+  "sex": "Female",
+  "race": "Human",
+  "occupation": "Druid",
+  "home": "Thundertree, the Sword Coast North",
+  "intro": "Reidoth was a druid who spent much time in the village of Thundertree and was a member of the Emerald Enclave in the late 15th century DR.",
+  "physical": "The druid had long white hair, and was lean and haggard. She was said to know a lot about the land and locations in the nearby area. She did not receive many adventurers, and was rather tight-lipped."
+ },
+ "LMoP|agatha": {
+  "title": "Agatha",
+  "sex": "Female",
+  "race": "Elven banshee",
+  "home": "Agatha's Grove, Neverwinter Wood",
+  "intro": "Agatha, also known as the Ghost of Neverwinter Wood, was a banshee who haunted the Neverwinter Wood near Conyberry.",
+  "physical": "The banshee looked like she did in life: an elven maiden clad in a flowing gown. She was dead, though, her skin shriveled, and eyes staring pale and blind, but those eyes, while empty, saw all things.",
+  "personality": "Never powerless, Agatha still retained the wizardry skills she had in life. She was seen throughout the Dessarin river region, but she avoided interactions with others, especially when she believed a powerful wizard was in the area. Agatha viewed the townsfolk of Conyberry as allies and would use her powers to bring food and protection to the community during harsh winters, including killing orcs or raiders who ventured too near the village."
+ },
+ "LMoP|bowgentle": {
+  "title": "Bowgentle",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Itinerant wizard",
+  "home": "Shilmista",
+  "intro": "Bowgentle of Silverymoon was a legendary wizard.",
+  "personality": "Bowgentle was noted for his calm demeanour, politeness and generosity, but also for his reckless adventuring."
+ },
+ "LMoP|grista": {
+  "title": "Grista",
+  "sex": "Female",
+  "race": "Dwarf",
+  "occupation": "Barkeep",
+  "home": "Sleeping Giant, Phandalin",
+  "intro": "Grista Kettlecopp was a dwarf who lived in Phandalin in the late 15th century DR.",
+  "physical": "Grista owned and ran the Sleeping Giant taproom. She did not keep the pub clean, and it attracted the ruffians of Phandalin, like the Redbrands.",
+  "personality": "She was described to be bad-tempered, rude, and unpleasant. She valued being left alone to run her business the way she saw fit, and had no desire to get involved with anyone else's personal business."
+ },
+ "LMoP|harbin wester": {
+  "title": "Harbin Wester",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Banker",
+  "home": "Phandalin, the Sword Coast North",
+  "intro": "Harbin Wester was the Townmaster of Phandalin and subsequently a member of the Town Council of Phandalin in the late 15th century DR.",
+  "physical": "Harbin was a corpulent middle-aged banker and politician. He was the wealthiest resident of Phandalin and its biggest landowner, and he tended to dress in clothes that communicated his wealth.",
+  "personality": "Harbin was pompous and pretentious. He generally presented himself as polite and friendly, if a bit overdramatic and effusive, but this was just for politics. In fact, he was a greedy, calculating, and two-faced businessman at heart, unafraid to push the boundaries of decency or legality to get what he wanted."
+ },
+ "LMoP|mosk": {
+  "title": "Mosk",
+  "sex": "Male",
+  "race": "Bugbear",
+  "home": "Tresendar Manor, Phandalin",
+  "intro": "Mosk was a bugbear who worked for Nezznar circa 1491 DR and led the goblinoids under his employ.",
+  "physical": "The bugbear leader more a jeweled leather eyepatch just for aesthetics, instead of practical purposes, as he had both eyes intact. He also carried 33 sp. Mosk led the goblinoids that worked towards the Black Spider's cause."
+ },
+ "LMoP|aldith tresendar": {
+  "title": "Aldith Tresendar",
+  "sex": "Male",
+  "occupation": "Knight",
+  "home": "Tresendar Manor, Phandalin",
+  "intro": "Aldith Tresendar, also known as the Black Hawk, was a knight of great repute in the 10th century DR."
+ },
+ "LMoP|urmon": {
+  "title": "Urmon",
+  "occupation": "Adventurer",
+  "intro": "Urmon was an adventurer and lore enthusiast.",
+  "physical": "Urmon kept a journal where they noted down the history of the Lost Mine of Phandelver, and the Forge of Spells. Their journal also recorded that an enchanted mace called Lightbringer, which was made in the mine for a cleric of Lathander."
+ },
+ "LMoP|tsernoth": {
+  "title": "Tsernoth",
+  "occupation": "Necromancer",
+  "home": "Iriaebor, the Western Heartlands",
+  "intro": "Tsernoth was a necromancer that inhabited Iriaebor."
+ },
+ "LMoP|venomfang": {
+  "title": "Venomfang",
+  "race": "Green dragon",
+  "home": "Thundertree, Sword Coast North",
+  "intro": "Venomfang was a green dragon who made its lair in an old wizard's tower in the ruins of Thundertree village.",
+  "physical": "The appearance of Venomfang. Venomfang was a typical young green dragon. Not wanting to give up its amassed wealth, the dragon was protective of its base."
+ },
+ "LMoP|palien": {
+  "title": "Palien",
+  "occupation": "Warrior",
+  "home": "Neverwinter, the Sword Coast North",
+  "intro": "Palien was a warrior and a hero, who was celebrated for fending off several groups of monsters during the founding of Thundertree."
+ },
+ "LMoP|favric": {
+  "title": "Favric",
+  "occupation": "Leader of a band of Cultists of the Dragon",
+  "home": "Thundertree, Sword Coast North",
+  "intro": "Favric was the local group leader of the Cult of the Dragon in Thundertree circa 1491 DR.",
+  "physical": "Favric dressed in the typical garb of a dragon cultist, wearing a long dark robe and a black leather mask. He could speak Draconic, as well as Common. The young leader was far more ambitious than others of his sect."
+ },
+ "LMoP|gog": {
+  "title": "Gog",
+  "sex": "Male",
+  "race": "Ogre",
+  "home": "Wyvern Tor, the Sword Coast North",
+  "intro": "Gog was an ogre who allied himself with a group of scouts from the Many-Arrows tribe.",
+  "physical": "The filthy ogre was fearless in combat, and would fight until he was slain."
+ },
+ "LMoP|vhalak": {
+  "title": "Vhalak",
+  "sex": "Male",
+  "race": "Doppelganger",
+  "occupation": "Servant, supervisor",
+  "home": "Wave Echo Cave, Sword Mountains",
+  "intro": "Vhalak was a doppelganger in the employ of Nezznar, the Black Spider.",
+  "physical": "A servant of the Black Spider, Vhalak often took the form of a drow male, who supervised others."
+ },
+ "LMoP|elmar barthen": {
+  "title": "Elmar Barthen",
+  "sex": "Female",
+  "race": "Human",
+  "occupation": "Shopkeeper",
+  "home": "Phandalin, Sword Coast North",
+  "intro": "Elmina Barthen was the proprietor of Barthen's Provisions, the largest trading post in Phandalin, in the late 15th century DR.",
+  "personality": "Barthen had a kindly manner."
+ },
+ "LMoP|daran edermath": {
+  "title": "Daran Edermath",
+  "sex": "Male",
+  "race": "Drow or half-elf",
+  "occupation": "Adventurer, orchard keeper",
+  "home": "Phandalin, the Sword Coast North",
+  "intro": "Daran Edermath was a retired drow or half-elf adventurer who dwelt in Phandalin in the late 15th century DR.",
+  "physical": "Daran had silver hair and was over a hundred years old. He was a retired member of the Order of the Gauntlet, but still kept in touch with them. His connections secretly made him one of the most powerful folk in Phandalin, if he cared to bring them to bear.",
+  "personality": "Daran was quick to help, and was happy to speak and trade with newcomers to the town of Phandalin, sometimes offering them a place to stay in his apple orchard. However, he was slow to put his faith in strangers, and any hint of underhandedness could forever lose his trust. He preferred to avoid politics."
+ },
+ "LMoP|qelline alderleaf": {
+  "title": "Qelline Alderleaf",
+  "sex": "Female",
+  "race": "Halfling",
+  "occupation": "Farmer",
+  "home": "Phandalin, the Sword Coast North",
+  "intro": "Qelline Alderleaf was a halfling farmer that lived in Phandalin.",
+  "physical": "The farmer was very knowledgeable about the ongoings of the village she lived in. She was also said to be wise and practical. Qelline was kind enough to let adventurers stay in the hayloft of her home free of charge."
+ },
+ "HotDQ|frulam mondath": {
+  "title": "Frulam Mondath",
+  "sex": "Female",
+  "race": "Human",
+  "intro": "Frulam Mondath was a member of the reformed Cult of the Dragon of Severin Silrajin, holding the rank of Wearer of the Purple."
+ },
+ "HotDQ|langdedrosa cyanwrath": {
+  "title": "Langdedrosa Cyanwrath",
+  "sex": "Male",
+  "race": "Half-blue dragon",
+  "occupation": "Warrior",
+  "home": "Greenfields, Western Heartlands",
+  "intro": "Langdedrosa Cyanwrath was a half–blue dragon member of the reformed Cult of the Dragon.",
+  "physical": "Cyanwrath was seven feet tall with bright blue scales. He had draconic features and sharp claws.",
+  "personality": "While the half-dragon had a strong sense of honor, he could be driven to wrathful rage."
+ },
+ "HotDQ|azbara jos": {
+  "title": "Azbara Jos",
+  "sex": "Male",
+  "race": "Human",
+  "home": "Greypeak Mountains, Savage Frontier",
+  "intro": "Azbara Jos was a Red Wizard of Thay and a member of the faction loyal to Rath Modar."
+ },
+ "HotDQ|jamna gleamsilver": {
+  "title": "Jamna Gleamsilver",
+  "sex": "Female",
+  "race": "Gnome",
+  "occupation": "Assassin",
+  "intro": "Jamna Gleamsilver was a gnome assassin and a member of the Zhentarim."
+ },
+ "HotDQ|pharblex spattergoo": {
+  "title": "Pharblex Spattergoo",
+  "sex": "Male",
+  "race": "Bullywug",
+  "occupation": "Shaman",
+  "home": "Castle Naerytar, Mere of Dead Men",
+  "intro": "Pharblex Spattergoo was the chief and shaman of the bullywug tribe in the Mere of Dead Men during the time of the Tyranny of Dragons in 1489.",
+  "personality": "Pharblex greatly enjoyed tormenting the lizardfolk, thanks to Dralmorrer Borngray putting them under his control, and he killed the lizardfolk chief Suncaller."
+ },
+ "HotDQ|talis the white": {
+  "title": "Talis the White",
+  "sex": "Female",
+  "race": "Half-elf",
+  "occupation": "Cultist",
+  "home": "Greypeak Mountains, Savage Frontier",
+  "intro": "Talis Kasterel, or Talis the White, was a high-ranking member of the reformed Cult of the Dragon under Severin Silrajin in the late 15th century DR.",
+  "personality": "Talis was a devoted follower of Tiamat and a traditionalist of the faith. She believed that Severin's methods deviated too much from their true objective and he just wanted glory for himself. She also greatly despised not being chosen as White Dragon Whisperer, a title that went instead to Varramzord."
+ },
+ "HotDQ|rezmir": {
+  "title": "Rezmir",
+  "sex": "Female",
+  "race": "Half–black dragon",
+  "occupation": "Cultist",
+  "home": "Castle Naerytar, Mere of Dead Men",
+  "intro": "Rezmir, or Rezmir the Black, was a half–black dragon human woman who was the Black Dragon Wyrmspeaker of the reformed Cult of the Dragon under Severin Silrajin. She descended from House Orogoth.",
+  "personality": "She was a fierce and terrible warrior, relentless and cruel with her enemies, even if they existed among her own ranks. She was truly devoted to Tiamat."
+ },
+ "HotDQ|rath modar": {
+  "title": "Rath Modar",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Red Wizard",
+  "home": "Skyreach Castle, Greypeak Mountains",
+  "intro": "Rath Modar was a Red Wizard of Thay who had desires to become the next Zulkir of Illusion and even grander plans for himself.",
+  "personality": "Rath was deceptive and obfuscating. He had an interest in ancient empires and lost items of power. He plotted revenge from his castle on the Sword Coast."
+ },
+ "HotDQ|blagothkus": {
+  "title": "Blagothkus",
+  "sex": "Male",
+  "race": "Cloud giant",
+  "occupation": "King",
+  "home": "Skyreach Castle, Greypeak Mountains",
+  "intro": "Blagothkus was the cloud giant ruler of Skyreach Castle.",
+  "personality": "Blagothkus was a survivor of the giant empires of the past, and his main dream was to somehow go back to those glorious times. Using this motivation, the Cult of the Dragon convinced him that they were reestablishing a time when only giants and dragons would rule, though his commitment to that alliance was borne more out of a desire to spur giant-kind to action."
+ },
+ "HotDQ|severin silrajin": {
+  "title": "Severin Silrajin",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Cult's main leader",
+  "home": "Well of Dragons, Western Heartlands",
+  "intro": "Severin Silrajin, usually known simply as Severin, was the Red Dragon Wyrmspeaker and the main leader of the reformed Cult of the Dragon in the late 15th century DR.",
+  "personality": "Severin was a true visionary, bringing new life and power to the Cult. However, he was also young and prone to underestimating his enemies or not seeing enemies posing as friends."
+ },
+ "HotDQ|leosin erlanthar": {
+  "title": "Leosin Erlanthar",
+  "sex": "Male",
+  "race": "Half-elf",
+  "occupation": "Monk",
+  "home": "Berdusk, Western Heartlands",
+  "intro": "Leosin Erlanthar was a monk from Berdusk, the master of Nesim Waladra. and a member of the Harpers who researched the reformed Cult of the Dragon under Severin Silrajin during the late 1480s DR."
+ },
+ "HotDQ|ackyn selebon": {
+  "title": "Ackyn Selebon",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Merchant",
+  "home": "Baldur's Gate, Sword Coast",
+  "intro": "Ackyn Selebon was a merchant of Baldur's Gate during the Tyranny of Dragons."
+ },
+ "HotDQ|ardred briferhew": {
+  "title": "Ardred Briferhew",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Caravan master",
+  "home": "Waterdeep, Sword Coast North",
+  "intro": "Ardred Briferhew was a veteran caravan master just before the Tyranny of Dragons."
+ },
+ "HotDQ|larion keenblade": {
+  "title": "Larion Keenblade",
+  "sex": "Male",
+  "race": "Half-Elf",
+  "occupation": "Thief",
+  "intro": "Larion Keenblade was a member of Severin's reformed Cult of the Dragon."
+ },
+ "HotDQ|dralmorrer borngray": {
+  "title": "Dralmorrer Borngray",
+  "sex": "Male",
+  "race": "High Elf",
+  "occupation": "Castellan",
+  "home": "Castle Naerytar, Mere of Dead Men",
+  "intro": "Dralmorrer Borngray was an elf who served as caretaker of Castle Naerytar for the Black Dragon Wyrmspeaker Rezmir of the reformed Cult of the Dragon under Severin Silrajin. He was also member of the Eldreth Veluuthra.",
+  "personality": "Borngray idolized Rezmir and followed all her orders and did all he could to help her. The only exception was Rezmir's pact with the bullywugs; Borngray considered the lizardfolk to be more reliable and did what he could to benefit the lizardfolk and spite the bullywugs. He was also impatient for the arrival of Tiamat and the doom of humanity so he could go to more civilized places like Evermeet."
+ },
+ "HotDQ|varram": {
+  "title": "Varram",
+  "sex": "Male",
+  "race": "Gold dwarf",
+  "occupation": "Cultist",
+  "home": "Well of Dragons, Western Heartlands",
+  "intro": "Varramzord, also known as Varram the White, was a male gold dwarf and the White Dragon Wyrmspeaker in the reformed Cult of the Dragon under Severin Silrajin.",
+  "personality": "Owing to his past experience, Varram hated the Red Wizards of Thay and despised the fact that Severin had allied with them. Varram was one of Severin's best friends, but had a weak personality and greatly feared the wrath of Severin. He could be easily convinced to betray the Cult in exchange for his personal protection."
+ },
+ "HotDQ|maelgot": {
+  "title": "Maelgot",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Bodyguard",
+  "home": "Greypeak Mountains, Savage Frontier",
+  "intro": "Maelgot was a member of the reformed Cult of the Dragon under Severin Silrajin."
+ },
+ "HotDQ|kusphia": {
+  "title": "Kusphia",
+  "sex": "Female",
+  "race": "Human",
+  "occupation": "Cultist",
+  "home": "Hunting lodge, Greypeak Mountains",
+  "intro": "Kusphia was a member of the reformed Cult of the Dragon under Severin Silrajin."
+ },
+ "HotDQ|wigluf": {
+  "title": "Wigluf",
+  "sex": "Male",
+  "race": "Giant",
+  "home": "Skyreach Castle, Greypeak Mountains",
+  "intro": "Wigluf was a stone giant who helped Blagothkus in managing the flying Skyreach Castle.",
+  "personality": "Wigluf was very concerned about Blagothkus' plan to ally with dragons and the Cult of the Dragon. He was scared that the consequences for giant kind would be terrible, but he supported Blagothkus out of loyalty."
+ },
+ "HotDQ|sandesyl morgia": {
+  "title": "Sandesyl Morgia",
+  "sex": "Female",
+  "race": "Moon elf vampire",
+  "occupation": "Cultist",
+  "home": "Well of Dragons, Western Heartlands",
+  "intro": "Sandesyl Morgia was a vampire and member of the Cult of the Dragon as of the late 15th century DR.",
+  "personality": "She was a true believer of the \"true path\" as taught by Sammaster, the founder of the Cult of the Dragon and former chosen of the goddess Mystra."
+ },
+ "HotDQ|achreny ulyeltin": {
+  "title": "Achreny Ulyeltin",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Merchant",
+  "intro": "Achreny Ulyeltin was a merchant just before the Tyranny of Dragons.",
+  "personality": "Achreny was a boorish man without trace of civilization about him. He was smelly, vulgar, and utterly without manners."
+ },
+ "HotDQ|aldor urnpoleshurst": {
+  "title": "Aldor Urnpoleshurst",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Lawyer",
+  "intro": "Aldor Urnpoleshurst was a lawyer just before the Tyranny of Dragons.",
+  "personality": "Aldor was very suspicious of others and made accusations over nothing. He was a lawyer in training but a skunk in inclination."
+ },
+ "HotDQ|beyd sechepol": {
+  "title": "Beyd Sechepol",
+  "sex": "Male",
+  "race": "Half-elf",
+  "occupation": "Merchant",
+  "intro": "Beyd Sechepol was a merchant during the Tyranny of Dragons.",
+  "personality": "Beyd was a very diplomatic individual, always evading arguments that divided public opinion, with the exception of topics regarding horses and gear."
+ },
+ "HotDQ|eldkin agetul": {
+  "title": "Eldkin Agetul",
+  "sex": "Female",
+  "race": "Dwarf",
+  "occupation": "Guard",
+  "intro": "Eldkin Agetul was a guard just before the Tyranny of Dragons.",
+  "personality": "Eldkin was a perfectionist and wanted all to know this."
+ },
+ "HotDQ|enom tobun": {
+  "title": "Enom Tobun",
+  "sex": "Male",
+  "race": "Halfling",
+  "occupation": "Teamster",
+  "intro": "Enom Tobun was a teamster just before the Tyranny of Dragons.",
+  "personality": "Enom loved telling stories, not caring for the truthfulness of them. If someone question this, he grew resentful and vindictive. On the other hand, he was a wonderful traveling companion."
+ },
+ "HotDQ|green imsa": {
+  "title": "Green Imsa",
+  "sex": "Female",
+  "race": "Human",
+  "intro": "Green Imsa was a traveler just before the Tyranny of Dragons.",
+  "personality": "Imsa was a quiet and friendly individual. She became frustrated if people bothered her about her condition."
+ },
+ "HotDQ|lai angesstun": {
+  "title": "Lai Angesstun",
+  "sex": "Male",
+  "race": "Dwarf",
+  "occupation": "Merchant",
+  "home": "Amn, Lands of Intrigue",
+  "intro": "Lai Angesstun was a merchant just before the Tyranny of Dragons.",
+  "personality": "Lai was fixated with money. He talked only about how much he would make, how he spent it, and how others would envy him. He was selfish and never used his money to help someone else."
+ },
+ "HotDQ|leda widris": {
+  "title": "Leda Widris",
+  "sex": "Female",
+  "race": "Human",
+  "occupation": "Guard",
+  "intro": "Leda Widris was a mercenary just before the Tyranny of Dragons.",
+  "personality": "Leda was an honest and courageous woman. She wanted to experience what a real cold wind felt like."
+ },
+ "HotDQ|losvius longnose": {
+  "title": "Losvius Longnose",
+  "sex": "Male",
+  "race": "Halfling",
+  "occupation": "Teamster",
+  "intro": "Losvius Longnose was a teamster on the Sword Coast just before the Tyranny of Dragons.",
+  "personality": "Losvius's surname derived not from his big nose but from his overpowering thirst for gossip about other people. Losvius was fixated on uncovering others' embarrassing secrets."
+ },
+ "HotDQ|noohar serelim": {
+  "title": "Noohar Serelim",
+  "sex": "Male",
+  "race": "Moon elf",
+  "occupation": "Merchant",
+  "home": "Cormyr, interior Faerûn",
+  "intro": "Noohar Serelim was a merchant that operated on the Sword Coast as of the late 15th century DR.",
+  "personality": "Noohar was one of the most articulate persons in Faerun. He was a fantastic orator and talked non-stop, even though he seldom had something to say."
+ },
+ "HotDQ|nyerhite verther": {
+  "title": "Nyerhite Verther",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Merchant",
+  "home": "Sword Coast, west Faerûn",
+  "intro": "Nyerhite Verther was a Calishite silk merchant just before the Tyranny of Dragons.",
+  "personality": "The merchant was not a scrupulous individual. When unhinged, he exploded in anger and fury."
+ },
+ "HotDQ|orvustia esseren": {
+  "title": "Orvustia Esseren",
+  "sex": "Female",
+  "race": "Human",
+  "occupation": "Guard",
+  "home": "Baldur's Gate, Western Heartlands",
+  "intro": "Orvustia Esseren was a guard on the Sword Coast just before the Tyranny of Dragons in the late 15th century DR.",
+  "personality": "The guard was smart, tough, and talented with her bow and spear but knew nothing of the Realms outside her homeland."
+ },
+ "HotDQ|tyjit skesh": {
+  "title": "Tyjit Skesh",
+  "sex": "Female",
+  "race": "Dwarf",
+  "occupation": "Guard",
+  "intro": "Tyjit Skesh was a guard on the Sword Coast just before the Tyranny of Dragons.",
+  "personality": "Tyjit was quick to anger and quicker to use her two blades, but was also honest to a fault. She did not tolerate bullying, and always explained the cause of her anger in the hopes that people's attitude would change."
+ },
+ "RoT|neronvain": {
+  "title": "Neronvain",
+  "sex": "Male",
+  "race": "Moon elf & wild elf",
+  "occupation": "Cultist",
+  "home": "Misty Forest, High Moor",
+  "intro": "Neronvain was the Green Wyrmspeaker of the reformed Cult of the Dragon that attacked the Misty Forest during the late 1480s DR."
+ },
+ "RoT|naergoth bladelord": {
+  "title": "Naergoth Bladelord",
+  "sex": "Male",
+  "race": "Human, later wight or Death knight",
+  "home": "Well of Dragons",
+  "intro": "Naergoth Bladelord was one of the Wearers of Purple in the Cult of the Dragon. He was the warrior lord of the cult and the leader of the ruling council. He usually resided in Saerloon."
+ },
+ "RoT|rath modar": {
+  "title": "Rath Modar",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Red Wizard",
+  "home": "Skyreach Castle, Greypeak Mountains",
+  "intro": "Rath Modar was a Red Wizard of Thay who had desires to become the next Zulkir of Illusion and even grander plans for himself.",
+  "personality": "Rath was deceptive and obfuscating. He had an interest in ancient empires and lost items of power. He plotted revenge from his castle on the Sword Coast."
+ },
+ "RoT|tiamat": {
+  "title": "Tiamat",
+  "intro": "Tiamat () was the chaotic evil and lawful evil dragon goddess of greed, queen of evil dragons and, for a time, reluctant servant of the greater gods Bane and later Asmodeus. Before entering the Faerûnian pantheon, she was a member of the Draconic pantheon, and for some time she was also a member of the Untheric pantheon.",
+  "physical": "Tiamat's humanoid avatar form. Tiamat was a unique chromatic dragon, who had one head for each primary color of the most common species of chromatics (black, blue, green, red, white). Each head was able to operate entirely independently of each other and had the powers of a member of the respective race of dragonkind.",
+  "personality": "Tiamat was arrogant, greedy, hateful, spiteful and vain. She never forgave any kind of slight and was focused on obtaining more power and wealth. She disdained mortals, regarding them as mere disposable tools in her schemes."
+ },
+ "RoT|cheela flegsteel": {
+  "title": "Cheela Flegsteel",
+  "sex": "Female",
+  "occupation": "Cult of the Dragon agent",
+  "intro": "Cheela Flegsteel was one of the Wearers of Purple in the Cult of the Dragon during the late 15th century DR."
+ },
+ "RoT|yggran": {
+  "title": "Yggran",
+  "race": "Half-red dragon",
+  "occupation": "Cultist",
+  "intro": "Yggran was a half-red dragon agent of the Cult of the Dragon active during the late 15th century DR.."
+ },
+ "RoT|cylanestriel": {
+  "title": "Cylanestriel",
+  "sex": "Female",
+  "race": "Elf",
+  "occupation": "Ranger",
+  "home": "Faerûn",
+  "intro": "Cylanestriel was an elven ranger and celebrated hero that ventured the Realms circa the late 15th century DR."
+ },
+ "RoT|bel": {
+  "title": "Bel",
+  "intro": "Bel was an archdevil of the Nine Hells who acted as the Archduke of Avernus until he was supplanted by Zariel. He was a military genius who specialized in misdirection and led with careful tactics, in contrast to his successor's berserker rage.",
+  "physical": "Unlike many other archdevils, Bel retained a resemblance to a pit fiend, appearing as a tall, crimson-scaled colossus with massive, bat-like wings, clawed extremities, and fangs that dripped a green, smoking venom. His visage was brutal and bestial but nonetheless infernal, warped by innumerable years of willful wickedness and hatred.",
+  "personality": "Calculating and calm in his assessments, Bel was one of the greatest military minds in the Nine Hells, using every tactical advantage available and only engaging in battle on his own terms. His favored tactics involved ambushes, double-crosses, feints and counter-feints, and backstabbing his enemies while anticipating the treacherous moves of his rivals. While he occasionally erupted with anger upon being foiled, he was generally cool-headed—a far cry from the constant, fiery fury of Zariel."
+ },
+ "RoT|loska": {
+  "title": "Loska",
+  "sex": "Female",
+  "race": "Winter wolf",
+  "intro": "Loska was a winter wolf that lived in the North during the late 15th century DR. She was the traveling companion of Delaan Winterhound, a ranger of the Emerald Enclave."
+ },
+ "RoT|nymmurh": {
+  "title": "Nymmurh",
+  "sex": "Male",
+  "race": "Bronze dragon",
+  "home": "Alaron, Moonshae Isles",
+  "intro": "Nymmurh was a bronze dragon summoned to the metallic dragon's council to discuss of the menace of the Cult of the Dragon and Tiamat during the Tyranny of Dragons.",
+  "personality": "Nymmurh was sympathetic to humanoids, especially those who chose the path of goodness and justice. He reasoned that metallic dragons were made in Bahamut's image, and therefore had no choice to be good. As such it was all the more reason to celebrate humanoids, who were capable of evil, that freely chose the path of goodness and justice."
+ },
+ "RoT|meltharond": {
+  "title": "Meltharond",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Corpse Wizard ruler",
+  "home": "Reghed Glacier, Spine of the World",
+  "intro": "Meltharond was a once-powerful wizard-ruler and former consort and companion of the white dragon Arveiaturace."
+ },
+ "RoT|mend-nets": {
+  "title": "Mend-nets",
+  "sex": "Male",
+  "race": "Human",
+  "home": "Oyaviggaton, Sea of Moving Ice",
+  "intro": "Mend-nets was a warrior of the Ice Hunters tribe that made their home on Oyaviggaton during the late 15th century DR.",
+  "personality": "He was a rather untrusting individual that held a distinct distaste for the monstrous creatures that laired within his tribe's icy island-home. He detested the kobolds that laired within the isle's cave network, loathed its community of revolting ice toads, and became completely frightened by its ravenous ice troll denizens."
+ },
+ "RoT|galin": {
+  "title": "Galin",
+  "sex": "Male",
+  "race": "Elf",
+  "occupation": "Warden",
+  "home": "Altand, Misty Forest",
+  "intro": "Galin was an elf that served as warden of Altand in the Misty Forest in the High Moor as of the late 15th century DR. He unfortunately became entangled in the schemes of the Cult of the Dragon.",
+  "personality": "He developed something of an anxious personality due to the numerous burdens set upon his shoulders and secrets he was forced to keep."
+ },
+ "RoT|protanther": {
+  "title": "Protanther",
+  "sex": "Male",
+  "race": "Gold dragon",
+  "home": "Novularond, Great Glacier",
+  "intro": "Protanther was a particularly powerful gold dragon who was once the King of Justice.",
+  "personality": "Protanther did not like the humanoid races. He thought that the humanoids attained too many powers in a very short time without developing the wisdom to use them judiciously. For this reason he believed the humanoid races were dangerous."
+ },
+ "RoT|jorgen pawl": {
+  "title": "Jorgen Pawl",
+  "sex": "Male",
+  "occupation": "Wizard",
+  "home": "Xonthal's Tower, Western Heartlands",
+  "intro": "Jorgen Pawl was a member of the Cult of the Dragon during the late 15th century DR. He was commander of Xonthal's Tower."
+ },
+ "RoT|nyh ilmichh": {
+  "title": "Nyh Ilmichh",
+  "sex": "Female",
+  "occupation": "Envoy",
+  "home": "Thay, Unapproachable East",
+  "intro": "Nyh Ilmichh was an envoy of the Red Wizards of Thay sent by Szass Tam to propose an alliance between Thay and the Council of Waterdeep in the 1490s DR."
+ },
+ "PotA|shoalar quanderil": {
+  "title": "Shoalar Quanderil",
+  "sex": "Male",
+  "race": "Water genasi",
+  "occupation": "Pirate",
+  "home": "Rivergard Keep, Dessarin Valley",
+  "intro": "Shoalar Quanderil was a high-ranking member of the Cult of the Crushing Wave during the Elemental Evil crisis.",
+  "personality": "Shoalar always appeared jovial, but with a biting sense of humor and tending to laugh at people rather than with them. He saw Olhydra's power as a means to become rich."
+ },
+ "PotA|hellenrae": {
+  "title": "Hellenrae",
+  "sex": "Female",
+  "race": "Human",
+  "occupation": "Cultist",
+  "home": "Sacred Stone Monastery, Dessarin Valley",
+  "intro": "Hellenrae was a high-ranking member of the Cult of the Black Earth during the Elemental Evil crisis.",
+  "personality": "Hellenrae simply hated everyone, even her fellow cultists, so she tried to avoid contact with others. She greatly despised weakness."
+ },
+ "PotA|windharrow": {
+  "title": "Windharrow",
+  "sex": "Male",
+  "race": "Half moon elf",
+  "occupation": "Bandit",
+  "home": "Tyar-Besil, Dessarin Valley",
+  "intro": "Windharrow was a high-ranking member of the Cult of the Howling Hatred at the Temple of Howling Hatred in Tyar-Besil during the Elemental Evil crisis.",
+  "personality": "He was at heart an opportunist. Windharrow was loyal to Aerisi Kalinoth as long as he feared her power. However, confronted with danger to his life or a richer offer, he would betray the air cult without a backward glance."
+ },
+ "PotA|aerisi kalinoth": {
+  "title": "Aerisi Kalinoth",
+  "sex": "Female",
+  "race": "Moon elf",
+  "intro": "Aerisi Kalinoth was the Prophet of Air and leader of the Cult of the Howling Hatred."
+ },
+ "PotA|gar shatterkeel": {
+  "title": "Gar Shatterkeel",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Priest",
+  "home": "Nelanther Isles",
+  "intro": "Gar Shatterkeel was the Prophet of Water and the leader of the Cult of the Crushing Wave in the late 15th century DR, until its defeat along with the other cults of Elemental Evil, after which he was saved by the sea goddess Umberlee and served as one of her Chosen.",
+  "physical": "His skin was covered in barnacles, and his left arm was replaced by a large mechanical crab claw prostheses. He wielded a magical trident known as Drown while he was the Prophet of the Cult of the Crushing Wave, and then the magical trident Wave while acting as a Chosen of Umberlee."
+ },
+ "PotA|miraj vizann": {
+  "title": "Miraj Vizann",
+  "sex": "Male",
+  "race": "Earth genasi",
+  "occupation": "Cultist",
+  "home": "Tyar-Besil, Dessarin Valley",
+  "intro": "Miraj Vizann was the second-in-command of the Cult of the Black Earth at the Temple of the Black Earth in Tyar-Besil during the Elemental Evil crisis.",
+  "personality": "Miraj was a very rational and deliberate individual. He joined the earth cult only to deepen his understanding of elemental magic. He believed that enemies could be bribed or persuaded, such as to attack instead fire cultists."
+ },
+ "PotA|marlos urnrayle": {
+  "title": "Marlos Urnrayle",
+  "sex": "Male",
+  "race": "Medusa",
+  "home": "Cormyr, interior Faerûn",
+  "intro": "Marlos Urnrayle was the Prophet of Earth and the leader of the Cult of the Black Earth.",
+  "personality": "He was genteel and well-spoken, but took pleasure in mocking others and could be driven to fits of blind, unreasoning jealousy."
+ },
+ "PotA|vanifer": {
+  "title": "Vanifer",
+  "sex": "Female",
+  "race": "Tiefling",
+  "home": "Tyar-Besil, Dessarin Valley",
+  "intro": "Vanifer was the Prophet of Fire and leader of the Cult of the Eternal Flame in the late 15th century DR.",
+  "personality": "She was extremely manipulative, gathering allies as she needed them and discarding them as soon as they lost their usefulness. Though she put on the airs of a rich noble, she despised those born into wealth."
+ },
+ "PotA|yan-c-bin": {
+  "title": "Yan-C-Bin",
+  "race": "Archomental",
+  "home": "Elemental Plane of Air",
+  "intro": "Yan-C-Bin (), also known as the Prince of Evil Air, was a powerful archomental from the Elemental Plane of Air. He was referred to by a number of names and titles, including the Prince of Evil Aerial Creatures, the Shadow of the Four Winds, and the Howling Hatred",
+  "physical": "Yan-C-Bin commonly appeared to his followers as a tall, thin, elderly humanoid with long hair flowing in the wind. His true form was akin to a tornado.",
+  "personality": "Yan-C-Bin was flighty and quick to react to things, but he was also a rational thinker with a desire for intellectual stimulation and a love of scholarly pursuits. It was said that all creatures in the sky of any plane feared Yan-C-Bin. But he also had a strong sense of honor and would generously reward those who helped him."
+ },
+ "PotA|olhydra": {
+  "title": "Olhydra",
+  "sex": "Female",
+  "race": "Archomental",
+  "home": "Elemental Plane of Water",
+  "physical": "In her natural state, she appeared as a huge cresting wave with two eyes like large pearls or as a shapeless watery mass about in diameter.",
+  "personality": "Olhydra delighted in creating dangerous and destructive manifestations of water. She was eager to smash any vessel in her realm and destroy any city and town within her reach. She could surge forth tirelessly and relentlessly, but was patient enough to know when to draw back and when to attack, eroding her opponent."
+ },
+ "PotA|oreioth": {
+  "title": "Oreioth",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Necromancer",
+  "home": "Red Larch, Savage Frontier",
+  "intro": "Oreioth was a necromancer hiding in Red Larch in the late 15th century DR.",
+  "personality": "Oreioth had always been cruel, but after his self-exile to Red Larch with only the company of his undead servitors, he became a true megalomaniac. He barely recognized his own name and dreamed of founding a kingdom of undead minions with himself on the throne. He considered himself the \"Lord of Lance Rock\" and hoped to protect his \"kingdom\" from invaders."
+ },
+ "PotA|vizeran devir": {
+  "title": "Vizeran DeVir",
+  "sex": "Male",
+  "race": "Drow",
+  "occupation": "Archmage",
+  "home": "Araj, Northdark",
+  "intro": "Vizeran DeVir was an exiled drow archmage during the late 15th century DR.",
+  "personality": "Vizeran's main objective was revenge against both Gromph and Lolth, the first for what he did to him, and the second for the dominion she maintained over all drow. His plans and goals were entirely self-serving, and he would sacrifice anyone without hesitation to further his schemes."
+ },
+ "PotA|larrakh": {
+  "title": "Larrakh",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Cultist",
+  "home": "Red Larch, Dessarin Valley",
+  "intro": "Larrakh was a member of the Cult of the Black Earth in Red Larch who was in contact with the Believers during the Elemental Evil crisis.",
+  "personality": "The priest hoped to redeem himself in the eyes of his cultist masters by conquering Red Larch. His plot was to transform the Believers into a nefarious organization and afterward unveil and defeat them, becoming a hero in the eyes of the citizens."
+ },
+ "PotA|zomith": {
+  "title": "Zomith",
+  "sex": "Female",
+  "race": "Half-orc",
+  "occupation": "Guard",
+  "home": "Northwest Faerûn",
+  "intro": "Zomith was a half-orc caravan guard during the Elemental Evil crisis."
+ },
+ "PotA|grund": {
+  "title": "Grund",
+  "sex": "Male",
+  "race": "Half-orc",
+  "home": "Red Larch, Dessarin Valley",
+  "intro": "Grund was simpleton in Red Larch during the Elemental Evil crisis.",
+  "personality": "Grund was a happy dim-witted sort. He had a special relationship with the members of the Believers."
+ },
+ "PotA|umsheryoth": {
+  "title": "Umsheryoth",
+  "sex": "Male",
+  "race": "Bronze dragon",
+  "home": "Dessarin Valley",
+  "intro": "Umsheryoth was an adult male bronze dragon residing in the Dessarin Valley."
+ },
+ "PotA|nurvureem": {
+  "title": "Nurvureem",
+  "sex": "Female",
+  "race": "Drow-dragon",
+  "home": "Rundreth Manor, Dessarin Valley",
+  "intro": "Nurvureem, also known as the \"Dark Lady\", was a draa'zekyl shadow dragon with a fell reputation among the inhabitants of the Dessarin River Valley. She maintained several different lairs, though she favored the ruined manor-house of Rundreth Manor.",
+  "personality": "As of the 15th century DR took on the persona of enigmatic and beautiful drow woman, referred to by locals as \"the Dark Lady\". She did not abide disruptive visitors and cared little for those who tried to ingratiate themselves as allies."
+ },
+ "PotA|darathra shendrel": {
+  "title": "Darathra Shendrel",
+  "sex": "Female",
+  "race": "Human",
+  "occupation": "Ruler, adventurer",
+  "home": "Triboar, Dessarin Valley",
+  "intro": "Darathra Shendrel was a human knight and the Lord Protector of Triboar in the Dessarin Valley, as well as a former adventurer and a member of the Harpers, in the late 15th century DR.",
+  "personality": "She was good-natured and had a reputation for fairness and sensible governance. Darathra believed that good people must be allowed to prosper free from tyranny and she was willing to give her life for the people of Triboar. She was resolute and never backed down, and pushed back when pressured."
+ },
+ "PotA|gervor": {
+  "title": "Gervor",
+  "sex": "Male",
+  "race": "Half-elf",
+  "occupation": "Adventurer",
+  "home": "Tyar-Besil, Dessarin Valley",
+  "intro": "Gervor was an adventurer prisoner of the Cult of the Black Earth at the Temple of the Black Earth in Tyar-Besil during the Elemental Evil crisis."
+ },
+ "PotA|wulgreda": {
+  "title": "Wulgreda",
+  "sex": "Female",
+  "race": "Dwarf",
+  "home": "Tyar-Besil, Dessarin Valley",
+  "intro": "Wulgreda was a prisoner of the Cult of the Black Earth at the Temple of the Black Earth in Tyar-Besil during the Elemental Evil crisis."
+ },
+ "PotA|darreth": {
+  "title": "Darreth",
+  "sex": "Male",
+  "race": "Human",
+  "home": "Womford, Dessarin Valley",
+  "intro": "Darreth was a commoner of Womford in the Dessarin Valley in the late 15th century DR."
+ },
+ "PotA|bruldenthar": {
+  "title": "Bruldenthar",
+  "sex": "Male",
+  "race": "Dwarf",
+  "occupation": "Sage",
+  "home": "Sacred Stone Monastery, Dessarin Valley",
+  "intro": "Bruldenthar was a dwarven sage in Mirabar during the Elemental Evil crisis."
+ },
+ "PotA|teresiel": {
+  "title": "Teresiel",
+  "sex": "Female",
+  "race": "Elf",
+  "occupation": "Diplomat",
+  "home": "Fane of the Eye, Tyar-Besil",
+  "intro": "Teresiel was a prisoner at the Fane of the Eye under Tyar-Besil during the Elemental Evil crisis."
+ },
+ "PotA|rhundorth": {
+  "title": "Rhundorth",
+  "sex": "Male",
+  "race": "Dwarf",
+  "occupation": "Diplomat, Blacksmith",
+  "home": "Fane of the Eye, Tyar-Besil",
+  "intro": "Rhundorth was a master blacksmith in Mirabar who became a prisoner at the Fane of the Eye under Tyar-Besil during the Elemental Evil crisis."
+ },
+ "PotA|renwick caradoon": {
+  "title": "Renwick Caradoon",
+  "sex": "Male",
+  "race": "Human archlich",
+  "home": "Summit Hall, Dessarin Valley",
+  "intro": "Renwick \"Snowcloak\" Caradoon was the eldest of the three brothers whose exploits led to the creation of the Knights of Samular (along with Samular Caradoon and Amphail the Just). Renwick eventually died in the last battle of the Second Troll War, only to return as an archlich."
+ },
+ "PotA|jurth": {
+  "title": "Jurth",
+  "sex": "Male",
+  "race": "Orog",
+  "occupation": "Cultist",
+  "home": "Sacred Stone Monastery, Dessarin Valley",
+  "intro": "Jurth was an orog member of the Cult of the Black Earth during the Elemental Evil crisis."
+ },
+ "PotA|lytin": {
+  "title": "Lytin",
+  "sex": "Female",
+  "race": "Half-elf",
+  "occupation": "Cultist",
+  "home": "Scarlet Moon Hall, Dessarin Valley",
+  "intro": "Lytin was a member of the Cult of the Eternal Flame at the Scarlet Moon Hall during the Elemental Evil crisis in 1491 DR."
+ },
+ "PotA|eyon": {
+  "title": "Eyon",
+  "sex": "Female",
+  "race": "Human",
+  "occupation": "Cultist",
+  "home": "Tyar-Besil, Dessarin Valley",
+  "intro": "Eyon was a member of the Cult of the Crushing Wave at the Temple of the Crushing Wave in Tyar-Besil during the Elemental Evil crisis."
+ },
+ "PotA|thuluna maah": {
+  "title": "Thuluna Maah",
+  "sex": "Female",
+  "race": "Hag",
+  "occupation": "Cultist",
+  "home": "Tyar-Besil, Dessarin Valley",
+  "intro": "Thuluna Maah was a sea hag and a high-ranking member of the Cult of the Crushing Wave at the Temple of the Crushing Wave in Tyar-Besil during the Elemental Evil crisis.",
+  "personality": "Thuluna Maah was the second-in-command of the temple, answering only to Gar Shatterkeel. She was a sly, calculating creature, quick to offer bargains and make deals that she could later turn to her advantage. Thuluna dreamed of purging the cult of its human members but only when the right opportunity came."
+ },
+ "PotA|morbeoth": {
+  "title": "Morbeoth",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Cultist",
+  "home": "Tyar-Besil, Dessarin Valley",
+  "intro": "Morbeoth was a member of the Cult of the Crushing Wave at the Temple of the Crushing Wave in Tyar-Besil during the Elemental Evil crisis.",
+  "personality": "Morbeoth was a proud and prickly individual. He felt that his mastery of arcane power put him above anyone weaker. He resented that a mere druid was chosen to serve as the Prophet of Water, and that an ugly monster like a sea hag served as the cult's second-in-command."
+ },
+ "PotA|nartham": {
+  "title": "Nartham",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Cultist",
+  "home": "Tyar-Besil, Dessarin Valley",
+  "intro": "Nartham was a member of the Cult of the Black Earth at the Temple of the Black Earth in Tyar-Besil during the Elemental Evil crisis.",
+  "personality": "Nartham was a violent and short-tempered fellow, always looking for an excuse to kill."
+ },
+ "PotA|yarsha": {
+  "title": "Yarsha",
+  "sex": "Female",
+  "race": "Human",
+  "occupation": "Cultist",
+  "home": "Tyar-Besil, Dessarin Valley",
+  "intro": "Yarsha was a high-ranking member of the Cult of the Black Earth at the Temple of the Black Earth in Tyar-Besil during the Elemental Evil crisis.",
+  "personality": "Yarsha was a murderous individual, plotting to kill and replace Miraj Vizann."
+ },
+ "PotA|xharva deem": {
+  "title": "Xharva Deem",
+  "sex": "Female",
+  "race": "Genie",
+  "occupation": "Master of the forge",
+  "home": "Tyar-Besil, Dessarin Valley",
+  "intro": "Xharva Deem was a dao in service to the Cult of the Black Earth at the Temple of the Black Earth in Tyar-Besil during the Elemental Evil crisis."
+ },
+ "PotA|bastian thermandar": {
+  "title": "Bastian Thermandar",
+  "sex": "Male",
+  "race": "Fire genasi",
+  "home": "Tyar-Besil, Dessarin Valley",
+  "intro": "Bastian Thermandar was the second-in-command of the Cult of the Eternal Flame at the Temple of the Eternal Flame in Tyar-Besil in the late 1490s DR.",
+  "personality": "Bastian was a very paranoid individual, not trusting anyone. He was also greatly ambitious, scheming to gain for himself Tinderstrike and supplant Vanifer."
+ },
+ "PotA|reetha": {
+  "title": "Reetha",
+  "sex": "Female",
+  "race": "Human",
+  "occupation": "Bowyer",
+  "home": "Westbridge, Dessarin Valley",
+  "intro": "Reetha was a bowyer in the Dessarin Valley during the Elemental Evil crisis."
+ },
+ "PotA|drexa": {
+  "title": "Drexa",
+  "sex": "Male",
+  "race": "Lizardfolk",
+  "occupation": "Chieftain",
+  "home": "Fane of the Eye, Tyar-Besil",
+  "intro": "Drexa was the chieftain of the Blackmaw lizardfolk tribe at the Fane of the Eye under Tyar-Besil and a member of the Cult of the Crushing Wave during the Elemental Evil crisis.",
+  "personality": "The lizard king believed that he should be one of the leaders of the Crushing Wave. He dreamed of overthrowing Gar Shatterkeel one day."
+ },
+ "PotA|reulek": {
+  "title": "Reulek",
+  "sex": "Male",
+  "race": "Duergar dwarf ghost",
+  "occupation": "Treasure hunter",
+  "home": "Fane of the Eye, Tyar-Besil",
+  "intro": "Reulek was a duergar ghost at the Fane of the Eye under Tyar-Besil during the Elemental Evil crisis."
+ },
+ "PotA|obratu": {
+  "title": "Obratu",
+  "sex": "Male",
+  "race": "Oni mage",
+  "occupation": "Treasure hunter",
+  "home": "Shrine of the Tender Oath, Dessarin Valley",
+  "intro": "Obratu was an oni mage at the Shrine of the Tender Oath in the Dessarin Valley during the Elemental Evil crisis."
+ },
+ "PotA|dirana": {
+  "title": "Dirana",
+  "sex": "Female",
+  "race": "Human",
+  "occupation": "Cultist",
+  "home": "Fane of the Eye, Tyar-Besil",
+  "intro": "Dirana was a member of the Cult of the Crushing Wave at the Fane of the Eye under Tyar-Besil during the Elemental Evil crisis."
+ },
+ "PotA|mougra": {
+  "title": "Mougra",
+  "sex": "Male",
+  "race": "Goblin",
+  "occupation": "Bandit",
+  "home": "Red Larch, Savage Frontier",
+  "intro": "Mougra was a goblin bandit in Red Larch during the 1490s DR."
+ },
+ "PotA|geeraugh": {
+  "title": "Geeraugh",
+  "sex": "Male",
+  "race": "Half-ogre",
+  "occupation": "Bandit",
+  "home": "Red Larch, Savage Frontier",
+  "intro": "Geeraugh was a half-ogre bandit in Red Larch during the Elemental Evil crisis."
+ },
+ "PotA|braelen hatherhand": {
+  "title": "Braelen Hatherhand",
+  "sex": "Male",
+  "race": "Human",
+  "home": "Red Larch, Dessarin Valley",
+  "intro": "Braelen Hatherhand was a boy in Red Larch and a son of a member of the Believers in the 1490s DR."
+ },
+ "PotA|baragustas harbuckler": {
+  "title": "Baragustas Harbuckler",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Retired Carpenter",
+  "home": "Red Larch, Dessarin Valley",
+  "intro": "Baragustas Harbuckler was a retired carpenter in Red Larch and a member of the Believers during the Elemental Evil crisis."
+ },
+ "PotA|inglor brathren": {
+  "title": "Inglor Brathren",
+  "sex": "Male",
+  "race": "Dwarf",
+  "occupation": "Handyman, spy",
+  "home": "Bargewright Inn, Dessarin Valley",
+  "intro": "Inglor Brathren was a member of the Zhentarim at Bargewright Inn during the late 15th century DR."
+ },
+ "PotA|fennor": {
+  "title": "Fennor",
+  "sex": "Female",
+  "race": "Human",
+  "occupation": "Warlord",
+  "home": "Dessarin Valley, Savage Frontier",
+  "intro": "Fennor was a berserker and warlord of the Uthgardt Elk tribe during the Elemental Evil crisis.",
+  "personality": "Fennor was a bloodthirsty leader, wanting massacres. However, she respected Javor and if asked by him Fennor could be convinced to abort the raid."
+ },
+ "PotA|grumink": {
+  "title": "Grumink",
+  "sex": "Male",
+  "race": "Dwarf",
+  "occupation": "Mercenary",
+  "home": "Shrine of the Tender Oath, Dessarin Valley",
+  "intro": "Grumink the Renegade was a dwarf at the Shrine of the Tender Oath in the Dessarin Valley during the Elemental Evil crisis.",
+  "personality": "Grumink was a bloodthirsty and callous individual. He stopped at nothing to get what he wanted. Grumink delighted in building a reputation as a cold-blooded killer, and went out of his way to slay people when doing so might add to his notoriety or attract the attention of the law."
+ },
+ "PotA|ghald": {
+  "title": "Ghald",
+  "sex": "Male",
+  "race": "Sahuagin",
+  "occupation": "Criminal",
+  "home": "Yartar, Savage Frontier",
+  "intro": "Ghald was a four-armed sahuagin and a member of the Kraken Society during the Elemental Evil crisis."
+ },
+ "PotA|cavil zaltobar": {
+  "title": "Cavil Zaltobar",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Mercenary",
+  "home": "Dessarin Valley, Savage Frontier",
+  "intro": "Cavil Zaltobar was a mercenary wizard in the Dessarin Valley during the Elemental Evil crisis."
+ },
+ "PotA|ariana riverlost": {
+  "title": "Ariana Riverlost",
+  "sex": "Female",
+  "race": "Elf",
+  "home": "Dessarin Valley, Savage Frontier",
+  "intro": "Ariana Riverlost was a wizard member of the Harpers in the Dessarin Valley during the Elemental Evil crisis."
+ },
+ "PotA|eldras tantur": {
+  "title": "Eldras Tantur",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Blacksmith",
+  "home": "Red Larch",
+  "intro": "Eldras Tantur was the blacksmith of Red Larch during the Elemental Evil crisis of 1491 DR."
+ },
+ "PotA|endrith vallivoe": {
+  "title": "Endrith Vallivoe",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Shopkeeper",
+  "home": "Red Larch, Dessarin Valley",
+  "intro": "Endrith Vallivoe was a shopkeeper in Red Larch and a contact of the Harpers during the Elemental Evil crisis.",
+  "personality": "The shopkeeper was a shy and scuttling little man. He was an attentive watcher and listener and knew most of the village's rumors. He was a friend to the Harpers and was a useful and loyal informant for them."
+ },
+ "PotA|haeleeya hanadroum": {
+  "title": "Haeleeya Hanadroum",
+  "sex": "Female",
+  "race": "Human",
+  "occupation": "Shopkeeper",
+  "home": "Red Larch",
+  "intro": "Haeleeya Hanadroum was a shopkeeper in Red Larch and an Emerald Enclave supporter during the Elemental Evil crisis of 1491 DR."
+ },
+ "PotA|harburk tuthmarillar": {
+  "title": "Harburk Tuthmarillar",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Constable",
+  "home": "Red Larch",
+  "intro": "Harburk Tuthmarillar was the constable of Red Larch during the Elemental Evil crisis on 1491 DR."
+ },
+ "PotA|imdarr relvaunder": {
+  "title": "Imdarr Relvaunder",
+  "intro": "Imdarr Relvaunder was a priest of Tempus in Red Larch and secretly a member of the Order of the Gauntlet during the Elemental Evil crisis.",
+  "personality": "Imdarr was a stern man, and keenly interested in news, rumors, and visitors."
+ },
+ "PotA|kaylessa irkell": {
+  "title": "Kaylessa Irkell",
+  "sex": "Female",
+  "race": "Human",
+  "occupation": "Tavern owner",
+  "home": "Swinging Sword, Red Larch",
+  "intro": "Kaylessa Irkell was the owner of the Swinging Sword tavern in Red Larch during the Elemental Evil crisis.",
+  "personality": "Kaylessa was the fortyish matriarch of her family and a pleasant, sturdy woman. She was increasingly worried about strange phenomena in Red Larch and brought up her concerns with any likely adventurers who stopped by."
+ },
+ "PotA|mangobarl lorren": {
+  "title": "Mangobarl Lorren",
+  "intro": "Mangobarl Lorren was the baker of Red Larch during the Elemental Evil crisis. He ran his shop in that village.",
+  "personality": "He loved to gossip and knew all kinds of wild tales, few of them true."
+ },
+ "PotA|marlandro gaelkur": {
+  "title": "Marlandro Gaelkur",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Shopkeeper, Barber",
+  "home": "Red Larch, Dessarin Valley",
+  "intro": "Marlandro Gaelkur was a shopkeeper in Red Larch and a member of the Believers during the Elemental Evil crisis in 1491 DR."
+ },
+ "OotA|droki": {
+  "title": "Droki",
+  "sex": "Male",
+  "race": "Derro",
+  "occupation": "Courier",
+  "home": "Gracklstugh, Northdark",
+  "intro": "Droki was a derro criminal in Gracklstugh during the late 1480s or early 1490s DR.",
+  "personality": "Droki hated everyone in general and surfacers in particular. If he met surfacers, he spent all his time insulting and misleading them. If someone took his satchel, Droki would throw an epic tantrum."
+ },
+ "OotA|yestabrod": {
+  "title": "Yestabrod",
+  "race": "Aberrant myconid",
+  "occupation": "Priest",
+  "home": "Neverlight Grove, Northdark",
+  "intro": "Yestabrod was a mutant myconid leader of the Circle of Masters in Neverlight Grove in the late 15th century DR."
+ },
+ "OotA|zuggtmoy": {
+  "title": "Zuggtmoy",
+  "intro": "Zuggtmoy () was the Demon Queen of Fungi, but not considered a true patron of fungi. She was merely the embodiment of the death and virulence that fungi represented, and fully willing to subvert the natural order for her own ends. The Lady of Rot and Decay did not use decomposition for the higher purposes of renewal or rebirth, desiring destruction purely for its own sake.",
+  "physical": "Zuggtmoy was an utterly inhuman being, but could mold herself into roughly humanoid form. One often depicted form was a skeletally-thin humanoid draped and veiled in mycelium and lichen.",
+  "personality": "Despite technically engaging in the many facets of mortal life, much like her artificial form, this was a soulless parody of such existence. Zuggtmoy was alien in both body and mind, her only desire being to infect living creatures with her spores, turning them into her mindless slaves before they were reduced to naught but rotting and decomposing hosts for her fungi, mushrooms, and molds. Ultimately she sought to become the master of all life, the dominant mind of one great organism melded from all other living things."
+ },
+ "OotA|grisha": {
+  "title": "Grisha",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Cultist",
+  "home": "Filthriddens, Labyrinth",
+  "intro": "Grisha was a human cultist of Yeenoghu in the Labyrinth in the late 15th century DR.",
+  "personality": "A strict ruler, Grisha believed he sensed the power of Yeenoghu in all things and that he was behind the cultists being resurrected as ghouls after they died."
+ },
+ "OotA|yeenoghu": {
+  "title": "Yeenoghu",
+  "intro": "Yeenoghu ( ) was a demon lord and the chief being worshiped by gnolls. Dedicated only to destruction, the Ruler of Ruin sought the collapse of civilization and he would brutally butcher all that stood between him and his rabid slaughter.",
+  "physical": "Yeenoghu appeared as a gnoll-like creature, tall with a grinning skull-like face and a leering pair of burning emerald or amber eyes atop his seemingly emaciated form. A mangy, yellow crest of fur reached from his head to mid-back, with the only hair on his body being small scabby patches. The rest of his body was pale and gray, his leathery hide contrasting with his taut mane and a crest of blackened spines within it.",
+  "personality": "Yeenoghu's desires were savage in nature, wanting slaughter and destruction above all else. He took great pleasure in inflicting terror and sorrow before his victims' deaths, destroying treasured possessions and crushing their hopes. He despised civilization and if he were to conquer other realms, abyssal or otherwise, he would not attempt to rebuild their former structures."
+ },
+ "OotA|juiblex": {
+  "title": "Juiblex",
+  "intro": "Juiblex ( ) was a demon lord of oozes and shapeless things, a being that exemplified the corruptive nature of the Abyss and that was almost glorious in its unrivaled obscenity. Ridiculed by its peers as \"Lord of Nothing\", the Faceless Lord was, even to them, a demon as revoltingly vile in body as it was inscrutably aberrant in mind.",
+  "physical": "The Faceless One, an [[Avatar of Juiblex.]] Juiblex was, in short, disgusting, undoubtedly hideous to demons of all kinds and perhaps the most foul of all demon lords and deities. Its abhorrent aura was as foul as its sickening, shapeless form, a primordial soup of bubbling bile and nauseating fluid bound by a thin epidermis bathed in oil and thick mucus. The amorphous mass was swirled and striated with a hideous mixture of hues, primarily streaks of black and green combined with bilious browns and yellows as well as translucent grays and ambers."
+ },
+ "OotA|yuk yuk": {
+  "title": "Yuk Yuk",
+  "sex": "Male",
+  "race": "Goblin",
+  "home": "Silken Paths, Underdark",
+  "intro": "Yuk Yuk was a goblin living in the Silken Paths during the late 1480s or early 1490s DR.",
+  "personality": "He was a thrill-seeking individual. Yuk Yuk was a relatively sociable denizen of the Underdark."
+ },
+ "OotA|glabbagool": {
+  "title": "Glabbagool",
+  "race": "Gelatinous cube",
+  "home": "Oozing Temple, Underdark",
+  "intro": "Glabbagool was an unusual sentient gelatinous cube in the Oozing Temple sometime in the late 1480s or early 1490s DR.",
+  "personality": "The arrival of the demon lord Juiblex in the Underdark somehow granted Glabbagool sentience. It wanted to avoid fighting, however, and was genuinely curious about the world and the people that inhabited it."
+ },
+ "OotA|hemeth": {
+  "title": "Hemeth",
+  "sex": "Male",
+  "race": "Duergar dwarf",
+  "occupation": "Arms dealer",
+  "home": "Gracklstugh, Northdark",
+  "intro": "Hemeth was a duergar arms dealer from Gracklstugh in the late 15th century DR."
+ },
+ "OotA|ariana": {
+  "title": "Ariana",
+  "sex": "Female",
+  "race": "Deep gnome",
+  "occupation": "Merchant",
+  "home": "Gracklstugh, Underdark",
+  "intro": "Ariana was a deep gnome merchant in Gracklstugh in the late 15th century DR."
+ },
+ "OotA|kazook pickshine": {
+  "title": "Kazook Pickshine",
+  "sex": "Male",
+  "race": "Deep gnome",
+  "occupation": "Alchemist",
+  "home": "Blingdenstone, Northdark",
+  "intro": "Kazook Pickshine was a notorious deep gnome alchemist in Blingdenstone in the late 15th century DR."
+ },
+ "OotA|pelek": {
+  "title": "Pelek",
+  "sex": "Male",
+  "race": "Deep gnome ghost",
+  "home": "Gracklstugh, Northdark",
+  "intro": "Pelek was a deep gnome of Blingdenstone and a ghost in Gracklstugh in the late 15th century DR."
+ },
+ "OotA|voosbur": {
+  "title": "Voosbur",
+  "race": "Myconid",
+  "home": "Gracklstugh, Northdark",
+  "intro": "Voosbur was a myconid adult in Gracklstugh in the late 15th century DR."
+ },
+ "OotA|rumpadump": {
+  "title": "Rumpadump",
+  "race": "Myconid",
+  "home": "Gracklstugh, Northdark",
+  "intro": "Rumpadump was a myconid sprout of Neverlight Grove in the late 15th century DR.",
+  "personality": "Rumpadump was quite introverted, in contrast to its companion Stool's outgoing nature. Rumpadump would rather stay back from social encounters and would not release its rapport spores until it was vital."
+ },
+ "OotA|lorthio bukbukken": {
+  "title": "Lorthio Bukbukken",
+  "sex": "Male",
+  "race": "Duergar",
+  "occupation": "Alchemist",
+  "home": "Gracklstugh, Northdark",
+  "intro": "Lorthio Bukbukken was a duergar alchemist in Gracklstugh in the late 15th century DR."
+ },
+ "OotA|mev flintknapper": {
+  "title": "Mev Flintknapper",
+  "sex": "Male",
+  "race": "Deep gnome",
+  "home": "Blingdenstone, Northdark",
+  "intro": "Mev Flintknapper was a deep gnome in Blingdenstone in the late 15th century DR."
+ },
+ "OotA|glyphic shroomlight": {
+  "title": "Glyphic Shroomlight",
+  "sex": "Male",
+  "race": "Deep gnome",
+  "occupation": "Priest",
+  "home": "Ruby in the Rough, Blingdenstone",
+  "intro": "Glyphic Shroomlight was a young deep gnome acolyte of Segojan Earthcaller in Blingdenstone in the late 15th century DR.",
+  "personality": "Glyphic was very nervous because he knew his position needed an older and more experienced priest."
+ },
+ "OotA|udhask": {
+  "title": "Udhask",
+  "sex": "Male",
+  "race": "Deep gnome ghost",
+  "home": "Blingdenstone, Northdark",
+  "intro": "Udhask was a deep gnome ghost in Blingdenstone in the late 15th century DR."
+ },
+ "OotA|sark axebarrel": {
+  "title": "Sark Axebarrel",
+  "sex": "Male",
+  "race": "Deep gnome",
+  "occupation": "Guard",
+  "home": "Blingdenstone, Northdark",
+  "intro": "Sark Axebarrel was a deep gnome guard in Blingdenstone in the late 15th century DR."
+ },
+ "OotA|sladis vadir": {
+  "title": "Sladis Vadir",
+  "sex": "Male",
+  "race": "High elf",
+  "occupation": "Guide",
+  "home": "Mantol-Derith, Underdark",
+  "intro": "Sladis Vadir was a druid and a member of the Emerald Enclave during the late 15th century DR.",
+  "personality": "Sladis was always fascinated by the Underdark, but the madness spread by the demon lords destroyed his sanity. However, it was not too late for him to be cured."
+ },
+ "OotA|krimgol muzgardt": {
+  "title": "Krimgol Muzgardt",
+  "sex": "Male",
+  "race": "Duergar dwarf",
+  "occupation": "Merchant",
+  "home": "Mantol-Derith, Northdark",
+  "intro": "Krimgol Muzgardt was a duergar ale merchant of Clan Muzgardt from Gracklstugh in the late 15th century DR.",
+  "personality": "The gem caused Krimgol to believe himself to be a calassabrak—a duergar without honor."
+ },
+ "OotA|kinyel druu'giir": {
+  "title": "Kinyel Druu'giir",
+  "sex": "Female",
+  "race": "Drow elf",
+  "occupation": "Assassin",
+  "home": "Mantol-Derith, Northdark",
+  "intro": "Kinyel Druu'giir was a drow assassin of House Druu'giir in Menzoberranzan in Mantol-Derith in the late 15th century DR.",
+  "personality": "Kinyel believed in her madness that killing the beholder would gain her the pardon of her house."
+ },
+ "OotA|rystia zav": {
+  "title": "Rystia Zav",
+  "sex": "Female",
+  "race": "Human",
+  "occupation": "Spy",
+  "home": "Mantol-Derith, Underdark",
+  "intro": "Rystia Zav was a spy and a member of the Harpers from Nesme during the late 15th century DR.",
+  "personality": "Rytsia had gone mad from loneliness, fear, and demon lords' influence. She believed that all beings she met were killers sent after her."
+ },
+ "OotA|zilchyn q'leptin": {
+  "title": "Zilchyn Q'Leptin",
+  "sex": "Male",
+  "race": "Drow",
+  "occupation": "Wizard",
+  "home": "Mantol-Derith, Northdark",
+  "intro": "Zilchyn Q'Leptin, or simply Zilch, was a drow wizard from Menzoberranzan in the late 15th century DR.",
+  "personality": "Zilchyn was a kleptomaniac. This behavior increased with the arrival of the demon lord."
+ },
+ "OotA|ougalop": {
+  "title": "Ougalop",
+  "sex": "Male",
+  "race": "Kuo-toa",
+  "occupation": "Hunter",
+  "home": "Mantol-Derith, Northdark",
+  "intro": "Ougalop was a kuo-toa in Mantol-Derith during the late 1480s or early 1490s DR."
+ },
+ "OotA|amarith coppervein": {
+  "title": "Amarith Coppervein",
+  "sex": "Female",
+  "race": "Dwarf",
+  "home": "Northdark, Underdark",
+  "intro": "Amarith Coppervein was a dwarf in the Underdark in the late 15th century DR."
+ },
+ "OotA|ryzliir symryvvin": {
+  "title": "Ryzliir Symryvvin",
+  "sex": "Female",
+  "race": "Drow elf",
+  "occupation": "Warrior",
+  "home": "Menzoberranzan, Northdark",
+  "intro": "Ryzliir Symryvvin was a drow elite warrior in Menzoberranzan in the late 15th century DR."
+ },
+ "OotA|velgor zolond": {
+  "title": "Velgor Zolond",
+  "sex": "Male",
+  "race": "Drow elf",
+  "occupation": "Mage",
+  "home": "Menzoberranzan, Northdark",
+  "intro": "Velgor Zolond was a drow mage in Menzoberranzan in the late 15th century DR."
+ },
+ "OotA|servan llarabbar": {
+  "title": "Servan Llarabbar",
+  "sex": "Male",
+  "race": "Drow elf",
+  "occupation": "Mage",
+  "home": "Velkynvelve, Northdark",
+  "intro": "Servan Llarabbar was a drow mage in Velkynvelve in the late 15th century DR.",
+  "personality": "Influenced by madness, Servan started to show heightened paranoia and megalomania. He dreamed of seceding Velkynvelve from Menzoberranzan, to found a land free from the control of the matron mothers."
+ },
+ "OotA|jaal": {
+  "title": "Jaal",
+  "sex": "Male",
+  "race": "Stone giant",
+  "occupation": "Guide",
+  "home": "Gracklstugh, Northdark",
+  "intro": "Jaal was a stone giant living in Gracklstugh in the late 15th century DR."
+ },
+ "OotA|veldyskar": {
+  "title": "Veldyskar",
+  "sex": "Male",
+  "race": "Basilisk",
+  "occupation": "Guardian",
+  "home": "Gravenhollow, Northdark",
+  "intro": "Veldyskar was an intelligent basilisk living in Gravenhollow in the late 15th century DR.",
+  "personality": "Veldyskar's philosophy during fights was to petrify first and ask questions later. To avoid problems, the keepers taught him how to cast a greater restoration spell."
+ },
+ "OotA|shedrak": {
+  "title": "Shedrak",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Head slave",
+  "home": "Wormwrithings, Northdark",
+  "intro": "Shedrak of the Eyes was an adventurer who became the favored servant of a beholder living in the Wormwrithings in the Underdark in the late 15th century DR.",
+  "personality": "Karazikar had broken Shedrak's mind in order to make him its slave. Shedrak considered the beholder a god and would not tolerate any impudence or resistance to the beholder."
+ },
+ "OotA|kurr": {
+  "title": "Kurr",
+  "sex": "Male",
+  "race": "Gnoll",
+  "occupation": "Pack Leader",
+  "home": "Labyrinth, Northdark",
+  "intro": "Kurr was a gnoll fang of Yeenoghu in the Labyrinth in the late 15th century DR.",
+  "personality": "Kurr suffered from a peculiar form of demon lord–spread madness: he felt guilty for all the people he had killed. He hoped to find someone who could kill him and his pack."
+ },
+ "OotA|gash": {
+  "title": "Gash",
+  "sex": "Male",
+  "race": "Gnoll",
+  "home": "Labyrinth, Northdark",
+  "intro": "Gash was a gnoll in the Labyrinth in the late 15th century DR.",
+  "personality": "The abuses of the minotaurs had broken his will and Gash had become a pathetically loyal and willing slave of his masters."
+ },
+ "OotA|slaughtertusk": {
+  "title": "Slaughtertusk",
+  "race": "Nalfeshnee",
+  "home": "Labyrinth, Northdark",
+  "intro": "Slaughtertusk was a nalfeshnee agent of Baphomet in the late 15th century DR.",
+  "personality": "Slaughtertusk was a bully at heart, and pleaded for its life against enemies stronger than it. It was bored by the task assigned to it but knew not to disobey the Horned King."
+ },
+ "OotA|krilelyn h'kar": {
+  "title": "Krilelyn H'Kar",
+  "sex": "Male",
+  "race": "Drow elf",
+  "occupation": "Warrior",
+  "home": "Menzoberranzan, Northdark",
+  "intro": "Krilelyn H'Kar was an elite warrior from House H'kar and a member of Bregan D'aerthe in Menzoberranzan in the late 15th century DR.",
+  "personality": "Krilelyn was a sarcastic and devilishly charming male ."
+ },
+ "OotA|shinzi": {
+  "title": "Shinzi",
+  "sex": "Female",
+  "race": "Half-drow",
+  "occupation": "Spy, promoter",
+  "home": "Narbondel's Shadow, Eastmyr",
+  "intro": "Shinzi was a half-drow in Menzoberranzan during the late 1480s."
+ },
+ "OotA|dalfred noakes": {
+  "title": "Dalfred Noakes",
+  "sex": "Male",
+  "race": "Halfling",
+  "occupation": "Innkeeper",
+  "home": "Narbondel's Shadow, Eastmyr, Menzoberranzan",
+  "intro": "Dalfred Noakes was a halfling innkeeper in Menzoberranzan in the late 15th century DR."
+ },
+ "OotA|viln tirin": {
+  "title": "Viln Tirin",
+  "sex": "Female",
+  "race": "Drow",
+  "occupation": "Cultist",
+  "home": "West Wall, Menzoberranzan",
+  "intro": "Viln Tirin was a drow gang leader and cultist in Menzoberranzan in the late 15th century DR."
+ },
+ "OotA|y'lara": {
+  "title": "Y'lara",
+  "race": "Yochlol",
+  "home": "Menzoberranzan, Northdark",
+  "intro": "\"Y'lara\" was a yochlol trapped in Menzoberranzan in the late 15th century DR."
+ },
+ "CoS|strahd von zarovich": {
+  "title": "Strahd von Zarovich",
+  "sex": "Male",
+  "race": "Vampire Human",
+  "occupation": "Count",
+  "home": "Barovia",
+  "intro": "Count Strahd von Zarovich was a vampire and the dark lord of the valley of Barovia, one of the Domains of Dread located in a remote corner of the Shadowfell."
+ },
+ "CoS|ezmerelda d'avenir": {
+  "title": "Ezmerelda d'Avenir",
+  "sex": "Female",
+  "race": "Human",
+  "occupation": "Vampire hunter",
+  "home": "Domains of Dread",
+  "intro": "Ezmerelda d'Avenir, born under the surname Radanavich and preferring to be known by the nickname Ez, was a hunter of monsters (often vampires) who traveled across the Domains of Dread.",
+  "physical": "Her right leg, just below the knee, was entirely prosthetic."
+ },
+ "CoS|baba lysaga": {
+  "title": "Baba Lysaga",
+  "sex": "Female",
+  "race": "Hag human",
+  "intro": "Baba Lysaga was an ancient and powerful hag who lived in Barovia."
+ },
+ "CoS|zelraun roaringhorn": {
+  "title": "Zelraun Roaringhorn",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Noble",
+  "home": "Waterdeep, Sword Coast North",
+  "intro": "Zelraun Roaringhorn was a wizard member of the Harpers in the late 15th century DR.",
+  "physical": "Despite being in his 50s in the late 1480s DR, Zelraun appeared to be only about 30 years old. He maintained his youthful look by means of potions of longevity.",
+  "personality": "Zelraun always maintained an attitude of self-assurance and pride that derived from his family. Accustomed to nobility and wealth, he used the money of his family on fine living. He loved to gamble."
+ },
+ "CoS|eravien haund": {
+  "title": "Eravien Haund",
+  "sex": "Male",
+  "race": "Half-moon elf",
+  "occupation": "Noble",
+  "home": "Waterdeep, Sword Coast North",
+  "intro": "Eravien Haund was a half-elf and a noble member of the Lords' Alliance in the late 15th century DR.",
+  "personality": "The half-elf was a charming and sly courtier, able to be immediately size up any social situation. However, he focused too much on socializing, distracting him from important information."
+ },
+ "CoS|tatyana": {
+  "title": "Tatyana",
+  "sex": "Female",
+  "race": "Human",
+  "home": "Barovia",
+  "intro": "Tatyana was a young Barovian woman. When count Strahd von Zarovich fell desperately in love with her, his unrequited obsession drove him to seal a pact with the Dark Powers, turning him into a vampire and plunging the entire valley into the Domains of Dread.",
+  "physical": "Tatyana was extraordinarily beautiful. She had auburn hair."
+ },
+ "CoS|arik lorensk": {
+  "title": "Arik Lorensk",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Barkeeper",
+  "home": "Barovia, Barovia, Domains of Dread",
+  "intro": "Arik Lorensk was a human barkeeper at the Blood of the Vine tavern in the village of Barovia.",
+  "physical": "Arik was a short man with a pudgy body. He spoke in a dull, hollow voice, and looked wary.",
+  "personality": "Arik was quite a quiet man, often ignoring attempts to question him."
+ },
+ "SKT|augrek brighthelm": {
+  "title": "Augrek Brighthelm",
+  "sex": "Female",
+  "race": "Shield dwarf",
+  "home": "Bryn Shander, Ten Towns, Icewind Dale",
+  "intro": "Augrek Brighthelm was a deputy in Bryn Shander sometime after the War of the Silver Marches.",
+  "personality": "Augrek had a good heart. She truly wanted to protect her city. She also loved Sheriff Markham Southwell."
+ },
+ "SKT|duvessa shane": {
+  "title": "Duvessa Shane",
+  "sex": "Female",
+  "race": "Human",
+  "occupation": "Elder councilor",
+  "home": "Bryn Shander, Ten Towns Icewind Dale",
+  "intro": "Duvessa Shane was the speaker of Bryn Shander in 1485 DR and sometime after the War of the Silver Marches.",
+  "personality": "Duvessa inherited her mother's talent for negotiation and her father's charm. Some people thought her temerity but she always obtained what she wanted She believed that people of Ten Towns can survive all kinds of storms. Duvessa did not give an inch in any argument or conflict."
+ },
+ "SKT|markham southwell": {
+  "title": "Markham Southwell",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Sheriff",
+  "home": "Bryn Shander, Ten Towns, Icewind Dale",
+  "intro": "Markham Southwell was the sheriff of Bryn Shander in Icewind Dale in the late 15th century DR.",
+  "physical": "He was brawny of build.",
+  "personality": "Although likeable, Markham was taciturn and disinterested in small talk. He never showed his emotions while as he focused on his job of protecting Bryn Shander and Icewind Dale as a whole, as well as aiding Town Speaker Duvessa. He judged people by what they did, not what they said, and believed everyone should be treated with dignity."
+ },
+ "SKT|beldora": {
+  "title": "Beldora",
+  "sex": "Female",
+  "race": "Human",
+  "home": "Bryn Shander, Ten Towns, Icewind Dale",
+  "intro": "Beldora was a secret Harper agent in Bryn Shander sometime after the War of the Silver Marches.",
+  "personality": "Beldora liked to tell lies to people, believing that this made life more interesting. However, she wanted to protect poor people."
+ },
+ "SKT|shalvus martholio": {
+  "title": "Shalvus Martholio",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Spy",
+  "home": "Goldenfields",
+  "intro": "Shalvus Martholio was was a Zhentarim spy inside Goldenfields sometime after the War of the Silver Marches.",
+  "personality": "Shalvus wanted rise the Zhent ranks quickly and hoped that Goldenfield was the right place to show his qualities. He accepted any risks to fed his ambition. However Shalvus truly loved animals."
+ },
+ "SKT|lifferlas": {
+  "title": "Lifferlas",
+  "sex": "Male",
+  "race": "Awakened Tree",
+  "home": "Goldenfields",
+  "intro": "Lifferlas was an awakened tree in Goldenfields sometime after the War of the Silver Marches.",
+  "personality": "He loved children and was truly happy when they carved their names into his body or hung from his boughs."
+ },
+ "SKT|zi liang": {
+  "title": "Zi Liang",
+  "sex": "Female",
+  "race": "Human",
+  "home": "Goldenfields, Dessarin Valley",
+  "intro": "Zi Liang was an acolyte of Chauntea at the Harvesthome Abbey in Goldenfields in the late 15th century DR.",
+  "personality": "Zi Liang was a true devotee of Chauntea. She believed that Goldenfields was a beacon of hope in the North and she must protect it. Zi didn't trust authority and went with her heart."
+ },
+ "SKT|miros xelbrin": {
+  "title": "Miros Xelbrin",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Innkeeper",
+  "home": "Goldenfields",
+  "intro": "Miros Xelbrin was an innkeeper in Goldenfields sometime after the War of the Silver Marches.",
+  "personality": "Miros staunchly supported the Emerald Enclave's goals. For him it was okay if people joked about him, but not about his inn or his employers, in which case he descended into a rage."
+ },
+ "SKT|naxene drathkala": {
+  "title": "Naxene Drathkala",
+  "sex": "Female",
+  "race": "Human",
+  "home": "Goldenfields",
+  "intro": "Naxene Drathkala was an member of the Watchful Order of Magists and Protectors in Goldenfields sometime after the War of the Silver Marches.",
+  "personality": "Naxene believed that all can be resolved by magic and to be too smart to mistake something. She supported Laeral as a force of order in a chaotic world."
+ },
+ "SKT|oren yogilvy": {
+  "title": "Oren Yogilvy",
+  "sex": "Male",
+  "race": "Strongheart halfling",
+  "occupation": "Musician",
+  "home": "Goldenfields, Dessarin Valley",
+  "intro": "Oren Yogilvy was a halfling musician in the Goldenfields in the late 15th century DR.",
+  "personality": "Oren truly lived for and by his music. Sometimes he got into trouble but his music had always saved him from harm."
+ },
+ "SKT|darathra shendrel": {
+  "title": "Darathra Shendrel",
+  "sex": "Female",
+  "race": "Human",
+  "occupation": "Ruler, adventurer",
+  "home": "Triboar, Dessarin Valley",
+  "intro": "Darathra Shendrel was a human knight and the Lord Protector of Triboar in the Dessarin Valley, as well as a former adventurer and a member of the Harpers, in the late 15th century DR.",
+  "personality": "She was good-natured and had a reputation for fairness and sensible governance. Darathra believed that good people must be allowed to prosper free from tyranny and she was willing to give her life for the people of Triboar. She was resolute and never backed down, and pushed back when pressured."
+ },
+ "SKT|darz helgar": {
+  "title": "Darz Helgar",
+  "sex": "Male",
+  "race": "Human",
+  "home": "Triboar, Dessarin Valley",
+  "intro": "Darz Helgar was an inhabitant of Triboar sometime after the War of the Silver Marches.",
+  "physical": "Darz was a male human of Illuskan heritage.",
+  "personality": "Darz had come to terms with his former life as a thief and had no regrets. He made a fresh start in Triboar and was finished with running away regardless of what happened."
+ },
+ "SKT|urgala meltimer": {
+  "title": "Urgala Meltimer",
+  "sex": "Female",
+  "race": "Human",
+  "occupation": "Innkeeper",
+  "home": "Triboar, Dessarin Valley",
+  "intro": "Urgala Meltimer was a former adventurer and the owner and innkeeper of Northshield House in Triboar in the Dessarin Valley in the late 15th century DR.",
+  "physical": "Urgala was a female human of Turami descent, with dark brown skin and black hair. She kept herself fit and could be quite intimidating.",
+  "personality": "She liked retirement and was very protective of her home, and was willing to fight to preserve it and the homes of her neighbors. She believed violence was a necessity for survival in a violent world but admonished all guests in the inn bearing weapons to keep them sheathed. She tolerated neither bullies nor monsters, curbing their behavior with a sharp word and a firm hand, or driving them out with violence if necessary."
+ },
+ "SKT|othovir": {
+  "title": "Othovir",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Shopkeeper, hunter",
+  "home": "Triboar, Dessarin Valley",
+  "intro": "Othovir was a shopkeeper in Triboar sometime after the War of the Silver Marches.",
+  "physical": "Othovir was a handsome and charismatic male human of Illuskan stock.",
+  "personality": "Othovir cared greatly about his good name. He became angry if he found out someone was looking into his private life or his past."
+ },
+ "SKT|ghelryn foehammer": {
+  "title": "Ghelryn Foehammer",
+  "sex": "Male",
+  "race": "Shield dwarf",
+  "occupation": "Smith",
+  "home": "Triboar, Dessarin Valley",
+  "intro": "Ghelryn \"Goldhand\" Foehammer was a shield dwarf master smith of the town of Triboar in the Dessarin Valley in the mid-to-late 14 and late 15 centuries DR.",
+  "personality": "Ghelryn was goodhearted but he zealously hated orcs and giants and he would never run from a fight, especially against them. He believed dwarves must forge their legacy and that he should stand up for Clan Foehammer and for dwarves everywhere."
+ },
+ "SKT|slarkrethel": {
+  "title": "Slarkrethel",
+  "sex": "Male",
+  "race": "Kraken",
+  "intro": "Slarkrethel was a huge kraken wizard and Chosen of Umberlee, who also founded the Kraken Society.",
+  "physical": "Like his origins, Slarkrethel's appearance was disputed. The majority of sages described him as a giant squid, indeed, the giant squid was the symbol of the Kraken Society, however, later images of krakens were described as far less squid-like, with fins as well as tentacles, and recognizable faces. On one aspect, all could agree however, Slarkrethel was a leviathan of a creature, gargantuan in size."
+ },
+ "SKT|narth tezrin": {
+  "title": "Narth Tezrin",
+  "sex": "Male",
+  "race": "Human",
+  "home": "Triboar, Dessarin Valley",
+  "intro": "Narth Tezrin was an resident of Triboar and member of the Lionshield Coster during the late 15th century DR.",
+  "personality": "Narth had an adventurous spirit. He sought to become a person of renown, no matter the risks. He adored his colleague Alaestra and this stopped him from running away in search of adventures."
+ },
+ "SKT|serissa": {
+  "title": "Serissa",
+  "sex": "Female",
+  "race": "Storm giant",
+  "home": "Maelstrom, Trackless Sea",
+  "intro": "Serissa was the storm giant heiress sometime after the War of the Silver Marches.",
+  "personality": "Serissa above all feared a civil war among the different giant races, which had the potential restart the war against the dragons. She knew well the envy of her older sisters but considered them harmless. Serissa trusted only Iymrith and her uncle Uthor."
+ },
+ "SKT|iymrith": {
+  "title": "Iymrith",
+  "sex": "Female",
+  "race": "Blue dragon",
+  "home": "Iymrith's lair, Anarath",
+  "intro": "Iymrith, also known as the Doom of the Desert and the Dragon of the Statues, was a powerful blue dragon sorcerer that dwelled within an abandoned amphitheater in the ruined Netherese city of Anarath in the Anauroch desert.",
+  "personality": "Iymrith was manipulative and cunning, as shown by her ongoing deception of Serissa, daughter of the storm giant King Hekaton, for an extended duration of time. Her ultimate goal was to shed her physical form and achieve godhood. Like many dragons, she was shown to be prideful and arrogant, unwilling to flee in battle or abandon her treasure to those that may lessen her wealth."
+ },
+ "SKT|felgolos": {
+  "title": "Felgolos",
+  "sex": "Male",
+  "race": "Bronze dragon",
+  "home": "Lyn Armaal, Savage Frontier",
+  "intro": "Felgolos was a very imprudent bronze dragon, that traveled across Faerûn causing trouble and surviving perils, much to the befuddlement of many dragonologists. Regardless, he sought joy and fun in all of his undertakings.",
+  "physical": "Felgolos' scales had a particularly glossy sheen.",
+  "personality": "Felgolos was always amiable and curious to a fault. He enjoyed wandering across the Realms, especially into the territories of other dragons, regardless of the inherent danger. He was very knowledgeable about matters of everyday life in Faerûn."
+ },
+ "SKT|tholtz daggerdark": {
+  "title": "Tholtz Daggerdark",
+  "sex": "Male",
+  "race": "Human",
+  "home": "Trackless Sea",
+  "intro": "Tholtz Daggerdark was a sea-captain in Trackless Sea sometime after the War of the Silver Marches."
+ },
+ "SKT|harshnag": {
+  "title": "Harshnag",
+  "sex": "Male",
+  "race": "Frost giant",
+  "home": "Mount Sar, Sword Coast North",
+  "physical": "Harshnag was particularly burly-looking, even for a frost giant. He had skin as white as snow, light blue eyes and pale blue hair which he often kept tied back in a braid."
+ },
+ "SKT|morak ur'gray": {
+  "title": "Morak Ur'gray",
+  "sex": "Male",
+  "race": "Shield dwarf",
+  "occupation": "Innkeeper",
+  "home": "Nightstone, northwest Faerûn",
+  "intro": "Morak Ur'gray was an innkeeper in Nightstone in the late 15th century DR.",
+  "personality": "Morak was a natural leader and always optimistic. He thought for sure that Lady Velrosa Nandar would send help for them."
+ },
+ "SKT|darthag ulgar": {
+  "title": "Darthag Ulgar",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Merchant",
+  "home": "Nightstone, Sword Coast North",
+  "intro": "Darthag Ulgar was a merchant of the Lionshield Coster and the operator of their trading post in Nightstone during the late 15th century DR."
+ },
+ "SKT|zephyros": {
+  "title": "Zephyros",
+  "sex": "Male",
+  "race": "Cloud giant",
+  "home": "Tower of Zephyros",
+  "intro": "Zephyros was an eccentric cloud giant wizard sometime after the War of the Silver Marches.",
+  "personality": "Zephyros was very open-minded to \"small folks\"."
+ },
+ "SKT|amarath": {
+  "title": "Amarath",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Cultist",
+  "home": "Northwest Faerûn",
+  "intro": "Amarath was a member of the Cult of the Howling Hatred sometime after the War of the Silver Marches."
+ },
+ "SKT|dellvon ludwig": {
+  "title": "Dellvon Ludwig",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Priest",
+  "home": "Bryn Shander, Ten Towns",
+  "intro": "Delvon Ludwig was a priest of Torm who lived in the Sword Coast North during the late 15th century DR."
+ },
+ "SKT|artus cimber": {
+  "title": "Artus Cimber",
+  "sex": "Male",
+  "race": "Human",
+  "home": "Suzail, Cormyr",
+  "physical": "As a young child, Artus was scrawny with dark brown eyes. Through his long adventuring career, Artus earned many scars of various shapes and sizes that covered his back and stomach, including the scars left by the Zhent torturers. When Artus settled in Chult, he was gifted a lightweight lush green hooded tunic, perfect for the hot and humid climate of the jungle.",
+  "personality": "Unlike his brother Oric, Artus was intelligent and observant. Artus was passionate about the preservation of knowledge and history, especially if it pertained to Chult, where he'd spent most of his life with Alisanda. Since the disappearance of Mezro and his wife, Artus longed to be reunited with her again."
+ },
+ "SKT|sorelisa zandra": {
+  "title": "Sorelisa Zandra",
+  "sex": "Female",
+  "race": "Human",
+  "occupation": "Spy",
+  "home": "Bryn Shander, Icewind Dale",
+  "intro": "Sorelisa Zandra, was a Zhentarim bounty hunter sometime after the War of the Silver Marches."
+ },
+ "SKT|hantanus tarm": {
+  "title": "Hantanus Tarm",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Castellan",
+  "home": "Goldenfields",
+  "intro": "Hantanus Tarm was the castellan of Goldenfields sometime after the War of the Silver Marches."
+ },
+ "SKT|darlow": {
+  "title": "Darlow",
+  "race": "Black bear",
+  "occupation": "Bear",
+  "home": "Goldenfields, Dessarin Valley",
+  "intro": "Darlow was the name of a black bear that lived within the Harvesthome Abbey of Goldenfields during the late 15th century DR."
+ },
+ "SKT|aerglas": {
+  "title": "Aerglas",
+  "sex": "Male",
+  "race": "Moon elf",
+  "occupation": "Adventurer",
+  "home": "Goldenfields, Dessarin Valley",
+  "intro": "Aerglas was a druid of the Emerald Enclave who lived in Goldenfields during the mid–15th century DR."
+ },
+ "SKT|turlang": {
+  "title": "Turlang",
+  "sex": "Male",
+  "race": "Treant",
+  "home": "Turlang's Wood, High Forest",
+  "intro": "Turlang was a treant who guarded the northwestern region of the High Forest, a grove known as Turlang's Wood. He \"governed\" over an area of a hundred or so trees, a gentle, calm but authoritative presence over his arboreal realm."
+ },
+ "SKT|tharra shyndle": {
+  "title": "Tharra Shyndle",
+  "sex": "Female",
+  "race": "Half-elf",
+  "home": "High Forest",
+  "intro": "Tharra Shyndle was a druid member of the Emerald Enclave in the High Forest sometime after the War of the Silver Marches."
+ },
+ "SKT|quinn nardrosz": {
+  "title": "Quinn Nardrosz",
+  "sex": "Male",
+  "race": "Human",
+  "home": "Jalanthar, Luruar",
+  "intro": "Quinn Nardrosz was a retired ranger in Jalanthar sometime after the War of the Silver Marches."
+ },
+ "SKT|chazlauth yarghorn": {
+  "title": "Chazlauth Yarghorn",
+  "sex": "Male",
+  "race": "Human",
+  "home": "Waterdeep",
+  "intro": "Chazlauth Yarghorn was a wizard in Waterdeep sometime after the War of the Silver Marches."
+ },
+ "SKT|irizzorl": {
+  "title": "Irizzorl",
+  "race": "Silver dragon",
+  "home": "Waterdeep, northwest Faerûn",
+  "intro": "Irizzorl was a silver dragon wyrmling, living in the tower of the wizard Chazlauth Yarghorn's Waterdeep residence, sometime after the War of the Silver Marches in the late 15th century DR."
+ },
+ "SKT|kaelen sarssir": {
+  "title": "Kaelen Sarssir",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Tavern owner, actor",
+  "home": "Triboar, Dessarin Valley",
+  "intro": "Kaelen Sarssir was an actor and the proprietor of the Talking Troll tavern in Triboar in the Savage Frontier in the late 15th century DR."
+ },
+ "SKT|hyuth kolstaag": {
+  "title": "Hyuth Kolstaag",
+  "sex": "Male",
+  "race": "Human",
+  "home": "Triboar, Dessarin Valley",
+  "intro": "Hyuth Kolstaag was an inhabitant of Triboar sometime after the War of the Silver Marches."
+ },
+ "SKT|zindra winterbow": {
+  "title": "Zindra Winterbow",
+  "sex": "Female",
+  "race": "Half-elf",
+  "home": "Dessarin Valley",
+  "intro": "Zindra Winterbow was a guide in Dessarin Valley sometime after the War of the Silver Marches."
+ },
+ "SKT|okssort": {
+  "title": "Okssort",
+  "sex": "Male",
+  "race": "Fire giant",
+  "intro": "Okssort was a fire giant who, together with his wife Ildmane, led an attack on Triboar sometime after the War of the Silver Marches."
+ },
+ "SKT|harthos zymorven": {
+  "title": "Harthos Zymorven",
+  "sex": "Male",
+  "race": "Human",
+  "home": "Zymorven Hall, Rauvin Vale",
+  "intro": "Harthos Zymorven was the commander of Zymorven Hall in the Rauvin Vale during the late 15th century DR."
+ },
+ "SKT|tholzar brenner": {
+  "title": "Tholzar Brenner",
+  "sex": "Male",
+  "race": "Human",
+  "home": "Yartar",
+  "intro": "Tholzar Brenner was a corrupt watch officer in Yartar sometime after the War of the Silver Marches."
+ },
+ "SKT|kriga moonmusk": {
+  "title": "Kriga Moonmusk",
+  "sex": "Female",
+  "race": "Human",
+  "intro": "Kriga Moonmusk was the great chief of the Blue Bear Tribe during the late 15th century DR.",
+  "personality": "Despite her advanced age, Kriga was exceptionally shrewd. When traveling throughout the North, Great Chief Kriga was transported in a fur-covered litter that was carried by four Blue Bear tribesmen."
+ },
+ "SKT|pencheska": {
+  "title": "Pencheska",
+  "sex": "Female",
+  "race": "Succubus",
+  "home": "Doomvault, Thaymount",
+  "intro": "Pencheska was a succubus in the Doomvault dungeon in 1486 DR.",
+  "personality": "Pencheska was unhappy with her situation as a slave of Tarul. She did not immediately attack the lich's enemies."
+ },
+ "SKT|nelkin danniker": {
+  "title": "Nelkin Danniker",
+  "sex": "Male",
+  "race": "Lightfoot halfling",
+  "occupation": "Spy",
+  "home": "Daggerford, Western Heartlands",
+  "intro": "Nelkin Danniker, better known as the Snail, was a member of the Zhentarim in Daggerford sometime after the War of the Silver Marches."
+ },
+ "SKT|zirazylym": {
+  "title": "Zirazylym",
+  "sex": "Female",
+  "race": "Bronze dragon",
+  "home": "Daggerford, Western Heartlands",
+  "intro": "Zirazylym was an adult bronze dragon in Daggerford sometime after the War of the Silver Marches."
+ },
+ "SKT|krowen valharrow": {
+  "title": "Krowen Valharrow",
+  "sex": "Male",
+  "race": "Human",
+  "home": "Everlund, Luruar",
+  "intro": "Krowen Valharrow was an archmage member of the Harpers in Everlund sometime after the War of the Silver Marches."
+ },
+ "SKT|dral thelev": {
+  "title": "Dral Thelev",
+  "sex": "Male",
+  "race": "Half-orc",
+  "home": "Everlund, Luruar",
+  "intro": "Dral Thelev was an one-eyed half-orc innkeeper in Everlund sometime after the War of the Silver Marches."
+ },
+ "SKT|pheszeltan": {
+  "title": "Pheszeltan",
+  "race": "Human",
+  "home": "Forgotten Forest, northwest Faerûn",
+  "intro": "Pheszeltan was a great Hierophant Druid of Mielikki and later Silvanus who lived somewhere in the deep-most reaches of the Forgotten Forest in the North in the mid–14th century DR. He was immortal and still living there by 1485 DR."
+ },
+ "SKT|draac xorlarrin": {
+  "title": "Draac Xorlarrin",
+  "sex": "Male",
+  "race": "Drow",
+  "home": "Underdark",
+  "intro": "Draac Xorlarrin was a member of House Xorlarrin and an ally of the fire giant Duke Zalto sometime after the War of the Silver Marches.",
+  "personality": "Draac was a slippery individual. He did not want to die under any circumstance."
+ },
+ "SKT|silixia": {
+  "title": "Silixia",
+  "sex": "Female",
+  "race": "Brass dragon",
+  "home": "Gray Vale, Savage Frontier",
+  "intro": "Silixia was a young brass dragon in the Gray Vale sometime after the War of the Silver Marches."
+ },
+ "SKT|wormblod": {
+  "title": "Wormblod",
+  "sex": "Male",
+  "race": "Human",
+  "home": "Spine of the World",
+  "intro": "Wormblod was the chieftain of the Great Worm Tribe sometime after the War of the Silver Marches."
+ },
+ "SKT|noori": {
+  "title": "Noori",
+  "sex": "Female",
+  "race": "Human",
+  "home": "Spine of the World",
+  "intro": "Noori was a member of the Great Worm Tribe sometime after the War of the Silver Marches."
+ },
+ "SKT|lonely moor": {
+  "title": "Lonely Moor",
+  "intro": "The Lonely Moor was an area of boggy land northwest of Evereska in the Western Heartlands of Faerûn. It was occupied by bands of gnolls and bugbears."
+ },
+ "SKT|fylo nelgorn": {
+  "title": "Fylo Nelgorn",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Priest",
+  "home": "Nesmé",
+  "intro": "Fylo Nelgorn was a Zhent diplomat in Nesmé sometime after the War of the Silver Marches."
+ },
+ "SKT|avgar filroy": {
+  "title": "Avgar Filroy",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Innkeper",
+  "home": "Noanar's Hold",
+  "intro": "Avgar Filroy was the only innkeeper in Noanar's Hold until sometime after the War of the Silver Marches."
+ },
+ "SKT|tau": {
+  "title": "Tau",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Cultist",
+  "home": "Sumber Hills",
+  "intro": "Tau was a member of the Cult of the Black Earth sometime after the War of the Silver Marches."
+ },
+ "SKT|sharda": {
+  "title": "Sharda",
+  "sex": "Female",
+  "race": "Human",
+  "occupation": "Cultist",
+  "home": "Sumber Hills",
+  "intro": "Sharda was a member of the Cult of the Black Earth sometime after the War of the Silver Marches."
+ },
+ "SKT|zorkh": {
+  "title": "Zorkh",
+  "sex": "Male",
+  "race": "Stone giant",
+  "occupation": "Hermit",
+  "home": "Greypeak Mountains",
+  "intro": "Zorkh was a stone giant hermit sometime after the War of the Silver Marches.",
+  "physical": "Zorkh was mute; he could understand the Giant language but could not speak."
+ },
+ "SKT|nirva": {
+  "title": "Nirva",
+  "race": "Cloud giant",
+  "intro": "Nirva was a cloud giant on a quest sometime after the War of the Silver Marches."
+ },
+ "SKT|albie grizlow": {
+  "title": "Albie Grizlow",
+  "sex": "Male",
+  "race": "Human",
+  "home": "Uluvin, Delimbiyr Vale",
+  "intro": "Albie Grizlow was a teenager cattle rancher in Uluvin, who lived there around the time of the War of the Silver Marches."
+ },
+ "SKT|kolbaz": {
+  "title": "Kolbaz",
+  "sex": "Male",
+  "race": "Human",
+  "home": "Yartar, Savage Frontier",
+  "intro": "Kolbaz was an old and cantankerous mage and a member of the Harpers in Yartar sometime after the War of the Silver Marches."
+ },
+ "SKT|khaspere drylund": {
+  "title": "Khaspere Drylund",
+  "sex": "Male",
+  "race": "Human",
+  "home": "Yartar",
+  "intro": "Khaspere Drylund was a noble in Yartar sometime after the War of the Silver Marches.",
+  "personality": "Khaspere was a little man. If someone cornered and threatened him, he revealed everything about his criminal business."
+ },
+ "SKT|moog": {
+  "title": "Moog",
+  "sex": "Female",
+  "race": "Hill giant",
+  "home": "Dessarin Valley",
+  "intro": "Moog was a lonely hill giant sometime after the War of the Silver Marches."
+ },
+ "SKT|gharwin umbryl": {
+  "title": "Gharwin Umbryl",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Tavern owner",
+  "home": "Smiling Satyr, Loudwater, Delimbiyr Vale",
+  "intro": "Gharwin Umbryl was the proprietor of the Smiling Satyr tavern outside Loudwater in the Delimbiyr Vale in the late 15th century DR."
+ },
+ "SKT|sandyse thunderquill": {
+  "title": "Sandyse Thunderquill",
+  "sex": "Female",
+  "race": "Human",
+  "home": "Neverwinter, Sword Coast North",
+  "intro": "Sandyse Thunderquill was a confident but socially awkward mage and a member of the Harpers in Neverwinter sometime after the War of the Silver Marches."
+ },
+ "SKT|thestryl mellardin": {
+  "title": "Thestryl Mellardin",
+  "sex": "Female",
+  "race": "Human",
+  "home": "Waterdeep, Sword Coast North",
+  "intro": "Thestryl Mellardin was a pale girl mage and a member of the Harpers in Waterdeep sometime after the War of the Silver Marches."
+ },
+ "SKT|eigeron": {
+  "title": "Eigeron",
+  "sex": "Male",
+  "race": "Cloud giant ghost",
+  "home": "Spine of the World",
+  "intro": "Eigeron was a ghost cloud giant sometime after the War of the Silver Marches."
+ },
+ "SKT|oinker-boinker": {
+  "title": "Oinker-Boinker",
+  "sex": "Male",
+  "race": "Ettin",
+  "home": "Grudd Haug, Dessarin Valley",
+  "intro": "Oinker-Boinker was an ettin sometime after the War of the Silver Marches."
+ },
+ "SKT|draunn": {
+  "title": "Draunn",
+  "intro": "Draunn was a primordial trapped beneath the Greypeak Mountains. A portion of Draunn called the Steinfang was located in Deadstone Cleft."
+ },
+ "SKT|elister noggins": {
+  "title": "Elister Noggins",
+  "sex": "Male",
+  "race": "Gnome",
+  "occupation": "Clockmaker",
+  "home": "Deadstone Cleft, Greypeak Mountains",
+  "intro": "Elister Noggins was a rock gnome priest of Gond from Loudwater."
+ },
+ "SKT|cinderhild": {
+  "title": "Cinderhild",
+  "sex": "Female",
+  "race": "Fire giant",
+  "home": "Ironslag, Ice Spires",
+  "intro": "Cinderhild was a fire giant and the belligerent daughter of Duke Zalto in Ironslag sometime after the War of the Silver Marches.",
+  "personality": "Her father told Cinderhild that Toril was full of wonders but gave her no permission to leave and thus she was angry with Zalto. She had a low opinion of her brother."
+ },
+ "SKT|zaltember": {
+  "title": "Zaltember",
+  "sex": "Male",
+  "race": "Fire giant",
+  "home": "Ironslag, Ice Spires",
+  "intro": "Zaltember was a fire giant and the sadistic son of Duke Zalto in Ironslag sometime after the War of the Silver Marches.",
+  "personality": "Zaltember was at heart a bully and a coward. If injured, he quickly escaped to his mother. He also tried to impress enemies by declaring himself to be the son of Zalto."
+ },
+ "SKT|kartha-kaya": {
+  "title": "Kartha-Kaya",
+  "sex": "Male",
+  "race": "Yak folk",
+  "home": "Ironslag, North Faerûn",
+  "intro": "Kartha-Kaya was the chief of a yak folk village near Ironslag sometime after the War of the Silver Marches."
+ },
+ "SKT|jasper dimmerchasm": {
+  "title": "Jasper Dimmerchasm",
+  "sex": "Male",
+  "race": "Shield dwarf",
+  "home": "Ironslag, north Faerûn",
+  "intro": "Jasper Dimmerchasm was a shield dwarf member of the Zhentarim and prisoner of the fire giants in Ironslag sometime after the War of the Silver Marches."
+ },
+ "SKT|cressaro": {
+  "title": "Cressaro",
+  "sex": "Male",
+  "race": "Cloud giant",
+  "occupation": "Bodyguard, consort",
+  "home": "Lyn Armaal, Savage Frontier",
+  "intro": "Cressaro was the cloud giant castellan of Lyn Armaal sometime after the War of the Silver Marches.",
+  "personality": "Cressaro followed the orders of Sansuri without doubts, deeply loyal to her."
+ },
+ "SKT|kaaltar": {
+  "title": "Kaaltar",
+  "sex": "Male",
+  "race": "Cloud giant",
+  "home": "Lyn Armaal",
+  "intro": "Kaaltar was a cloud giant who resided in Lyn Armaal during the late 15th century DR.",
+  "physical": "Kaaltar was tall and weighed , equivalent in size to a muscular human male."
+ },
+ "SKT|vaal": {
+  "title": "Vaal",
+  "sex": "Male",
+  "race": "Cloud giant",
+  "home": "Maelstrom, Trackless Sea",
+  "intro": "Vaal was a cloud giant count sometime after the War of the Silver Marches.",
+  "personality": "Vaal was susceptible to bribes"
+ },
+ "SKT|tartha": {
+  "title": "Tartha",
+  "sex": "Female",
+  "race": "Fire giant",
+  "home": "Maelstrom, Trackless Sea",
+  "intro": "Tartha was a fire giant duchess sometime after the War of the Silver Marches.",
+  "personality": "Tartha hated dragons above all."
+ },
+ "SKT|hellenhild": {
+  "title": "Hellenhild",
+  "sex": "Male",
+  "race": "Frost giant",
+  "home": "Maelstrom, Trackless Sea",
+  "intro": "Hellenhild was a frost giant jarl sometime after the War of the Silver Marches.",
+  "personality": "Hellenhild respected battle prowess above all."
+ },
+ "SKT|braxow": {
+  "title": "Braxow",
+  "sex": "Male",
+  "race": "Stone giant",
+  "home": "Maelstrom, Trackless Sea",
+  "intro": "Braxow was a stone giant thane sometime after the War of the Silver Marches.",
+  "personality": "Braxow feared not following the giant pantheon's ways."
+ },
+ "SKT|zaldar floshin": {
+  "title": "Zaldar Floshin",
+  "sex": "Male",
+  "race": "Half-elf",
+  "occupation": "Captain",
+  "home": "Waterdeep",
+  "intro": "Zaldar Floshin was a half-elven member of the noble elven House Floshin, and a sea-captain in Waterdeep sometime after the War of the Silver Marches.",
+  "personality": "Zaldar was said to be a rather brooding individual."
+ },
+ "SKT|klarz": {
+  "title": "Klarz",
+  "sex": "Male",
+  "race": "Hobgoblin",
+  "occupation": "Sea captain",
+  "intro": "Klarz was a hobgoblin sea-captain on the Trackless Sea in the late 15th century DR. He was the captain of the Koalinth."
+ },
+ "SKT|nimir": {
+  "title": "Nimir",
+  "race": "Storm giant",
+  "occupation": "Bodyguard",
+  "home": "Maelstrom, Trackless Sea",
+  "intro": "Nimir was a storm giant residing in the Maelstrom in the Trackless Sea during the late 15th century DR.",
+  "personality": "Nimir was a rather insightful giant who believed that his race should establish an alliance with the smaller races, rather than continuously warring with them. To this end he felt that the princess Serissa was a perfect successor to the throne of King Hekaton and was willing to sacrifice his life in order to protect her."
+ },
+ "TftYP-AtG|durnan": {
+  "title": "Durnan",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Tavernkeeper; Lord of Waterdeep",
+  "home": "Waterdeep",
+  "intro": "Durnan (), occasionally known as Durham, was the gruff, burly yet close-mouthed Masked Lord of Waterdeep who ran the Yawning Portal Inn and considered himself the self-appointed gatekeeper to Undermountain. He was known for having explored Undermountain.",
+  "personality": "He had a strong dislike for hobgoblins. Mirt believed he may have lost family, friends, and neighbors&mdash;and even been left homeless&mdash;by hobgoblin raids, although Durnan himself would never speak on the subject."
+ },
+ "TftYP-DiT|tarul var": {
+  "title": "Tarul Var",
+  "sex": "Male",
+  "race": "Lich",
+  "occupation": "Wizard",
+  "home": "Bloodgate Keep, Daggerford",
+  "intro": "Tarul Var was a lich necromancer and Red Wizard of Thay in Daggerford in 1486 DR.",
+  "personality": "Tarul was an arrogant and devious individual. He knew that his success depended on a favorable result from the Bloodgate mission, but he did not truly believe that he could fail. He believed that all living creatures were weaker than liches."
+ },
+ "TftYP-DiT|white maw": {
+  "title": "White Maw",
+  "race": "Gray ooze",
+  "home": "Doomvault, Thaymount",
+  "intro": "White Maw was a massive intelligent gray ooze in the Doomvault dungeon in 1486 DR.",
+  "personality": "White Maw absorbed the identities of the creatures it ingested. This granted it sentience, but with a price; the conflicting personalities of those it consumed drove it to madness."
+ },
+ "TftYP-DiT|ooze master": {
+  "title": "Ooze Master",
+  "race": "Undead hybrid human ooze",
+  "home": "Doomvault, Thaymount",
+  "intro": "The Ooze Master was a monstrous intelligent ooze in the Doomvault dungeon."
+ },
+ "TftYP-DiT|durnan": {
+  "title": "Durnan",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Tavernkeeper; Lord of Waterdeep",
+  "home": "Waterdeep",
+  "intro": "Durnan (), occasionally known as Durham, was the gruff, burly yet close-mouthed Masked Lord of Waterdeep who ran the Yawning Portal Inn and considered himself the self-appointed gatekeeper to Undermountain. He was known for having explored Undermountain.",
+  "personality": "He had a strong dislike for hobgoblins. Mirt believed he may have lost family, friends, and neighbors&mdash;and even been left homeless&mdash;by hobgoblin raids, although Durnan himself would never speak on the subject."
+ },
+ "TftYP-DiT|mennek ariz": {
+  "title": "Mennek Ariz",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Enchanter",
+  "home": "Bloodgate Keep, Daggerford",
+  "intro": "Mennek Ariz was a traitorous Red Wizard of Thay in Daggerford.",
+  "personality": "Mennek, as an enchanter, greatly despised the preeminence of the necromancers over his land and secretly aligned with rebels who sought to overthrow Szass Tam and the necromancers from control of Thay."
+ },
+ "TftYP-TFoF|durnan": {
+  "title": "Durnan",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Tavernkeeper; Lord of Waterdeep",
+  "home": "Waterdeep",
+  "intro": "Durnan (), occasionally known as Durham, was the gruff, burly yet close-mouthed Masked Lord of Waterdeep who ran the Yawning Portal Inn and considered himself the self-appointed gatekeeper to Undermountain. He was known for having explored Undermountain.",
+  "personality": "He had a strong dislike for hobgoblins. Mirt believed he may have lost family, friends, and neighbors&mdash;and even been left homeless&mdash;by hobgoblin raids, although Durnan himself would never speak on the subject."
+ },
+ "TftYP-THSoT|durnan": {
+  "title": "Durnan",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Tavernkeeper; Lord of Waterdeep",
+  "home": "Waterdeep",
+  "intro": "Durnan (), occasionally known as Durham, was the gruff, burly yet close-mouthed Masked Lord of Waterdeep who ran the Yawning Portal Inn and considered himself the self-appointed gatekeeper to Undermountain. He was known for having explored Undermountain.",
+  "personality": "He had a strong dislike for hobgoblins. Mirt believed he may have lost family, friends, and neighbors&mdash;and even been left homeless&mdash;by hobgoblin raids, although Durnan himself would never speak on the subject."
+ },
+ "TftYP-TSC|durnan": {
+  "title": "Durnan",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Tavernkeeper; Lord of Waterdeep",
+  "home": "Waterdeep",
+  "intro": "Durnan (), occasionally known as Durham, was the gruff, burly yet close-mouthed Masked Lord of Waterdeep who ran the Yawning Portal Inn and considered himself the self-appointed gatekeeper to Undermountain. He was known for having explored Undermountain.",
+  "personality": "He had a strong dislike for hobgoblins. Mirt believed he may have lost family, friends, and neighbors&mdash;and even been left homeless&mdash;by hobgoblin raids, although Durnan himself would never speak on the subject."
+ },
+ "TftYP-TSC|ashardalon": {
+  "title": "Ashardalon",
+  "sex": "Male",
+  "race": "Red dragon",
+  "home": "Astral Plane",
+  "intro": "Ashardalon was a powerful red dragon who was mentioned in songs throughout the multiverse. He was known for his depredations and unorthodox methods to extend his own life. Although he later achieved the status of greatwyrm, he remained relentless in his pursuit of godhood.",
+  "physical": "An extremely old red dragon, Ashardalon had an appearance that diverged somewhat from usual ancient dragons of his kind. He possessed unusual demonic features and a scar on his chest in the shape of an enormous winged humanoid.",
+  "personality": "Ashardalon was regarded as a self-important dragon with an almost desperate attachment to his own life. He was willing to go through whatever means necessary to prevent his own death."
+ },
+ "TftYP-TSC|belak": {
+  "title": "Belak",
+  "sex": "Male",
+  "race": "Human",
+  "home": "Sunless Citadel",
+  "intro": "Belak the Outcast was a dark druid allegedly exiled from his druidic circle for reasons unknown. He took up residence in the Sunless Citadel in order to study the Gulthias Tree.",
+  "personality": "He was an eccentric druid, known for his dangerous alignment with the unnatural. Driven by radical views on expanding nature's reach, he was characterized by great hubris, cold pragmatism, and cruel possessiveness."
+ },
+ "TftYP-ToH|durnan": {
+  "title": "Durnan",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Tavernkeeper; Lord of Waterdeep",
+  "home": "Waterdeep",
+  "intro": "Durnan (), occasionally known as Durham, was the gruff, burly yet close-mouthed Masked Lord of Waterdeep who ran the Yawning Portal Inn and considered himself the self-appointed gatekeeper to Undermountain. He was known for having explored Undermountain.",
+  "personality": "He had a strong dislike for hobgoblins. Mirt believed he may have lost family, friends, and neighbors&mdash;and even been left homeless&mdash;by hobgoblin raids, although Durnan himself would never speak on the subject."
+ },
+ "TftYP-WPM|durnan": {
+  "title": "Durnan",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Tavernkeeper; Lord of Waterdeep",
+  "home": "Waterdeep",
+  "intro": "Durnan (), occasionally known as Durham, was the gruff, burly yet close-mouthed Masked Lord of Waterdeep who ran the Yawning Portal Inn and considered himself the self-appointed gatekeeper to Undermountain. He was known for having explored Undermountain.",
+  "personality": "He had a strong dislike for hobgoblins. Mirt believed he may have lost family, friends, and neighbors&mdash;and even been left homeless&mdash;by hobgoblin raids, although Durnan himself would never speak on the subject."
+ },
+ "ToA|xandala": {
+  "title": "Xandala",
+  "sex": "Female",
+  "race": "Half-elf",
+  "intro": "Xandala () was a half-elf who sought out the Ring of Winter in Chult during the late 15th century DR.",
+  "physical": "Areas of Xandala's skin were covered by a thin layer of scales. These scales were a result of her draconic heritage.",
+  "personality": "Xandala craved the power of the Ring of Winter as she thought it would bring her immense power and immortality. She believed that she was destined for greatness because of her draconic ancestry."
+ },
+ "ToA|zindar": {
+  "title": "Zindar",
+  "sex": "Male",
+  "race": "Gold half-dragon",
+  "home": "Port Nyanzaru, Chult",
+  "intro": "Zindar () was a half-dragon sorcerer and harbormaster of Port Nyanzaru in the late 15th century DR. He was also a central member of the Ytepka Society.",
+  "personality": "He had an imposing presence that he liked to use to more efficiently diffuse disputes during the course of his job. He took pride in his work and his city, and had little patience for any who would bring harm to either. He kept his business honest, although he was not above retaliating against those who crossed him."
+ },
+ "ToA|liara portyr": {
+  "title": "Liara Portyr",
+  "sex": "Female",
+  "race": "Human",
+  "occupation": "Flaming Fist Commander",
+  "home": "Baldur's Gate, Sword Coast North",
+  "intro": "Liara Portyr () was a member of the Portyr patriar family, the commander of Fort Beluarian and the highest-ranking member of the Flaming Fist in Chult in the late 15th century DR. She answered only to Duke Ulder Ravengard of Baldur's Gate.",
+  "personality": "Liara was a hard-hearted and dedicated leader who held high respect for militaristic order. She saw hardships as challenges for her to overcome. She admired those who took up the adventuring life."
+ },
+ "ToA|ras nsi": {
+  "title": "Ras Nsi",
+  "sex": "Male",
+  "race": "Yuan-ti malison Human",
+  "occupation": "Bara",
+  "home": "Jungles of Chult",
+  "intro": "Ras (or \"Duke\") Nsi () was one of the seven barae, the Chosen of Ubtao. He was infamous for seeking bloody and violent revenge against the Eshowe tribe of Chult and for the creation of the majority of the undead that roam that land.",
+  "physical": "Ras Nsi dressed the part of a Cormyrean noble, wearing a sky-blue cloak and bearing a rapier. He had soft features, but his eyes supernaturally glowed bright red whenever he became irritable or spoke of his zeal for the city of Mezro. After the Spellplague, he resembled a yuan-ti malison, with his torso and face wrapped in bandages, and bore a flaming longsword.",
+  "personality": "The first impression one might receive when meeting Ras Nsi was that he was decadent and weak-willed. Nsi, despite his exile, maintained a powerful devotion to both Ubtao and his holy city. He strongly opposed King Osaw's opening of the once hidden city to non-Tabaxi."
+ },
+ "ToA|acererak": {
+  "title": "Acererak",
+  "sex": "Male",
+  "race": "Cambion",
+  "personality": "Acererak traveled through the multiverse in search of artifacts, which he liked to lock away in trap-ridden dungeons to watch adventurers suffer and die. He then enjoyed trapping their souls in his phylactery, whose location was unknown. Although having had the power and opportunities to ascend to godhood, Acererak had no interest in being worshiped, despite having his share of followers whose suffering he enjoyed watching."
+ },
+ "ToA|artus cimber": {
+  "title": "Artus Cimber",
+  "sex": "Male",
+  "race": "Human",
+  "home": "Suzail, Cormyr",
+  "physical": "As a young child, Artus was scrawny with dark brown eyes. Through his long adventuring career, Artus earned many scars of various shapes and sizes that covered his back and stomach, including the scars left by the Zhent torturers. When Artus settled in Chult, he was gifted a lightweight lush green hooded tunic, perfect for the hot and humid climate of the jungle.",
+  "personality": "Unlike his brother Oric, Artus was intelligent and observant. Artus was passionate about the preservation of knowledge and history, especially if it pertained to Chult, where he'd spent most of his life with Alisanda. Since the disappearance of Mezro and his wife, Artus longed to be reunited with her again."
+ },
+ "ToA|dragonbait": {
+  "title": "Dragonbait",
+  "sex": "Male",
+  "race": "Saurial",
+  "home": "Lost Vale, Dalelands",
+  "intro": "Dragonbait, also referred to as Champion, was the finhead saurial paladin companion and the soul-brother of the adventurer Alias, who was transported to Toril, alongside a small community of his people, by the Rotting God Moander.",
+  "physical": "Dragonbait stood at in height, not counting his single head fin, the telltale sign of him being a finhead saurial. His low height was due to his posture, canted towards his hips, and balanced by a long thick tail. His mouth was short, thinner, and more rounded than that of lizardfolk.",
+  "personality": "Dragonbait was adaptable and quite intuitive. Like many other paladins, he was good, caring, kind, and righteous, a being of a pure soul. That was the reason why he was chosen as a sacrifice to bring Alias to life by Cassana, and Phalse."
+ },
+ "ToA|syndra silvane": {
+  "title": "Syndra Silvane",
+  "sex": "Female",
+  "race": "Human",
+  "occupation": "Merchant Adventurer",
+  "home": "Baldur's Gate",
+  "intro": "Syndra Silvane () was a merchant and former adventurer living in the city of Baldur's Gate in the late 15 DR.",
+  "physical": "After becoming affected by the death curse, Syndra began wearing a hood and silver mask to hide her features."
+ },
+ "ToA|wakanga o'tamu": {
+  "title": "Wakanga O'tamu",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Merchant",
+  "home": "Port Nyanzaru, Chult",
+  "intro": "Wakanga O'tamu () was a merchant prince in Port Nyanzaru during the late 15th century DR. He was an information broker of sorts, offering lost lore and arcane knowledge as well as dealing in magical items.",
+  "physical": "Wakanga was a wealthy Chultan merchant and the only arcane spellcaster among Port Nyanzaru's merchant princes. He was often described as a wizard who had a masterful command of his Art. He was capable of quickly learning ancient and powerful Chultan spells.",
+  "personality": "He enjoyed life's luxuries, especially pleasures of the flesh. He was a dandy who was easily seduced by smart women, though this was possibly only a carefully constructed public image. Those who called on him at his villa might find him absorbed in gilded tomes and disinterested in speaking until he had finished his reading."
+ },
+ "ToA|drufi": {
+  "title": "Drufi",
+  "sex": "Female",
+  "race": "Frost giant",
+  "intro": "Drufi () was a frost giant who led an attack on Bryn Shander sometime after the War of the Silver Marches."
+ },
+ "ToA|taban": {
+  "title": "Taban",
+  "sex": "Male",
+  "race": "Human",
+  "home": "Port Nyanzaru, Chult",
+  "intro": "Taban was a gladiator active in Port Nyanzaru in Chult during the late 15th century DR.",
+  "personality": "He was stubborn but proud. If defeated in a fight, he became ashamed and eager to prove himself. He was also a gambler who placed bets at Port Nyanzaru's Executioner's Run."
+ },
+ "ToA|river mist": {
+  "title": "River Mist",
+  "sex": "Female",
+  "race": "Tabaxi",
+  "occupation": "Jungle guide",
+  "home": "Port Nyanzaru, Chult",
+  "intro": "River Mist was a tabaxi guide that worked out of Port Nyanzaru in the late 15th century DR. She worked alongside her brother, Flask of Wine both as guides and assets of the Zhentarim.",
+  "personality": "River was more comfortable in the jungles of Chult and could not abide the crowded streets of Port Nyanzaru."
+ },
+ "ToA|shago": {
+  "title": "Shago",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Jungle guide",
+  "home": "Fort Beluarian, Chult",
+  "intro": "Shago () was a Chultan man working as a guide out of Fort Beluarian, Chult in the late 15th century DR.",
+  "physical": "He was quite large, standing at and . He had rippling muscles and a winning smile.",
+  "personality": "Shago was boastful, describing himself as having \"the heart of a tyrannosaurus\" and to be unafraid of hard work or danger. He claimed to be proficient in fighting, foraging, canoeing, camping, and whatever else a client might need from a guide."
+ },
+ "ToA|aremag": {
+  "title": "Aremag",
+  "sex": "Male",
+  "race": "Dragon turtle",
+  "home": "Bay of Chult, Chult",
+  "intro": "Aremag () was a dragon turtle who lived in the Bay of Chult from at least the mid–14 to the late 15 centuries DR. His activities in the bay were well known by the locals of Port Nyanzaru.",
+  "physical": "Thanks to the fight with the Narwhal, Aremag had a blind, milky left eye and was missing a piece of its shell. He had a particularly grouchy personality.",
+  "personality": "Aremag thought highly of himself, and expected deference from any sailors he encountered. When forced into combat with his patrons, he would often avoid direct combat, and rather knock his enemies into the water or capsize their vessels for them to be devoured by reef sharks."
+ },
+ "ToA|soshen": {
+  "title": "Soshen",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Guard",
+  "home": "Port Nyanzaru, Chult",
+  "intro": "Soshen was a member of the city guard of Port Nyanzaru during the late 15th century DR."
+ },
+ "ToA|ymezra": {
+  "title": "Ymezra",
+  "sex": "Female",
+  "race": "Human",
+  "home": "Port Nyanzaru, Chult",
+  "intro": "Ymezra was the daughter of Jessamine, one of the merchant princes of Port Nyanzaru in Chult during the late 15th century DR."
+ },
+ "ToA|niles breakbone": {
+  "title": "Niles Breakbone",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Order of the Gauntlet Commander",
+  "home": "Camp Vengeance, Chult",
+  "intro": "Niles Breakbone was a knight in the Order of the Gauntlet as well as the commander of Camp Vengeance in Chult during the late 15th century DR.",
+  "personality": "Niles was a devout servant of Tyr who was well-versed in traditional battles of two armies facing off against one another, however he was exasperated by guerrilla tactics that were so-often used in the jungle setting. He was a dedicated member of the Order of the Gauntlet and was seen as representing its best qualities, although the stain of the jungle campaign had led him to become desperate and unreasonable. He viewed Camp Vengeance as existing in a permanent state of emergency, and anyone who refused his orders&mdash;regardless of their relationship to the Order of the Gauntlet&mdash;was deemed a traitor to be punished or executed."
+ },
+ "ToA|nanny pu'pu": {
+  "title": "Nanny Pu'pu",
+  "sex": "Female",
+  "race": "Green hag",
+  "occupation": "Witch doctor",
+  "home": "Mbala, Chult",
+  "intro": "Nanny Pu'pu () was a green hag and the lone inhabitant of Mbala in Chult as of the late 15th century DR.",
+  "physical": "She appeared as an arthritic old crone, with skeletal features and sallow skin. She wore yellow clay streaked over her dark skinned face in an apparent design of a skull. She walked with such a pronounced hunch that she appeared almost bestial.",
+  "personality": "Nanny Pu'pu played the role of an old wise woman perfectly even as she conspired to kill and eat any travelers she met. Her preferred method was to isolate individuals from their friends and pick them off one-by-one in order to avoid direct conflict. She used trickery and illusions to lure potential victims to Mbala."
+ },
+ "ToA|zongo": {
+  "title": "Zongo",
+  "race": "Triceratops",
+  "home": "Port Nyanzaru, Chult",
+  "intro": "Zongo was a triceratops owned by Faroul and Gondolo, a pair of hapless jungle guides operating out of Port Nyanzaru, Chult during the late 15th century DR.",
+  "physical": "Zongo was slow-moving and notably flatulent."
+ },
+ "ToA|kupalué": {
+  "title": "Kupalué",
+  "race": "Vegepygmy",
+  "home": "Chult",
+  "intro": "Kupalué (), also known as Kupa or \"Weed\", was the vegepygmy companion of the Chultan druid Qawasha in the late 15th century DR. Kupalué's name meant \"walking weed\" in the Chultan language.",
+  "physical": "The vegepygmy stood tall and weighed about . If he became wet, the waterlogged vegepygmy gained an additional",
+  "personality": "Kupalué was quite knowledgeable about the many types of animal and plant life that were native to Chult. Left to his own devices, he moved slowly and observantly through the jungle, using the tendrils on his body to feel and taste the air around him, thus allowing him to connect to the jungle more deeply than any human. He had a sarcastic sense of humor and a fascination with magic."
+ },
+ "ToA|tzindelor": {
+  "title": "Tzindelor",
+  "sex": "Female",
+  "race": "Red dragon",
+  "home": "Wyrmheart Mine, Chult",
+  "intro": "Tzindelor, also known as Tinder, was a young red dragon who laired within Wyrmheart Mine in Chult throughout the latter half of the 15th century DR. She was further known by such honorifics as \"your titanic, blazing majesty\" and \"thou unquenchable, unendurable furnace\" by her kobold minions.",
+  "personality": "Owing to her youth, there was much that Tzindelor did not know or understand about the world. Regardless of this naivete, she was confident, cruel, and expected to be treated with unwavering deference and overblown flattery. She delighted in seeing and hearing her prey screaming and dying in the flames of her breath weapon."
+ },
+ "ToA|qawasha": {
+  "title": "Qawasha",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Jungle guide",
+  "home": "Port Nyanzaru, Chult",
+  "intro": "Qawasha () was a druid of the Emerald Enclave that sought to eradicate the undead that infested the jungles of Chult during the late 15th century DR. To this end, he worked as a guide alongside his vegepygmy companion, Kupalué.",
+  "physical": "Qawasha was a Chultan man who stood tall and weighed . He was physically fit, capable of outrunning a ghoul.",
+  "personality": "He was a hard worker and had a calming demeanor, able to assuage people's fears and inspire their confidence, especially in the face of the dangers of the Chultan jungle. He was unafraid to travel into the dangerous depths of the jungle, and would sometimes seek the solitude of nature in such places. His many days spent wandering and meditating in the jungle had led him to certain understandings about the world, such as that death and decay were simply the other side of the same coin as life and growth, that silence was the key to communing with the jungle, and that evil had lodged itself like a painful thorn into the minds of mortals."
+ },
+ "ToA|asharra": {
+  "title": "Asharra",
+  "sex": "Female",
+  "race": "Aarakocra",
+  "occupation": "Leader",
+  "home": "Kir Sabal",
+  "intro": "Asharra (), or Teacher, as she was known by her own kind, was an elderly aarakocra druid, as well the leader of Kir Sabal near the end of the 15th century DR. She was venerated by the others in her community, to the point of being considered a saint.",
+  "personality": "Asharra was exceptionally insightful and equally ambitious. While she had a propensity for manipulating others, she never acted in a manner that was malicious or uncaring. She knew the specifications of a ritual called the Dance of the Seven Winds, that allowed a small number of people to temporarily gain the power of flight."
+ },
+ "ToA|bag of nails": {
+  "title": "Bag of Nails",
+  "sex": "Male",
+  "race": "Tabaxi",
+  "occupation": "Hunter",
+  "home": "Omu, Chult",
+  "intro": "Bag of Nails was a tabaxi that lived in Chult during the late 15th century DR. As of the year of the death curse, he dwelled within an abandoned building in the lost city of Omu.",
+  "personality": "In his older years, Bag of Nails wished to receive a death worthy of a hunter. In truth he had lost his mind to senility and began seeing every individual he met as his quarry."
+ },
+ "ToA|gorra": {
+  "title": "Gorra",
+  "sex": "Male",
+  "race": "Wight, human",
+  "occupation": "Engineer",
+  "home": "Tomb of the Nine Gods, Omu",
+  "intro": "Gorra, who was also known as Withers, was an undead wight that acted as an overseer in the Tomb of the Nine Gods."
+ },
+ "ToA|cryonax": {
+  "title": "Cryonax",
+  "sex": "Male",
+  "race": "Archomental",
+  "home": "Paraelemental Plane of Ice",
+  "intro": "Cryonax () was the Prince of evil cold-using creatures, and one of the inhabitants of the Para-Elemental Plane of Ice.",
+  "physical": "He somewhat resembled a yeti with two tentacles in place of each arm. He stood tall and weighed . He radiated an aura of terrible cold, said to chill both the body and soul of those around him."
+ },
+ "LMoP|mormesk the wraith": {
+  "title": "Mormesk",
+  "sex": "Male",
+  "race": "Wraith Human",
+  "home": "Wave Echo Cave, the Sword Mountains",
+  "intro": "Mormesk was a human mage and the last defending wizard against Uruth Ukrypt's raid on the Wave Echo Cave. He was turned into a wraith that haunted the cavern for over half a millennium.",
+  "physical": "The human wizard was said to be a powerful spellcaster. He coveted treasure and wealth, both in life and in undeath. As well as general wealth, Mormesk desired magical equipment, such as spellbooks, but also longed for arcane knowledge."
+ },
+ "LMoP|sister garaele": {
+  "title": "Garaele",
+  "sex": "Female",
+  "race": "Elf",
+  "occupation": "Priestess Harper agent",
+  "home": "Phandalin, the Sword Coast North",
+  "intro": "Sister Garaele was an elf cleric who lived in Phandalin in the late 15th century DR. She was a worshiper of Tymora, and spent much time caring for the Shrine of Luck in town.",
+  "personality": "Although scholarly, the young acolyte of Tymora had a strong desire to travel and do good for the people of Phandalin. She was also said to be quite zealous, and was known to exuberantly preach anywhere and everywhere, including in peoples' homes. She was said to scold the townsfolk whenever bad fortune befell the town, suggesting that it was because they had not showed sufficient devotion to Tymora."
+ },
+ "HotDQ|captain othelstan": {
+  "title": "Othelstan",
+  "sex": "Male",
+  "race": "Human",
+  "occupation": "Warrior",
+  "home": "Parnast, Greypeak Mountains",
+  "intro": "Captain Othelstan was a member of the Cult of the Dragon who supervised the Cult-controlled village of Parnast in the Greypeak Mountains.",
+  "physical": "The captain was a strong man with black skin."
+ },
+ "HotDQ|glazhael the cloudchaser": {
+  "title": "Glazhael",
+  "sex": "Male",
+  "race": "White dragon",
+  "home": "Skyreach Castle, Greypeak Mountains",
+  "intro": "Glazhael the Cloudchaser was a white dragon allied with the reformed Cult of the Dragon of Severin Silrajin.",
+  "physical": "While Glazhael was described by some as being particularly handsome for a white dragon, he was not especially intelligent.",
+  "personality": "He believed that dragons were superior to all other beings and was proud to take actions in service to the exalted queen Tiamat."
+ },
+ "RoT|lord volmer": {
+  "title": "Volmer",
+  "sex": "Male",
+  "race": "Bone devil",
+  "home": "Nine Hells",
+  "intro": "Lord Volmer was a bone devil from the Nine Hells that ventured to Toril on the Prime Material plane during the late 15th century DR."
+ },
+ "RoT|taraz the fair": {
+  "title": "Taraz",
+  "sex": "Male",
+  "race": "Efreet",
+  "home": "Xonthal's Tower, Western Heartlands",
+  "intro": "Taraz the Fair was an efreeti trapped in Xonthal's Tower by the wizard Xonthal circa 1380 DR."
+ },
+ "PotA|yngukulub the devourer": {
+  "title": "Yngukulub",
+  "race": "Aboleth",
+  "home": "Fane of the Eye, Tyar-Besil",
+  "intro": "Yngukulub the Devourer was an aboleth ally of Gar Shatterkeel at the Fane of the Eye under Tyar-Besil during the Elemental Evil crisis.",
+  "personality": "Yngukulub obeyed Gar because it believed that in the new era of Olhydra the aboleth would rule the world."
+ },
+ "OotA|deepking horgar steelshadow v": {
+  "title": "Horgar Steelshadow V",
+  "sex": "Male",
+  "race": "Duergar",
+  "occupation": "Ruler",
+  "home": "Gracklstugh, Northdark",
+  "intro": "Deepking Horgar Steelshadow V was the duergar king of Gracklstugh during the late 15th century DR."
+ },
+ "SKT|sir baric nylef": {
+  "title": "Baric Nylef",
+  "sex": "Male",
+  "race": "Human",
+  "home": "Bryn Shander, Ten Towns",
+  "intro": "Baric Nylef was a knight of Tyr that lived in Bryn Shander some time after the War of the Silver Marches.",
+  "personality": "Baric was a true devotee of Tyr. He waited for the day when he would meet his god. In the meantime, he felt that he must clean the world from evil."
+ },
+ "SKT|chief guh": {
+  "title": "Guh",
+  "sex": "Female",
+  "race": "Hill giant",
+  "home": "Grudd Haug, Dessarin Valley",
+  "personality": "Like her fellow hill giants, Guh was not very intelligent, and her plot was a questionable one. She believed that if she became the world's biggest giant, none would question her. In addition, Guh was a glutton."
+ },
+ "SKT|countess sansuri": {
+  "title": "Sansuri",
+  "sex": "Female",
+  "race": "Cloud giant",
+  "home": "Lyn Armaal, Savage Frontier",
+  "intro": "Countess Sansuri was the ruler of the cloud giants sometime after the War of the Silver Marches."
+ },
+ "SKT|duke zalto": {
+  "title": "Zalto",
+  "sex": "Male",
+  "race": "Fire giant",
+  "home": "Ironslag, Ice Spires",
+  "intro": "Duke Zalto was the ruler of the fire giants sometime after the War of the Silver Marches circa the late 15th century DR.",
+  "personality": "Zalto was a warmonger, dreaming to lead his kind at war in the glory of Surtr and Annam. He would sacrifice his family to achieve said goal."
+ },
+ "SKT|count nimbolo": {
+  "title": "Nimbolo",
+  "race": "Cloud giant",
+  "occupation": "Ruler",
+  "intro": "Burruld, also known by the name Count Nimbolo, was a cloud giant and master of a cloud castle in the late 15th century DR."
+ }
+}

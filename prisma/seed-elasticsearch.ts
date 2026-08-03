@@ -65,28 +65,41 @@ async function indexSpells() {
       savingThrow: true,
     },
   });
-  
-  // Get spell classes for filtering
+
   const spellClasses = await prisma.spellClass.findMany({
     select: {
       spellId: true,
       classId: true,
+      fromSubclass: true,
+      subclassId: true,
+      class: { select: { name: true, source: true } },
+      subclass: { select: { name: true, source: true } },
     },
   });
-  
-  const classMap = new Map<string, string[]>();
+
+  const classMap = new Map<string, {
+    classId: string;
+    fromSubclass: boolean;
+    subclassId: string | null;
+    class: { name: string; source: string };
+    subclass: { name: string; source: string } | null;
+  }[]>();
   for (const sc of spellClasses) {
-    if (!classMap.has(sc.spellId)) {
-      classMap.set(sc.spellId, []);
-    }
-    classMap.get(sc.spellId)!.push(sc.classId);
+    if (!classMap.has(sc.spellId)) classMap.set(sc.spellId, []);
+    classMap.get(sc.spellId)!.push({
+      classId: sc.classId,
+      fromSubclass: sc.fromSubclass,
+      subclassId: sc.subclassId,
+      class: { name: sc.class.name, source: sc.class.source },
+      subclass: sc.subclass ? { name: sc.subclass.name, source: sc.subclass.source } : null,
+    });
   }
-  
+
   const documents = spells.map((spell) => ({
     ...spell,
     classes: classMap.get(spell.id) || [],
   }));
-  
+
   await bulkIndex(INDICES.spells, documents);
   console.log(`  ✓ ${documents.length} spells indexed`);
 }
@@ -136,10 +149,18 @@ async function indexItems() {
       name: true,
       source: true,
       type: true,
+      types: true,
+      subtype: true,
+      armorType: true,
+      weaponType: true,
+      weaponCategory: true,
       rarity: true,
       value: true,
+      valueGp: true,
+      valueEstimated: true,
       weight: true,
       attunement: true,
+      attunementRequirement: true,
       description: true,
     },
   });

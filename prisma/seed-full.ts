@@ -6,29 +6,23 @@ import {
   clearAllTables,
   getStats,
 } from '../src/lib/migration';
+import { seedAdventures } from './seed-adventures';
+import { seedItems } from './seed-items';
 import {
   transformRace,
   transformSubrace,
   transformClass,
-  transformClassFeature,
-  transformSubclass,
-  transformSubclassFeature,
   transformSpell,
   transformCondition,
   transformBackground,
   transformFeat,
   transformDeity,
-  transformItem,
   transformMonster,
   transformMonsterTrait,
   transformMonsterSpellcasting,
   transformMonsterAction,
+  extractSpellReferences,
 } from '../src/lib/transformers';
-
-const SKIP_TABLES = [
-  'character', 'characterSpell', 'characterFeature', 'characterItem',
-  'party', 'encounter', 'encounterMonster'
-];
 
 async function seedBooks() {
   console.log('\n📚 Seeding Books...');
@@ -238,28 +232,29 @@ async function seedRaces() {
 
 async function seedClasses() {
   console.log('\n🎭 Seeding Classes...');
-  
+
   const classesData = loadJson<{ class: any[] }>('classes.json');
   const classes = classesData.class;
-  
+
   const classIdMap = new Map<string, string>();
+  const subclassIdMap = new Map<string, string>(); // "ClassName|SubclassName" -> subclassId
   let count = 0;
-  
+
   for (const classData of classes) {
     try {
       const classId = crypto.randomUUID();
       classIdMap.set(classData.name, classId);
-      
+
       const data = transformClass(classData);
       data.id = classId;
-      
+
       await prisma.class.upsert({
         where: { name: classData.name },
         update: data,
         create: data,
       });
       count++;
-      
+
       // Handle class features - classFeatures is array of arrays by level
       // Level = index + 1
       if (classData.classFeatures && Array.isArray(classData.classFeatures)) {
@@ -281,7 +276,7 @@ async function seedClasses() {
           }
         }
       }
-      
+
       // Handle subclasses
       if (classData.subclasses && Array.isArray(classData.subclasses)) {
         for (const subclass of classData.subclasses) {
@@ -298,7 +293,8 @@ async function seedClasses() {
             update: subclassData,
             create: subclassData,
           });
-          
+          subclassIdMap.set(`${classData.name}|${subclass.shortName ?? subclass.name}`, created.id);
+
           // Handle subclass features
           if (subclass.subclassFeatures && Array.isArray(subclass.subclassFeatures)) {
             for (let level = 0; level < subclass.subclassFeatures.length; level++) {
@@ -325,100 +321,97 @@ async function seedClasses() {
       console.error(`  ✗ Error seeding class ${classData?.name}: ${error.message}`);
     }
   }
-  
+
   console.log(`  ✓ ${count} classes seeded`);
-  return classIdMap;
+  return { classIdMap, subclassIdMap };
 }
 
-async function seedSpells(classIdMap: Map<string, string>) {
+async function seedSpells(classIdMap: Map<string, string>, subclassIdMap: Map<string, string>) {
   console.log('\n✨ Seeding Spells...');
-  
+
   const spells = loadSpellsDir();
   console.log(`  Found ${spells.length} spells to migrate`);
-  
-  const spellIdMap = new Map<string, string>();
+
   let count = 0;
   let classLinkCount = 0;
   let skipCount = 0;
-  
+
   for (const spell of spells) {
     if (!spell.name) {
       skipCount++;
       continue;
     }
-    
-    const spellId = crypto.randomUUID();
-    spellIdMap.set(`${spell.name}|${spell.source}`, spellId);
-    
+
     const data = transformSpell(spell);
     if (!data) {
       skipCount++;
       continue;
     }
-    
+
     try {
-      await prisma.spell.upsert({
+      const created = await prisma.spell.upsert({
         where: { name_source: { name: spell.name, source: spell.source || 'Unknown' } },
         update: data,
         create: data,
       });
       count++;
-      
+
+      const spellId = created.id;
+
       // Create spell-class links
       if (spell.classes) {
-        // From class list
+        // From class list — direct class spells
         if (spell.classes.fromClassList) {
           for (const classRef of spell.classes.fromClassList) {
             const classId = classIdMap.get(classRef.name);
-            if (classId) {
+            if (!classId) continue;
+            try {
               await prisma.spellClass.create({
-                data: {
-                  id: crypto.randomUUID(),
-                  spellId,
-                  classId,
-                  fromSubclass: false,
-                },
+                data: { id: crypto.randomUUID(), spellId, classId, fromSubclass: false },
               });
               classLinkCount++;
+            } catch {
+              // skip duplicate
             }
           }
         }
-        
-        // From subclass
+
+        // From subclass — spells granted by a specific subclass
         if (spell.classes.fromSubclass) {
           for (const subclassRef of spell.classes.fromSubclass) {
-            const subclassClassName = subclassRef.class?.name;
-            if (subclassClassName) {
-              const classId = classIdMap.get(subclassClassName);
-              if (classId) {
-                await prisma.spellClass.create({
-                  data: {
-                    id: crypto.randomUUID(),
-                    spellId,
-                    classId,
-                    fromSubclass: true,
-                  },
-                });
-                classLinkCount++;
-              }
+            const className = subclassRef.class?.name;
+            const subclassName = subclassRef.subclass?.name;
+            if (!className) continue;
+            const classId = classIdMap.get(className);
+            if (!classId) continue;
+            const subclassId = subclassName
+              ? subclassIdMap.get(`${className}|${subclassName}`)
+              : undefined;
+            try {
+              await prisma.spellClass.create({
+                data: { id: crypto.randomUUID(), spellId, classId, fromSubclass: true, subclassId },
+              });
+              classLinkCount++;
+            } catch {
+              // skip duplicate
             }
           }
         }
       }
     } catch (error: any) {
-      if (count < 5) {
+      if (skipCount < 5) {
         console.error(`  ✗ Error seeding spell ${spell.name}: ${error.message}`);
       }
+      skipCount++;
     }
-    
-    if (count % 200 === 0) {
+
+    if (count % 200 === 0 && count > 0) {
       console.log(`  Processed ${count}/${spells.length} spells...`);
     }
   }
-  
+
   console.log(`  ✓ ${count} spells seeded (${skipCount} skipped)`);
   console.log(`  ✓ ${classLinkCount} spell-class links created`);
-  return spellIdMap;
 }
 
 async function seedConditions() {
@@ -495,41 +488,25 @@ async function seedDeities() {
   console.log(`  ✓ ${count} deities seeded`);
 }
 
-async function seedItems() {
-  console.log('\n🎒 Seeding Items...');
-  
-  const itemsData = loadJson<{ item: any[] }>('items.json');
-  
-  let count = 0;
-  let skipCount = 0;
-  
-  for (const item of itemsData.item) {
-    const data = transformItem(item);
-    try {
-      await prisma.item.create({ data });
-      count++;
-    } catch (error) {
-      skipCount++;
-    }
-    
-    if (count % 100 === 0) {
-      console.log(`  Processed ${count}/${itemsData.item.length} items...`);
-    }
-  }
-  
-  console.log(`  ✓ ${count} items seeded (${skipCount} skipped)`);
-}
-
 async function seedMonsters() {
   console.log('\n👹 Seeding Monsters...');
   
   const monsters = loadMonstersDir();
   console.log(`  Found ${monsters.length} monsters to migrate`);
-  
+
+  // Spell lookup for linking spellcasting monsters (first source wins on name collisions)
+  const allSpells = await prisma.spell.findMany({ select: { id: true, name: true } });
+  const spellIdByName = new Map<string, string>();
+  for (const spell of allSpells) {
+    const key = spell.name.toLowerCase();
+    if (!spellIdByName.has(key)) spellIdByName.set(key, spell.id);
+  }
+
   let count = 0;
   let traitCount = 0;
   let actionCount = 0;
-  
+  let spellLinkCount = 0;
+
   for (const monster of monsters) {
     try {
       const data = transformMonster(monster);
@@ -541,9 +518,10 @@ async function seedMonsters() {
       });
       count++;
 
-      // Clear existing traits/actions so re-runs don't duplicate
+      // Clear existing traits/actions/spells so re-runs don't duplicate
       await prisma.monsterTrait.deleteMany({ where: { monsterId: created.id } });
       await prisma.monsterAction.deleteMany({ where: { monsterId: created.id } });
+      await prisma.monsterSpell.deleteMany({ where: { monsterId: created.id } });
 
       // Create traits
       if (monster.trait && Array.isArray(monster.trait)) {
@@ -553,11 +531,22 @@ async function seedMonsters() {
         }
       }
 
-      // Create spellcasting as traits
+      // Create spellcasting as traits + link known spells
       if (monster.spellcasting && Array.isArray(monster.spellcasting)) {
         for (const sc of monster.spellcasting) {
           await prisma.monsterTrait.create({ data: transformMonsterSpellcasting(sc, created.id) });
           traitCount++;
+        }
+
+        const spellIds = extractSpellReferences(monster.spellcasting)
+          .map((name) => spellIdByName.get(name))
+          .filter((id): id is string => !!id);
+        if (spellIds.length > 0) {
+          await prisma.monsterSpell.createMany({
+            data: spellIds.map((spellId) => ({ monsterId: created.id, spellId })),
+            skipDuplicates: true,
+          });
+          spellLinkCount += spellIds.length;
         }
       }
 
@@ -596,6 +585,7 @@ async function seedMonsters() {
   console.log(`  ✓ ${count} monsters seeded`);
   console.log(`  ✓ ${traitCount} traits created`);
   console.log(`  ✓ ${actionCount} actions created`);
+  console.log(`  ✓ ${spellLinkCount} monster-spell links created`);
 }
 
 async function main() {
@@ -618,17 +608,18 @@ async function main() {
     await seedSchoolsOfMagic();
     await seedDamageTypes();
     
-    const raceIdMap = await seedRaces();
-    const classIdMap = await seedClasses();
-    
-    await seedSpells(classIdMap);
+    await seedRaces();
+    const { classIdMap, subclassIdMap } = await seedClasses();
+
+    await seedSpells(classIdMap, subclassIdMap);
     await seedConditions();
     await seedBackgrounds();
     await seedFeats();
     await seedDeities();
     await seedItems();
     await seedMonsters();
-    
+    await seedAdventures();
+
     // Print final stats
     console.log('\n' + '='.repeat(60));
     console.log('📊 MIGRATION COMPLETE - FINAL STATS');
