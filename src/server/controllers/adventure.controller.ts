@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
 import prisma from "../../lib/prisma";
 import { parsePagination, paginatedResponse } from "../../lib/pagination";
+import { imagePathToUrl } from "../../lib/transformers";
 
 // Adventures are looked up by UUID or by code (e.g. "LMoP"), case-insensitive
 function adventureWhere(idOrCode: string) {
@@ -52,7 +53,17 @@ export async function getAdventureById(req: Request<{ id: string }>, res: Respon
 				book: { select: { id: true, code: true, name: true } },
 				sections: {
 					orderBy: { ordinal: "asc" },
-					select: { id: true, ordinal: true, name: true, headers: true, images: true },
+					select: {
+						id: true,
+						ordinal: true,
+						name: true,
+						headers: true,
+						images: true,
+						maps: {
+							orderBy: { ordinal: "asc" },
+							include: { pins: true },
+						},
+					},
 				},
 				npcs: {
 					orderBy: { name: "asc" },
@@ -65,7 +76,18 @@ export async function getAdventureById(req: Request<{ id: string }>, res: Respon
 			return res.status(404).json({ error: `Adventure not found with id or code ${id}` });
 		}
 
-		return res.json(adventure);
+		const withResolvedMapUrls = {
+			...adventure,
+			sections: adventure.sections.map((section) => ({
+				...section,
+				maps: section.maps.map((map) => ({
+					...map,
+					imageUrl: imagePathToUrl(map.imagePath),
+				})),
+			})),
+		};
+
+		return res.json(withResolvedMapUrls);
 	} catch (error) {
 		console.error("Failed to fetch adventure by id:", error);
 		return res.status(500).json({ error: "Failed to fetch adventure" });
@@ -95,6 +117,7 @@ export async function getAdventureSection(
 
 		const section = await prisma.adventureSection.findUnique({
 			where: { adventureId_ordinal: { adventureId: adventure.id, ordinal } },
+			include: { maps: { orderBy: { ordinal: "asc" }, include: { pins: true } } },
 		});
 
 		if (!section) {
@@ -103,7 +126,9 @@ export async function getAdventureSection(
 				.json({ error: `Section ${ordinal} not found for adventure ${adventure.code}` });
 		}
 
-		return res.json({ ...section, adventure });
+		const maps = section.maps.map((map) => ({ ...map, imageUrl: imagePathToUrl(map.imagePath) }));
+
+		return res.json({ ...section, maps, adventure });
 	} catch (error) {
 		console.error("Failed to fetch adventure section:", error);
 		return res.status(500).json({ error: "Failed to fetch adventure section" });

@@ -29,3 +29,6 @@ dist-ssr
 .env
 .env.*
 !.env.example
+
+# JWT signing keys (regenerate locally, never commit)
+/keys

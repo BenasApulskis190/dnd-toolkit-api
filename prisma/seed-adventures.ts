@@ -418,6 +418,65 @@ function extractBoldListNpcs(sections: any[]): string[] {
   return [...names];
 }
 
+interface AdventureMapPinDef {
+  label: string;
+  entryName: string;
+  x: number;
+  y: number;
+}
+
+interface AdventureMapDef {
+  sectionOrdinal: number;
+  name: string;
+  imagePath: string;
+  ordinal?: number;
+  pins: AdventureMapPinDef[];
+}
+
+// Hand-authored map/pin data lives in database/data/adventure-maps/<code>.json
+// (optional — most adventures don't have one yet). See lmop.json for the format.
+async function seedAdventureMaps(adventureCode: string, adventureId: string): Promise<number> {
+  const relativePath = join('adventure-maps', `${adventureCode.toLowerCase()}.json`);
+  if (!existsSync(join(DATA_DIR, relativePath))) return 0;
+
+  const mapDefs = loadJson<AdventureMapDef[]>(relativePath);
+  const sections = await prisma.adventureSection.findMany({
+    where: { adventureId },
+    select: { id: true, ordinal: true },
+  });
+  const sectionIdByOrdinal = new Map(sections.map((s) => [s.ordinal, s.id]));
+
+  let mapCount = 0;
+  for (const mapDef of mapDefs) {
+    const sectionId = sectionIdByOrdinal.get(mapDef.sectionOrdinal);
+    if (!sectionId) {
+      console.warn(
+        `  ⚠ ${adventureCode} map "${mapDef.name}" references missing section ordinal ${mapDef.sectionOrdinal}, skipping`,
+      );
+      continue;
+    }
+    const map = await prisma.adventureMap.create({
+      data: {
+        sectionId,
+        name: mapDef.name,
+        imagePath: mapDef.imagePath,
+        ordinal: mapDef.ordinal ?? 0,
+      },
+    });
+    await prisma.adventureMapPin.createMany({
+      data: mapDef.pins.map((pin) => ({
+        mapId: map.id,
+        label: pin.label,
+        entryName: pin.entryName,
+        x: pin.x,
+        y: pin.y,
+      })),
+    });
+    mapCount++;
+  }
+  return mapCount;
+}
+
 export async function seedAdventures() {
   console.log('\n🗺️ Seeding Adventures...');
 
@@ -481,6 +540,7 @@ export async function seedAdventures() {
 
   let adventureCount = 0;
   let sectionCount = 0;
+  let mapCount = 0;
   let npcCount = 0;
   let npcLinkCount = 0;
 
@@ -514,6 +574,8 @@ export async function seedAdventures() {
       }),
     });
     sectionCount += sections.length;
+
+    mapCount += await seedAdventureMaps(adventure.id, created.id);
 
     // NPCs: capitalized creature tags from non-core sources whose name never
     // appears lowercase anywhere (generic mobs do, named characters don't)
@@ -616,6 +678,7 @@ export async function seedAdventures() {
 
   console.log(`  ✓ ${adventureCount} adventures seeded`);
   console.log(`  ✓ ${sectionCount} sections created`);
+  console.log(`  ✓ ${mapCount} interactive maps created`);
   console.log(`  ✓ ${npcCount} NPCs created (${npcLinkCount} linked to monster stat blocks)`);
 }
 

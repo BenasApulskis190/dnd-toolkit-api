@@ -1,0 +1,426 @@
+[
+	{
+		"sectionOrdinal": 1,
+		"name": "Cragmaw Hideout",
+		"imagePath": "adventure/LMoP/Cragmaw Hideout (Player).jpg",
+		"ordinal": 1,
+		"pins": [
+			{
+				"label": "1",
+				"entryName": "1. Cave Mouth",
+				"x": 28.0,
+				"y": 78.3
+			},
+			{
+				"label": "2",
+				"entryName": "2. Goblin Blind",
+				"x": 47.8,
+				"y": 74.7
+			},
+			{
+				"label": "3",
+				"entryName": "3. Kennel",
+				"x": 51.8,
+				"y": 53.5
+			},
+			{
+				"label": "4",
+				"entryName": "4. Steep Passage",
+				"x": 42.0,
+				"y": 28.7
+			},
+			{
+				"label": "5",
+				"entryName": "5. Overpass",
+				"x": 52.5,
+				"y": 14.7
+			},
+			{
+				"label": "6",
+				"entryName": "6. Goblin Den",
+				"x": 14.5,
+				"y": 30.1
+			},
+			{
+				"label": "7",
+				"entryName": "7. Twin Pools Cave",
+				"x": 83.0,
+				"y": 40.9
+			},
+			{
+				"label": "8",
+				"entryName": "8. Klarg's Cave",
+				"x": 84.5,
+				"y": 71.1
+			}
+		]
+	},
+	{
+		"sectionOrdinal": 2,
+		"name": "Phandalin",
+		"imagePath": "adventure/LMoP/Phandalin (Player).jpg",
+		"ordinal": 2,
+		"pins": [
+			{
+				"label": "1",
+				"entryName": "Stonehill Inn",
+				"x": 44.75,
+				"y": 42.3
+			},
+			{
+				"label": "2",
+				"entryName": "Barthen's Provisions",
+				"x": 52.5,
+				"y": 28.0
+			},
+			{
+				"label": "3",
+				"entryName": "Edermath Orchard",
+				"x": 26.0,
+				"y": 28.7
+			},
+			{
+				"label": "4",
+				"entryName": "Lionshield Coster",
+				"x": 30.25,
+				"y": 59.9
+			},
+			{
+				"label": "5",
+				"entryName": "Phandalin Miner's Exchange",
+				"x": 32.75,
+				"y": 78.2
+			},
+			{
+				"label": "6",
+				"entryName": "Alderleaf Farm",
+				"x": 60.5,
+				"y": 66.7
+			},
+			{
+				"label": "7",
+				"entryName": "Shrine of Luck",
+				"x": 38.5,
+				"y": 40.9
+			},
+			{
+				"label": "8",
+				"entryName": "The Sleeping Giant",
+				"x": 65.0,
+				"y": 43.0
+			},
+			{
+				"label": "9",
+				"entryName": "Townmaster's Hall",
+				"x": 44.0,
+				"y": 51.3
+			},
+			{
+				"label": "10",
+				"entryName": "Tresendar Manor",
+				"x": 89.0,
+				"y": 35.9
+			}
+		]
+	},
+	{
+		"sectionOrdinal": 2,
+		"name": "Redbrand Hideout",
+		"imagePath": "adventure/LMoP/Redbrand Hideout (Player).jpg",
+		"ordinal": 3,
+		"pins": [
+			{
+				"label": "1",
+				"entryName": "1. Cellar",
+				"x": 91.5,
+				"y": 81.1
+			},
+			{
+				"label": "2",
+				"entryName": "2. Barracks",
+				"x": 59.75,
+				"y": 75.3
+			},
+			{
+				"label": "3",
+				"entryName": "3. Trapped Hall",
+				"x": 83.25,
+				"y": 57.4
+			},
+			{
+				"label": "4",
+				"entryName": "4. Tresendar Crypts",
+				"x": 60.25,
+				"y": 46.6
+			},
+			{
+				"label": "5",
+				"entryName": "5. Slave Pens",
+				"x": 79.5,
+				"y": 29.4
+			},
+			{
+				"label": "6",
+				"entryName": "6. Armory",
+				"x": 60.0,
+				"y": 20.4
+			},
+			{
+				"label": "7",
+				"entryName": "7. Storeroom and Work Area",
+				"x": 42.75,
+				"y": 20.1
+			},
+			{
+				"label": "8",
+				"entryName": "8. Crevasse",
+				"x": 32.25,
+				"y": 61.0
+			},
+			{
+				"label": "9",
+				"entryName": "9. Guard Barracks",
+				"x": 15.0,
+				"y": 86.8
+			},
+			{
+				"label": "10",
+				"entryName": "10. Common Room",
+				"x": 15.0,
+				"y": 51.3
+			},
+			{
+				"label": "11",
+				"entryName": "11. Wizard's Workshop",
+				"x": 14.75,
+				"y": 24.0
+			},
+			{
+				"label": "12",
+				"entryName": "12. Glasstaff's Quarters",
+				"x": 24.75,
+				"y": 20.8
+			}
+		]
+	},
+	{
+		"sectionOrdinal": 3,
+		"name": "Cragmaw Castle",
+		"imagePath": "adventure/LMoP/Cragmaw Castle (Player).jpg",
+		"ordinal": 4,
+		"pins": [
+			{
+				"label": "1",
+				"entryName": "1. Castle Entrance",
+				"x": 14.0,
+				"y": 59.2
+			},
+			{
+				"label": "2",
+				"entryName": "2. Trapped Hall",
+				"x": 25.75,
+				"y": 46.6
+			},
+			{
+				"label": "3",
+				"entryName": "3. Archer Post",
+				"x": 16.5,
+				"y": 38.6
+			},
+			{
+				"label": "3",
+				"entryName": "3. Archer Post",
+				"x": 16.5,
+				"y": 76.0
+			},
+			{
+				"label": "4",
+				"entryName": "4. Ruined Barracks",
+				"x": 22.25,
+				"y": 78.2
+			},
+			{
+				"label": "5",
+				"entryName": "5. Storeroom",
+				"x": 25.75,
+				"y": 28.0
+			},
+			{
+				"label": "6",
+				"entryName": "6. Hobgoblin Barracks",
+				"x": 16.5,
+				"y": 28.0
+			},
+			{
+				"label": "7",
+				"entryName": "7. Banquet Hall",
+				"x": 38.0,
+				"y": 60.6
+			},
+			{
+				"label": "8",
+				"entryName": "8. Dark Hall",
+				"x": 42.25,
+				"y": 42.7
+			},
+			{
+				"label": "9",
+				"entryName": "9. Goblin Shrine",
+				"x": 39.75,
+				"y": 22.6
+			},
+			{
+				"label": "10",
+				"entryName": "10. Postern Gate",
+				"x": 38.75,
+				"y": 82.5
+			},
+			{
+				"label": "11",
+				"entryName": "11. Ruined Tower",
+				"x": 54.25,
+				"y": 27.1
+			},
+			{
+				"label": "12",
+				"entryName": "12. Guard Barracks",
+				"x": 67.0,
+				"y": 57.0
+			},
+			{
+				"label": "13",
+				"entryName": "13. Owlbear Tower",
+				"x": 62.5,
+				"y": 75.3
+			}
+		]
+	},
+	{
+		"sectionOrdinal": 4,
+		"name": "Wave Echo Cave",
+		"imagePath": "adventure/LMoP/Wave Echo Cave (Player).jpg",
+		"ordinal": 5,
+		"pins": [
+			{
+				"label": "1",
+				"entryName": "1. Cave Entrance",
+				"x": 22.8,
+				"y": 74.5
+			},
+			{
+				"label": "2",
+				"entryName": "2. Mine Tunnels",
+				"x": 26.6,
+				"y": 60.0
+			},
+			{
+				"label": "3",
+				"entryName": "3. Old Entrance",
+				"x": 50.1,
+				"y": 74.5
+			},
+			{
+				"label": "4",
+				"entryName": "4. Old Guardroom",
+				"x": 41.9,
+				"y": 83.5
+			},
+			{
+				"label": "5",
+				"entryName": "5. Assayers' Office",
+				"x": 61.0,
+				"y": 83.5
+			},
+			{
+				"label": "6",
+				"entryName": "6. South Barracks",
+				"x": 50.1,
+				"y": 62.3
+			},
+			{
+				"label": "7",
+				"entryName": "7. Ruined Storeroom",
+				"x": 63.4,
+				"y": 62.3
+			},
+			{
+				"label": "8",
+				"entryName": "8. Fungi Cavern",
+				"x": 74.3,
+				"y": 65.8
+			},
+			{
+				"label": "9",
+				"entryName": "9. Great Cavern",
+				"x": 52.5,
+				"y": 50.8
+			},
+			{
+				"label": "10",
+				"entryName": "10. Dark Pool",
+				"x": 14.7,
+				"y": 30.8
+			},
+			{
+				"label": "11",
+				"entryName": "11. North Barracks",
+				"x": 33.4,
+				"y": 30.5
+			},
+			{
+				"label": "12",
+				"entryName": "12. Smelter Cavern",
+				"x": 63.4,
+				"y": 34.5
+			},
+			{
+				"label": "13",
+				"entryName": "13. Starry Cavern",
+				"x": 82.5,
+				"y": 50.0
+			},
+			{
+				"label": "14",
+				"entryName": "14. Wizards' Quarters",
+				"x": 89.3,
+				"y": 56.0
+			},
+			{
+				"label": "15",
+				"entryName": "15. Forge of Spells",
+				"x": 87.3,
+				"y": 41.5
+			},
+			{
+				"label": "16",
+				"entryName": "16. Booming Cavern",
+				"x": 77.0,
+				"y": 19.3
+			},
+			{
+				"label": "17",
+				"entryName": "17. Old Streambed",
+				"x": 48.7,
+				"y": 10.0
+			},
+			{
+				"label": "18",
+				"entryName": "18. Collapsed Cavern",
+				"x": 36.1,
+				"y": 20.8
+			},
+			{
+				"label": "19",
+				"entryName": "19. Temple of Dumathoin",
+				"x": 12.6,
+				"y": 12.8
+			},
+			{
+				"label": "20",
+				"entryName": "20. Priests' Quarters",
+				"x": 22.8,
+				"y": 9.5
+			}
+		]
+	}
+]

@@ -8,7 +8,7 @@ export async function seedItems() {
   const itemsData = loadJson<{ item: any[] }>('items.json');
 
   // Replace non-custom items so re-runs pick up transformer changes
-  await prisma.item.deleteMany({ where: { isCustom: false } });
+  await prisma.item.deleteMany({ where: { users: { none: {} } } });
 
   let count = 0;
   let skipCount = 0;

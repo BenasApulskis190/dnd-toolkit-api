@@ -53,11 +53,11 @@ export async function getNpcById(req: Request<{ id: string }>, res: Response) {
 			include: {
 				adventure: { select: { id: true, code: true, name: true } },
 				monster: {
-					include: {
-						monsterType: true,
-						traits: true,
-						actions: true,
-						spells: { include: { spell: { select: { id: true, name: true, level: true } } } },
+					select: {
+						id: true,
+						name: true,
+						challengeRating: true,
+						monsterType: { select: { name: true } },
 					},
 				},
 			},

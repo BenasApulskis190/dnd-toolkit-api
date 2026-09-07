@@ -493,6 +493,7 @@ export function transformMonster(monster: any): Prisma.MonsterCreateInput {
   let speedFly: number | undefined;
   let speedSwim: number | undefined;
   let speedClimb: number | undefined;
+  let speedBurrow: number | undefined;
 
   const parseSpeed = (val: any): number | undefined => {
     if (typeof val === 'number') return val;
@@ -506,6 +507,7 @@ export function transformMonster(monster: any): Prisma.MonsterCreateInput {
       speedFly = parseSpeed(monster.speed.fly);
       speedSwim = parseSpeed(monster.speed.swim);
       speedClimb = parseSpeed(monster.speed.climb);
+      speedBurrow = parseSpeed(monster.speed.burrow);
     } else if (typeof monster.speed === 'number') {
       speedWalk = monster.speed;
     }
@@ -544,6 +546,7 @@ export function transformMonster(monster: any): Prisma.MonsterCreateInput {
     speedFly,
     speedSwim,
     speedClimb,
+    speedBurrow,
     strScore,
     dexScore,
     conScore,
@@ -557,6 +560,10 @@ export function transformMonster(monster: any): Prisma.MonsterCreateInput {
     wisSave: monster.wisSave,
     chaSave: monster.chaSave,
     skills: monster.skills ? JSON.stringify(monster.skills) : undefined,
+    damageVulnerabilities: monster.vulnerable ? JSON.stringify(monster.vulnerable) : undefined,
+    damageResistances: monster.resist ? JSON.stringify(monster.resist) : undefined,
+    damageImmunities: monster.immune ? JSON.stringify(monster.immune) : undefined,
+    conditionImmunities: monster.conditionImmune ? JSON.stringify(monster.conditionImmune) : undefined,
     senses: monster.senses,
     passivePerception: monster.passive,
     languages: monster.languages,

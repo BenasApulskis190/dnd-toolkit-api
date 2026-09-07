@@ -22,6 +22,7 @@ const options: swaggerJsdoc.Options = {
       },
     ],
     tags: [
+      { name: 'Auth', description: 'Registration, login, and session endpoints' },
       { name: 'Monsters', description: 'Monster management endpoints' },
       { name: 'Monster Types', description: 'Monster type management endpoints' },
       { name: 'Spells', description: 'Spell management endpoints' },
@@ -37,7 +38,33 @@ const options: swaggerJsdoc.Options = {
       { name: 'Health', description: 'Health check endpoints' },
     ],
     components: {
+      securitySchemes: {
+        bearerAuth: {
+          type: 'http',
+          scheme: 'bearer',
+          bearerFormat: 'JWT',
+          description: 'Access token from register/login/google/refresh, sent as `Authorization: Bearer <token>`.',
+        },
+      },
       schemas: {
+        User: {
+          type: 'object',
+          properties: {
+            id: { type: 'string', format: 'uuid' },
+            username: { type: 'string' },
+            email: { type: 'string', format: 'email' },
+            name: { type: 'string', nullable: true },
+            avatarUrl: { type: 'string', nullable: true },
+            createdAt: { type: 'string', format: 'date-time' },
+          },
+        },
+        AuthResponse: {
+          type: 'object',
+          properties: {
+            accessToken: { type: 'string', description: 'Short-lived JWT (15m), RS256-signed. A refresh token is also set as an httpOnly cookie.' },
+            user: { $ref: '#/components/schemas/User' },
+          },
+        },
         Monster: {
           type: 'object',
           properties: {
@@ -283,6 +310,119 @@ const options: swaggerJsdoc.Options = {
       },
     },
     paths: {
+      '/api/auth/register': {
+        post: {
+          tags: ['Auth'],
+          summary: 'Register a new account',
+          description: 'Creates a user with username/email/password, and returns an access token. A refresh token is set as an httpOnly cookie.',
+          requestBody: {
+            required: true,
+            content: {
+              'application/json': {
+                schema: {
+                  type: 'object',
+                  required: ['username', 'email', 'password'],
+                  properties: {
+                    username: { type: 'string' },
+                    email: { type: 'string', format: 'email' },
+                    password: { type: 'string', format: 'password', description: 'Minimum 8 characters' },
+                  },
+                },
+              },
+            },
+          },
+          responses: {
+            '201': { description: 'Account created', content: { 'application/json': { schema: { $ref: '#/components/schemas/AuthResponse' } } } },
+            '400': { description: 'Missing fields or password too short', content: { 'application/json': { schema: { $ref: '#/components/schemas/Error' } } } },
+            '409': { description: 'Username or email already in use', content: { 'application/json': { schema: { $ref: '#/components/schemas/Error' } } } },
+          },
+        },
+      },
+      '/api/auth/login': {
+        post: {
+          tags: ['Auth'],
+          summary: 'Login with username/email and password',
+          description: 'Returns an access token. A refresh token is set as an httpOnly cookie.',
+          requestBody: {
+            required: true,
+            content: {
+              'application/json': {
+                schema: {
+                  type: 'object',
+                  required: ['identifier', 'password'],
+                  properties: {
+                    identifier: { type: 'string', description: 'Username or email' },
+                    password: { type: 'string', format: 'password' },
+                  },
+                },
+              },
+            },
+          },
+          responses: {
+            '200': { description: 'Logged in', content: { 'application/json': { schema: { $ref: '#/components/schemas/AuthResponse' } } } },
+            '400': { description: 'Missing fields', content: { 'application/json': { schema: { $ref: '#/components/schemas/Error' } } } },
+            '401': { description: 'Invalid credentials', content: { 'application/json': { schema: { $ref: '#/components/schemas/Error' } } } },
+          },
+        },
+      },
+      '/api/auth/google': {
+        post: {
+          tags: ['Auth'],
+          summary: 'Login or register with Google',
+          description: 'Verifies a Google Identity Services ID token, then finds or creates the matching user. Returns an access token; a refresh token is set as an httpOnly cookie.',
+          requestBody: {
+            required: true,
+            content: {
+              'application/json': {
+                schema: {
+                  type: 'object',
+                  required: ['idToken'],
+                  properties: {
+                    idToken: { type: 'string', description: 'ID token returned by Google Identity Services in the browser' },
+                  },
+                },
+              },
+            },
+          },
+          responses: {
+            '200': { description: 'Logged in / registered', content: { 'application/json': { schema: { $ref: '#/components/schemas/AuthResponse' } } } },
+            '400': { description: 'Missing idToken', content: { 'application/json': { schema: { $ref: '#/components/schemas/Error' } } } },
+            '401': { description: 'Invalid Google ID token', content: { 'application/json': { schema: { $ref: '#/components/schemas/Error' } } } },
+          },
+        },
+      },
+      '/api/auth/refresh': {
+        post: {
+          tags: ['Auth'],
+          summary: 'Rotate refresh token and issue a new access token',
+          description: 'Reads the refresh token from the httpOnly cookie, rotates it, and returns a new access token.',
+          responses: {
+            '200': { description: 'New access token issued', content: { 'application/json': { schema: { $ref: '#/components/schemas/AuthResponse' } } } },
+            '401': { description: 'Missing, invalid, or expired refresh token', content: { 'application/json': { schema: { $ref: '#/components/schemas/Error' } } } },
+          },
+        },
+      },
+      '/api/auth/logout': {
+        post: {
+          tags: ['Auth'],
+          summary: 'Logout',
+          description: 'Revokes the refresh token tied to the httpOnly cookie and clears it.',
+          responses: {
+            '204': { description: 'Logged out' },
+          },
+        },
+      },
+      '/api/auth/me': {
+        get: {
+          tags: ['Auth'],
+          summary: 'Get the current authenticated user',
+          security: [{ bearerAuth: [] }],
+          responses: {
+            '200': { description: 'Current user', content: { 'application/json': { schema: { $ref: '#/components/schemas/User' } } } },
+            '401': { description: 'Missing or invalid access token', content: { 'application/json': { schema: { $ref: '#/components/schemas/Error' } } } },
+          },
+        },
+      },
       '/api/monsters': {
         get: {
           tags: ['Monsters'],
