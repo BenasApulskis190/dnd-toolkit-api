@@ -17,6 +17,7 @@ import itemRoutes from "./routes/item.routes";
 import raceRoutes from "./routes/race.routes";
 import adventureRoutes from "./routes/adventure.routes";
 import npcRoutes from "./routes/npc.routes";
+import mapRoutes from "./routes/map.routes";
 import partyRoutes from "./routes/party.routes";
 import characterRoutes from "./routes/character.routes";
 import encounterRoutes from "./routes/encounter.routes";
@@ -55,6 +56,7 @@ app.use("/api/items", itemRoutes);
 app.use("/api/races", raceRoutes);
 app.use("/api/adventures", adventureRoutes);
 app.use("/api/npcs", npcRoutes);
+app.use("/api/maps", mapRoutes);
 app.use("/api/parties", partyRoutes);
 app.use("/api/characters", characterRoutes);
 app.use("/api/encounters", encounterRoutes);
@@ -130,6 +132,10 @@ app.get("/api", (_, res) => {
 			npcs: {
 				list: "GET /api/npcs?q=strahd&adventure=CoS",
 				byId: "GET /api/npcs/:id",
+			},
+			maps: {
+				list: "GET /api/maps?q=cragmaw&adventure=LMoP",
+				byId: "GET /api/maps/:id",
 			},
 			parties: {
 				list: "GET /api/parties (auth required)",
@@ -208,6 +214,7 @@ app.listen(PORT, () => {
 	console.log("  GET /api/races           - List all races");
 	console.log("  GET /api/adventures      - List all adventures");
 	console.log("  GET /api/npcs            - List all adventure NPCs");
+	console.log("  GET /api/maps            - List all adventure maps");
 	console.log("  GET /api/health          - Health check");
 	console.log("  GET /api/docs            - Swagger UI");
 });

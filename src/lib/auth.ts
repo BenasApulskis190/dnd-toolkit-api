@@ -7,8 +7,16 @@ import { Response } from "express";
 const privateKey = fs.readFileSync(path.join(__dirname, "../../keys/jwt-private.pem"), "utf8");
 const publicKey = fs.readFileSync(path.join(__dirname, "../../keys/jwt-public.pem"), "utf8");
 
-const ACCESS_TOKEN_TTL = "15m";
-const REFRESH_TOKEN_TTL_MS = 30 * 24 * 60 * 60 * 1000; // 30 days
+// Session lifetimes are env-tunable so dev, staging and prod can differ without
+// a code change. ACCESS_TOKEN_TTL is a jsonwebtoken duration string ("15m",
+// "1h"); SESSION_TTL_DAYS is how long a login survives in total — the refresh
+// token's lifetime, and therefore how long the user stays signed in without
+// re-entering credentials.
+// Cast: jsonwebtoken types the duration as a template-literal union that a
+// plain env string can't satisfy.
+const ACCESS_TOKEN_TTL = (process.env.ACCESS_TOKEN_TTL || "15m") as jwt.SignOptions["expiresIn"];
+const SESSION_TTL_DAYS = Number(process.env.SESSION_TTL_DAYS) || 3;
+const REFRESH_TOKEN_TTL_MS = SESSION_TTL_DAYS * 24 * 60 * 60 * 1000;
 
 export const REFRESH_TOKEN_COOKIE = "refresh_token";
 

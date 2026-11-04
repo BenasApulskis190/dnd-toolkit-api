@@ -79,8 +79,12 @@ model AdventureMapPin {
   mapId     String @map("map_id")
   label     String // printed/assigned marker text, e.g. "1", "E1", "2a"
   entryName String @map("entry_name") // exact heading text in the section's entries tree
-  x         Float // percent 0-100, relative to image width
-  y         Float // percent 0-100, relative to image height
+  // Null until the pin is placed on the image. Location lists are generated for
+  // every adventure from the printed numbered headings, but the coordinates are
+  // hand-authored, so an unplaced pin still lists/links its text — it just
+  // doesn't render an overlay marker.
+  x         Float? // percent 0-100, relative to image width
+  y         Float? // percent 0-100, relative to image height
 
   map AdventureMap @relation(fields: [mapId], references: [id], onDelete: Cascade)
 
